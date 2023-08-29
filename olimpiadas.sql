@@ -3,6 +3,7 @@
 
 --*************************************SIMPLES*******************************************
 
+
 --1 Apresentar todos os clientes que estão sem dados no campo email
 
 select
@@ -217,7 +218,9 @@ JOIN TbEditora ON TbEditora.codEditora = TbTitulo.codEditora
 WHERE
 TbTitulo.desTitulo LIKE '%Faça%';
 
+
 --*************************************JOIN GROUP*******************************************
+
 
 --21 Apresentar o Nome do Autor e a quantidade de livros que foram publicados entre 1990 e 2007
 
@@ -349,7 +352,9 @@ TbEmprestimoLivro.valMulta IS NULL OR TbEmprestimoLivro.valMulta = ' '
 GROUP BY
 TbEmprestimoLivro.codEmprestimo
 
+
 --*************************************SUB SELECT*******************************************
+
 
 --32 Apresentar os cliente que não fizeram retirada de livros
 SELECT
@@ -445,6 +450,10 @@ TbTitulo JOIN TbEditora ON TbTitulo.codEditora = TbEditora.codEditora
 WHERE 
 TbEditora.Estado = 'SP')
 
+
+--***********************************SUB SELECT GROUP*********************************************
+
+
 /*--40 Qtd de livros cadastrados por ano (não considerar nesta consulta os livros que se encontram nas estantes
 cujo responsável não é estagiário)*/
 SELECT 
@@ -503,14 +512,105 @@ AND TbCategoria.categoria IN ('Internet','Informática')
 GROUP BY
 TbTitulo.codTitulo
 
+
+--***********************************UNION*********************************************
+
+
+--44 Apresentar o titulo dos livros identificando os mesmos como Antigos (data lançamento < 2000) e Recentes (data lançamento <=2000)
+SELECT
+TbTitulo.desTitulo,
+CASE
+WHEN YEAR(TbTitulo.DatLancamento) < 2000 THEN'Antigos'
+ELSE  'Recentes'
+END AS Categoria
+FROM
+TbTitulo
+
+/*--45 Nome do funcionário. Caso seja estagiário, apresentar o nome do Responsável e a instituição de ensino.
+Caso seja Funcionário, identificar que ele é responsável e deixar o 3o. Campo vazio*/
+
+SELECT
+F.nome,
+CASE
+WHEN F.cargo = 'Estagiária' THEN R.nome
+WHEN F.codResp IS NULL THEN 'Responsável'
+ELSE ''
+END AS [Responsável],
+CASE
+WHEN  F.cargo = 'Estagiária' THEN F.instituicao
+ELSE ''
+END AS InstituicaoEnsino
+FROM
+Tbfuncionario F
+LEFT JOIN Tbfuncionario R ON F.codResp = R.codFunc;
+
+--46 Apresentar o nome do cliente e a quantidade de livros retirados. Caso não tenha retirado nenhum livro, colocar 0.
+SELECT
+TbCliente.Nome,
+ISNULL(COUNT(TbEmprestimo.codCliente), 0) AS QtdLivrosRetirado
+FROM
+TbCliente
+LEFT JOIN TbEmprestimo ON TbCliente.codCliente = TbEmprestimo.codCliente
+GROUP BY
+TbCliente.Nome
+
+--***********************************SELECT INTO*********************************************
+
+--47  Transferir os dados dos títulos Expirados (ano lançamento < 2000) para uma tabela temporária
+
+CREATE TABLE  TitulosExpirados
+(
+IdTituloExpirado INT PRIMARY KEY IDENTITY,
+Titulo VARCHAR(256) UNIQUE NOT NULL,
+AnoLancamento DATE NOT NULL,
+Preco FLOAT NOT NULL,
+Paginas INT NOT NULL
+)
+INSERT INTO TitulosExpirados(Titulo,AnoLancamento,Preco,Paginas)
+SELECT 
+TbTitulo.desTitulo, 
+TbTitulo.DatLancamento,
+TbTitulo.valPreco,
+TbTitulo.qtdPaginas
+FROM
+TbTitulo
+WHERE YEAR(TbTitulo.DatLancamento) < 2000;
+
+
+--48 transferir os dados dos autores que tem mais que 1 publicação para uma tabela temporária
+
+
+CREATE TABLE AutorTemporaria
+(
+IdAutorTemporaria INT PRIMARY KEY IDENTITY,
+NomeAutor VARCHAR(256) NOT NULL UNIQUE,
+Endereco VARCHAR(256) NOT NULL,
+Telefone VARCHAR(50) NOT NULL,
+QtdLivrosPublicados INT NOT NULL
+)
+
+INSERT INTO AutorTemporaria(NomeAutor,Endereco,Telefone,QtdLivrosPublicados)
+SELECT
+TbAutor.autor,
+TbAutor.endereco,
+TbAutor.telefone,
+COUNT(TbTitulo.codAutor) AS QtdLivrosPublicados
+FROM
+TbAutor
+JOIN TbTitulo ON TbTitulo.codAutor = TbAutor.codautor
+GROUP BY TbAutor.endereco,TbAutor.autor,TbAutor.telefone
+HAVING COUNT(TbTitulo.codAutor) > 1;
+
+SELECT * FROM AutorTemporaria
+select * from TitulosExpirados
+select * from TbEmprestimo
+select * from TbCliente
 select * from Tbfuncionario
 select * from TbEstante
 select * from TbTitulo
-select * from TbEditora
 select * from TbAutor
+select * from TbEditora
 select * from TbEmprestimoLivro
-select * from TbEmprestimo
-select * from TbCliente
 select * from TbExemplar
 select * from TbCategoria
 select * from tmpAutor
