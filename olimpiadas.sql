@@ -1,17 +1,18 @@
 --DQL DATA QUERY LANGUAGE
 
+USE Olimpiadas
 
 --*************************************SIMPLES*******************************************
 
 
 --1 Apresentar todos os clientes que estão sem dados no campo email
 
-select
+SELECT
 * 
-from 
+FROM
 TbCliente 
-Where 
-email is null or email  = ''
+WHERE 
+email IS NULL OR email  = ''
 
 --2 Mostrar o titulo em caixa alta, a quantidade de páginas e o ano de lançamento dos livros da editora 1 e 2
 
@@ -48,7 +49,9 @@ Tbfuncionario
 WHERE 
 Tbfuncionario.cargo = 'Estagiária' 
 AND
-Tbfuncionario.telefone = '13'  --****************************
+Tbfuncionario.telefone LIKE '13%'  --****************************
+
+
 
 --5 Apresentar os livros lançados no mês de Janeiro (1) cujo preço esteja entre 50 e 100 
 SELECT
@@ -85,7 +88,7 @@ TbTitulo
 /*--9 Mostrar o primeiro nome do livro e o ano de lançamento.
 Se ano de lançamento for até 2000 escrever Fase 1, se for maior Fase 2*/
   SELECT
-SUBSTRING(TbTitulo.desTitulo, 1, CHARINDEX(' ', TbTitulo.desTitulo + ' ') - 1) AS [Primeiro Nome do Livro],
+SUBSTRING(TbTitulo.desTitulo, 1, CHARINDEX(' ', TbTitulo.desTitulo  + ' ') - 1) AS [Primeiro Nome do Livro],
 YEAR(TbTitulo.DatLancamento) AS [Ano de Lançamento],
 CASE
 WHEN YEAR(TbTitulo.DatLancamento) <= 2000 THEN 'Fase 1'
