@@ -6,6 +6,19 @@ Go
 USE [Session2]
 GO
 
+---------------------------------CREATE TABLE RANKING-------------------------------------------
+
+CREATE TABLE Ranking
+(
+IdRanking INT PRIMARY KEY IDENTITY,
+Nome VARCHAR(100) NOT NULL ,
+Pontos INT NULL
+)
+
+---------------------------------------------------------------------------------------------------
+
+
+
 /****** Object:  Table [dbo].[cidade]    Script Date: 17/10/2023 10:06:26 ******/
 SET ANSI_NULLS ON
 GO

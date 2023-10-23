@@ -12,19 +12,19 @@ namespace session2.Controller
     [Produces("application/json")]
     public class ParticipanteController : ControllerBase
     {
-        private IParticipante _participanteRepository { get; set; }
+        private IRanking _participanteRepository { get; set; }
 
 
         public ParticipanteController()
         {
-            _participanteRepository = new ParticipanteRepository();
+            _participanteRepository = new RankingRepository();
         }
         [HttpGet]
         public IActionResult GetByName(string name)
         {
             try
             {
-                Participante participanteBuscado = _participanteRepository.BuscarPeloNome(name);
+                Ranking participanteBuscado = _participanteRepository.BuscarPeloNome(name);
                 if (participanteBuscado == null)
                 {
                     return NotFound("Participante não encontrado!");
@@ -36,5 +36,23 @@ namespace session2.Controller
                 return BadRequest(ex.Message);
             }
         }
+        [HttpGet("{pontos}")]
+        public IActionResult GetByPoints(int points) 
+        { 
+        try
+            {
+                List<Ranking> participanteBuscado = _participanteRepository.BuscarPelaPontuação(points);
+                if (participanteBuscado.Count == 0)
+                {
+                    return NotFound("Nenhum participante  encontrado encontrado!");
+                }
+                return Ok(participanteBuscado);
+            }
+            catch(Exception e) 
+            { 
+            return BadRequest(e.Message);
+            }
+        }
+
     }
 }

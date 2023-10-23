@@ -32,6 +32,8 @@ public partial class SessionContext : DbContext
 
     public virtual DbSet<Produto> Produtos { get; set; }
 
+    public virtual DbSet<Ranking> Rankings { get; set; }
+
     public virtual DbSet<Regiao> Regiaos { get; set; }
 
     public virtual DbSet<TipoEvento> TipoEventos { get; set; }
@@ -86,6 +88,10 @@ public partial class SessionContext : DbContext
             entity.HasOne(d => d.Loja).WithMany(p => p.Estoques)
                 .HasForeignKey(d => d.LojaId)
                 .HasConstraintName("FK_estoque_loja");
+
+            entity.HasOne(d => d.Produto).WithMany(p => p.Estoques)
+                .HasForeignKey(d => d.ProdutoId)
+                .HasConstraintName("FK_estoque_produto");
         });
 
         modelBuilder.Entity<Evento>(entity =>
@@ -160,6 +166,17 @@ public partial class SessionContext : DbContext
                 .HasMaxLength(255)
                 .HasColumnName("produto");
             entity.Property(e => e.Valor).HasColumnName("valor");
+        });
+
+        modelBuilder.Entity<Ranking>(entity =>
+        {
+            entity.HasKey(e => e.IdRanking).HasName("PK__Ranking__99835A004D128F93");
+
+            entity.ToTable("Ranking");
+
+            entity.Property(e => e.Nome)
+                .HasMaxLength(100)
+                .IsUnicode(false);
         });
 
         modelBuilder.Entity<Regiao>(entity =>

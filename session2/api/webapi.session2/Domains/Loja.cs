@@ -1,7 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
+using webapi.session2.Domains;
 
-namespace webapi.session2.Domains;
+namespace webapi.session2;
 
 public partial class Loja
 {

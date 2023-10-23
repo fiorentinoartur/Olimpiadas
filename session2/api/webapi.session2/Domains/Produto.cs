@@ -1,7 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
+using webapi.session2.Domains;
 
-namespace webapi.session2.Domains;
+namespace webapi.session2;
 
 public partial class Produto
 {
@@ -10,6 +11,8 @@ public partial class Produto
     public string? Produto1 { get; set; }
 
     public double? Valor { get; set; }
+
+    public virtual ICollection<Estoque> Estoques { get; set; } = new List<Estoque>();
 
     public virtual ICollection<Venda> Venda { get; set; } = new List<Venda>();
 }

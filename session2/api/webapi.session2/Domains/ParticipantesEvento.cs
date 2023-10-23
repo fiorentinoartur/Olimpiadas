@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace webapi.session2.Domains;
+namespace webapi.session2;
 
 public partial class ParticipantesEvento
 {
