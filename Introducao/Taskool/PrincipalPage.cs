@@ -28,13 +28,14 @@ namespace Taskool
         private void PrincipalPage_Load(object sender, EventArgs e)
         {
             this.WindowState = FormWindowState.Maximized;
-            
-            //********************CARREGAR IMAGEM*********************
-            
-            //Image imagem = Image.FromStream(new MemoryStream(user.Foto));
+            var usuario = ctx.Usuario.FirstOrDefault(x => x.Codigo == usuarioId);
+     
+           
 
-            //pictureBox2.Image = imagem;
-            //pictureBox2.SizeMode = PictureBoxSizeMode.Zoom;
+            Image imagem = Image.FromStream(new MemoryStream(usuario.Foto));
+
+            pictureBox2.Image = imagem;
+            pictureBox2.SizeMode = PictureBoxSizeMode.Zoom;
 
 
 
