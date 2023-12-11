@@ -22,6 +22,7 @@ namespace Taskool
             this.usuarioId = id;
             label_Sair.Visible = false;
             label_Editar.Visible = false;
+            
         }
         dbTarefasEntities ctx = new dbTarefasEntities();
         Usuario user = new Usuario();
@@ -38,6 +39,9 @@ namespace Taskool
             pictureBox2.SizeMode = PictureBoxSizeMode.Zoom;
 
 
+            AtualizarPagina();
+
+            label_Sair.Click += label_Sair_Click;
 
         }
 
@@ -46,36 +50,7 @@ namespace Taskool
             labelHora.Text = DateTime.Now.ToString("HH:mm");
         }
 
-        private void label1_Click(object sender, EventArgs e)
-        {
 
-        }
-
-        private void panel3_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void label6_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label7_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void timerMessage_Tick(object sender, EventArgs e)
-        {
-
-        }
-
-        private void AtualizarMensagem()
-        {
-            
-
-        }
 
         private void btnPortugues_Click(object sender, EventArgs e)
         {
@@ -106,7 +81,6 @@ namespace Taskool
 
             }
             Txt_BoaTarde.Text = saudacao;
-            AtualizarMensagem();
 
             btnPortugues.BackColor = Color.Green;
             btnIngles.BackColor = Color.YellowGreen;
@@ -114,7 +88,35 @@ namespace Taskool
          
 
         }
+        private void AtualizarPagina()
+        {
+            string saudacao;
+            DateTime horario = DateTime.Now;
+            int hora = horario.Hour;
 
+            var usuario = ctx.Usuario.FirstOrDefault(x => x.Codigo == usuarioId);
+
+            string nomeUsuario = usuario.Nome;
+
+            if (hora >= 12 && hora < 18)
+            {
+                saudacao = $"Boa tarde, {nomeUsuario}!";
+            }
+            else if (hora >= 18 && hora < 24)
+            {
+                saudacao = $"Boa noite, {nomeUsuario}!";
+            }
+            else if (hora >= 0 && hora < 4)
+            {
+                saudacao = $"Boa madrugada, {nomeUsuario}";
+            }
+            else
+            {
+                saudacao = $"Bom dia, {nomeUsuario}";
+
+            }
+            Txt_BoaTarde.Text = saudacao;
+        }
         private void btnIngles_Click(object sender, EventArgs e)
         {
 
@@ -145,6 +147,50 @@ namespace Taskool
         {
             label_Sair.Visible = true;
             label_Editar.Visible = true;
+        }
+
+        private void Txt_BoaTarde_Click(object sender, EventArgs e)
+        {
+
+            string saudacao;
+            DateTime horario = DateTime.Now;
+            int hora = horario.Hour;
+
+            var usuario = ctx.Usuario.FirstOrDefault(x => x.Codigo == usuarioId);
+
+            string nomeUsuario = usuario.Nome;
+
+            if (hora >= 12 && hora < 18)
+            {
+                saudacao = $"Boa tarde, {nomeUsuario}!";
+            }
+            else if (hora >= 18 && hora < 24)
+            {
+                saudacao = $"Boa noite, {nomeUsuario}!";
+            }
+            else if (hora >= 0 && hora < 4)
+            {
+                saudacao = $"Boa madrugada, {nomeUsuario}";
+            }
+            else
+            {
+                saudacao = $"Bom dia, {nomeUsuario}";
+
+            }
+            Txt_BoaTarde.Text = saudacao;
+        }
+
+        private void label_Sair_Click(object sender, EventArgs e)
+        {
+            DialogResult result = MessageBox.Show("Deseja realmente sair?", "Confirmação",MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+
+
+                if (result == DialogResult.Yes)
+            {
+
+                Application.Exit();
+            }
+                
         }
     }
 }

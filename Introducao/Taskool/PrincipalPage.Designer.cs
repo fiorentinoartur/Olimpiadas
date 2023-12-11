@@ -115,7 +115,6 @@
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(200, 83);
             this.panel3.TabIndex = 0;
-            this.panel3.Paint += new System.Windows.Forms.PaintEventHandler(this.panel3_Paint);
             // 
             // pictureBox1
             // 
@@ -134,7 +133,6 @@
             this.label1.Size = new System.Drawing.Size(76, 24);
             this.label1.TabIndex = 2;
             this.label1.Text = "Taskool";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // label21
             // 
@@ -145,7 +143,6 @@
             this.label21.Size = new System.Drawing.Size(98, 13);
             this.label21.TabIndex = 4;
             this.label21.Text = "Aniversário da Katy";
-            this.label21.Click += new System.EventHandler(this.label7_Click);
             // 
             // label20
             // 
@@ -156,7 +153,6 @@
             this.label20.Size = new System.Drawing.Size(107, 13);
             this.label20.TabIndex = 4;
             this.label20.Text = "Sistema de Biblioteca";
-            this.label20.Click += new System.EventHandler(this.label7_Click);
             // 
             // label19
             // 
@@ -167,7 +163,6 @@
             this.label19.Size = new System.Drawing.Size(103, 13);
             this.label19.TabIndex = 4;
             this.label19.Text = "Viagem para Palmas";
-            this.label19.Click += new System.EventHandler(this.label7_Click);
             // 
             // label3
             // 
@@ -178,7 +173,6 @@
             this.label3.Size = new System.Drawing.Size(69, 13);
             this.label3.TabIndex = 2;
             this.label3.Text = "Novo Projeto";
-            this.label3.Click += new System.EventHandler(this.label1_Click);
             // 
             // label2
             // 
@@ -189,7 +183,6 @@
             this.label2.Size = new System.Drawing.Size(78, 24);
             this.label2.TabIndex = 2;
             this.label2.Text = "Projetos";
-            this.label2.Click += new System.EventHandler(this.label1_Click);
             // 
             // panel2
             // 
@@ -212,7 +205,6 @@
             this.label4.TabIndex = 2;
             this.label4.Text = "Menu Principal";
             this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.label4.Click += new System.EventHandler(this.label1_Click);
             // 
             // label5
             // 
@@ -223,7 +215,6 @@
             this.label5.Size = new System.Drawing.Size(45, 13);
             this.label5.TabIndex = 2;
             this.label5.Text = "Taskool";
-            this.label5.Click += new System.EventHandler(this.label1_Click);
             // 
             // labelHora
             // 
@@ -249,7 +240,6 @@
             this.label6.TabIndex = 3;
             this.label6.Text = "Nossa maior fraqueza está em desistir. O caminho mais certo de vencer é tentar ma" +
     "is uma vez.";
-            this.label6.Click += new System.EventHandler(this.label6_Click);
             // 
             // label7
             // 
@@ -260,7 +250,6 @@
             this.label7.Size = new System.Drawing.Size(78, 13);
             this.label7.TabIndex = 4;
             this.label7.Text = "Thomas Edison";
-            this.label7.Click += new System.EventHandler(this.label7_Click);
             // 
             // Txt_BoaTarde
             // 
@@ -271,6 +260,7 @@
             this.Txt_BoaTarde.Size = new System.Drawing.Size(195, 29);
             this.Txt_BoaTarde.TabIndex = 2;
             this.Txt_BoaTarde.Text = "Boa Tarde, Artur!";
+            this.Txt_BoaTarde.Click += new System.EventHandler(this.Txt_BoaTarde_Click);
             // 
             // linkLabel2
             // 
@@ -338,7 +328,6 @@
             this.label_Editar.Size = new System.Drawing.Size(68, 13);
             this.label_Editar.TabIndex = 2;
             this.label_Editar.Text = "Editar Dados";
-            this.label_Editar.Click += new System.EventHandler(this.label1_Click);
             // 
             // label_Sair
             // 
@@ -349,7 +338,7 @@
             this.label_Sair.Size = new System.Drawing.Size(25, 13);
             this.label_Sair.TabIndex = 2;
             this.label_Sair.Text = "Sair";
-            this.label_Sair.Click += new System.EventHandler(this.label1_Click);
+            this.label_Sair.Click += new System.EventHandler(this.label_Sair_Click);
             // 
             // panel4
             // 
@@ -382,7 +371,6 @@
             this.label14.Size = new System.Drawing.Size(10, 7);
             this.label14.TabIndex = 4;
             this.label14.Text = "X";
-            this.label14.Click += new System.EventHandler(this.label7_Click);
             // 
             // label13
             // 
@@ -393,7 +381,6 @@
             this.label13.Size = new System.Drawing.Size(125, 13);
             this.label13.TabIndex = 4;
             this.label13.Text = "Criar um Banco de dados";
-            this.label13.Click += new System.EventHandler(this.label7_Click);
             // 
             // label12
             // 
@@ -404,7 +391,6 @@
             this.label12.Size = new System.Drawing.Size(111, 13);
             this.label12.TabIndex = 4;
             this.label12.Text = "Lidiane Completou";
-            this.label12.Click += new System.EventHandler(this.label7_Click);
             // 
             // panel5
             // 
@@ -437,7 +423,6 @@
             this.label16.Size = new System.Drawing.Size(10, 7);
             this.label16.TabIndex = 4;
             this.label16.Text = "X";
-            this.label16.Click += new System.EventHandler(this.label7_Click);
             // 
             // label17
             // 
@@ -448,7 +433,6 @@
             this.label17.Size = new System.Drawing.Size(102, 13);
             this.label17.TabIndex = 4;
             this.label17.Text = "Alugar local de festa";
-            this.label17.Click += new System.EventHandler(this.label7_Click);
             // 
             // label18
             // 
@@ -459,7 +443,6 @@
             this.label18.Size = new System.Drawing.Size(117, 13);
             this.label18.TabIndex = 4;
             this.label18.Text = "Gustavo Completou";
-            this.label18.Click += new System.EventHandler(this.label7_Click);
             // 
             // btnPortugues
             // 
@@ -484,10 +467,6 @@
             this.btnIngles.Text = "EN";
             this.btnIngles.UseVisualStyleBackColor = false;
             this.btnIngles.Click += new System.EventHandler(this.btnIngles_Click);
-            // 
-            // timerMessage
-            // 
-            this.timerMessage.Tick += new System.EventHandler(this.timerMessage_Tick);
             // 
             // PrincipalPage
             // 

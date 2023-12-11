@@ -50,7 +50,7 @@
             this.button1.Location = new System.Drawing.Point(273, 425);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(141, 31);
-            this.button1.TabIndex = 7;
+            this.button1.TabIndex = 1;
             this.button1.Text = "Entrar";
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click_1);
@@ -125,7 +125,7 @@
             this.Txt_Usuario.Location = new System.Drawing.Point(214, 170);
             this.Txt_Usuario.Name = "Txt_Usuario";
             this.Txt_Usuario.Size = new System.Drawing.Size(264, 20);
-            this.Txt_Usuario.TabIndex = 5;
+            this.Txt_Usuario.TabIndex = 0;
             // 
             // label1
             // 
@@ -158,6 +158,7 @@
             this.Controls.Add(this.label1);
             this.Name = "Form1";
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.Form1_Load_1);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
