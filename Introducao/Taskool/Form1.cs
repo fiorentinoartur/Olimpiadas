@@ -59,7 +59,7 @@ namespace Taskool
         {
             try
             {
-                // Abre o teclado virtual (substitua "osk.exe" pelo caminho real)
+            
                 Process.Start("C:\\Windows\\System32\\osk.exe");
             }
             catch (Exception ex)
