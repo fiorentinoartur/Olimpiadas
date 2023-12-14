@@ -19,39 +19,8 @@ namespace Taskool
 
             // Inicializações no construtor
             CapsLock.Visible = false;
-            Txt_Usuario.Leave += Txt_Usuario_Leave;
+            Txt_Usuario.Leave += fotoUsuario;
             Txt_Usuario.ShortcutsEnabled = false; // Desabilita atalhos Ctrl+C, Ctrl+V, Ctrl+X no TextBox
-
-         
-        }
-
-        // Evento acionado quando uma tecla é pressionada
-        private void Txt_Usuario_KeyDown(object sender, KeyEventArgs e)
-        {
-            // Impede atalhos Ctrl+C, Ctrl+V, Ctrl+X durante o KeyDown
-            if (e.Control && (e.KeyCode == Keys.C || e.KeyCode == Keys.V || e.KeyCode == Keys.X))
-            {
-                e.Handled = true;
-            }
-        }
-
-        // Evento acionado quando uma tecla é pressionada e resulta na geração de um caractere
-        private void Txt_Usuario_KeyPress(object sender, KeyPressEventArgs e)
-        {
-            // Impede atalhos Ctrl+C, Ctrl+V, Ctrl+X durante a digitação
-            if (Control.ModifierKeys.HasFlag(Keys.Control) &&
-                (e.KeyChar == 'C' || e.KeyChar == 'X' || e.KeyChar == 'V'))
-            {
-                e.Handled = true;
-            }
-        }
-
-        // Evento acionado quando o formulário é carregado
-        private void Form1_Load(object sender, EventArgs e)
-        {
-            // Inicializações relacionadas ao carregamento do formulário
-            // Por exemplo, carregar uma imagem inicial (código comentado)
-  
         }
 
         // Evento acionado quando o usuário clica no linkLabel para abrir o teclado virtual
@@ -59,14 +28,13 @@ namespace Taskool
         {
             try
             {
-            
-                Process.Start("C:\\Windows\\System32\\osk.exe");
+                Process.Start("osk.exe");
             }
             catch (Exception ex)
             {
                 MessageBox.Show("Erro ao abrir o teclado virtual: " + ex.Message);
             }
-        }
+        }   
 
         // Evento acionado quando o usuário clica no botão "Entrar"
         private void button1_Click_1(object sender, EventArgs e)
@@ -101,17 +69,8 @@ namespace Taskool
             CapsLock.Visible = IsKeyLocked(Keys.CapsLock);
         }
 
-        // Evento acionado quando o formulário é carregado novamente (substituído por Form1_Load)
-        private void Form1_Load_1(object sender, EventArgs e)
-        {
-            // Associa o evento Txt_Usuario_KeyDown ao TextBox Txt_Usuario
-            Txt_Usuario.KeyDown += Txt_Usuario_KeyDown;
-            // Associa o evento Txt_Usuario_KeyPress ao TextBox Txt_Usuario
-            Txt_Usuario.KeyPress += Txt_Usuario_KeyPress;
-        }
-
         // Função para carregar a foto do usuário com base no texto no TextBox ao sair do campo
-        private void fotoUsuario()
+        private void fotoUsuario(object sender, EventArgs e)
         {
             // Busca o usuário no banco de dados com base no texto no TextBox
             var buscarUsuario = ctx.Usuario.FirstOrDefault(x => x.Usuario1 == Txt_Usuario.Text);
@@ -123,13 +82,6 @@ namespace Taskool
                 pictureBox1.Image = imagem;
                 pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
             }
-        }
-
-        // Evento acionado ao sair do campo de texto (TextBox)
-        private void Txt_Usuario_Leave(object sender, EventArgs e)
-        {
-            // Carrega a foto do usuário ao sair do campo de texto
-            fotoUsuario();
         }
 
         // Função para rotacionar a imagem com base na orientação

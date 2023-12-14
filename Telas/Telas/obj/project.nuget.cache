@@ -1,0 +1,14 @@
+{
+  "version": 2,
+  "dgSpecHash": "0ibhOfocxT1dc+UNZJezsM10X/bI0ekQtsahdbjBqQV50GnPH/aGmZUxYncMVUqXWZhfPjTdG4gJStAau6Sasg==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Artur Fiorentino\\OneDrive\\Área de Trabalho\\Olimpiadas\\Telas\\Telas\\Telas.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Artur Fiorentino\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Users\\Artur Fiorentino\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512",
+    "C:\\Users\\Artur Fiorentino\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",
+    "C:\\Users\\Artur Fiorentino\\.nuget\\packages\\xamarin.essentials\\1.7.0\\xamarin.essentials.1.7.0.nupkg.sha512",
+    "C:\\Users\\Artur Fiorentino\\.nuget\\packages\\xamarin.forms\\5.0.0.2196\\xamarin.forms.5.0.0.2196.nupkg.sha512"
+  ],
+  "logs": []
+}
