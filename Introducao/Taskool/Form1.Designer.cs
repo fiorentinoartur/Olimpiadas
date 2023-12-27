@@ -126,6 +126,7 @@
             this.Txt_Usuario.Name = "Txt_Usuario";
             this.Txt_Usuario.Size = new System.Drawing.Size(264, 20);
             this.Txt_Usuario.TabIndex = 0;
+
             // 
             // label1
             // 
@@ -158,7 +159,6 @@
             this.Controls.Add(this.label1);
             this.Name = "Form1";
             this.Text = "Form1";
-
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
