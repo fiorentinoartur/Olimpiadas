@@ -19,9 +19,9 @@ namespace Taskool
             CarregarFrases();
         }
 
-        private void CarregarFrases()
+        public Frases CarregarFrases()
         {
-            string caminhoArquivo = Path.Combine(@"C:\Users\Artur Fiorentino\OneDrive\Área de Trabalho\Taskool\obj\Debug\mensagens.json");
+            string caminhoArquivo = Path.Combine(@"C:\Users\Artur Fiorentino\OneDrive\Área de Trabalho\Olimpiadas\Taskool\obj\Debug\mensagens.json");
 
             if (File.Exists(caminhoArquivo))
             {
@@ -33,10 +33,7 @@ namespace Taskool
                 // Se o arquivo não existir, inicializa a lista de frases vazia
                 frases = new List<Frases>();
             }
-        }
 
-        public Frases ObterFraseAleatoria()
-        {
             if (frases.Count > 0)
             {
                 Random random = new Random();
@@ -48,6 +45,7 @@ namespace Taskool
                 return new Frases { Mensagem = "Sem frases disponíveis.", Autor = "" };
             }
         }
+
     }
 
 }

@@ -31,37 +31,11 @@ namespace Taskool
             InitializeComponent();
             gerenciadorFrases = new GerenciadorFrases();
             edit_Sair.Visible = false;
-            InicializarComponentes();
+
         }
 
         dbTarefasEntities ctx = new dbTarefasEntities();
 
-        private void InicializarComponentes()
-        {
-
-            string caminhoDaPasta = Path.Combine(@"C:\Users\Artur Fiorentino\OneDrive\Área de Trabalho\Taskool\musicas-teste-20231226T134815Z-001\musicas-teste");
-
-            string[] arquivosDeMusicas = Directory.GetFiles(caminhoDaPasta);
-
-            if (arquivosDeMusicas.Length > 0)
-            {
-                string musicaEscolhida = arquivosDeMusicas[random.Next(arquivosDeMusicas.Length)];
-                playMusic.Image = Image.FromFile(@"C:\Users\Artur Fiorentino\OneDrive\Área de Trabalho\Taskool\Icons\play_icon_134504.jpeg");
-
-                mediaPlayer = new MediaPlayer();
-
-                string nomeMusica = Path.GetFileName(musicaEscolhida);
-
-                labelMusica.Text = nomeMusica;
-
-                mediaPlayer.Open(new Uri(musicaEscolhida));
-
-            }
-            else
-            {
-                MessageBox.Show("Nenhuma música encontrada");
-            }
-        }
         private void playMusic_Click(object sender, EventArgs e)
         {
 
@@ -69,12 +43,12 @@ namespace Taskool
 
             if (estaTocando)
             {
-                playMusic.Image = Image.FromFile(@"C:\Users\Artur Fiorentino\OneDrive\Área de Trabalho\Taskool\Icons\play_icon_134504.jpeg");
+                playMusic.Image = Image.FromFile(@"C:\Users\Artur Fiorentino\OneDrive\Área de Trabalho\Olimpiadas\Taskool\Icons\play_icon_134504.jpeg");
                 mediaPlayer.Pause();
             }
             else
             {
-                playMusic.Image = Image.FromFile(@"C:\Users\Artur Fiorentino\OneDrive\Área de Trabalho\Taskool\Icons\pausar (2).jpeg");
+                playMusic.Image = Image.FromFile(@"C:\Users\Artur Fiorentino\OneDrive\Área de Trabalho\Olimpiadas\Taskool\Icons\pausar (2).jpeg");
                 mediaPlayer.Play();
             }
             estaTocando = !estaTocando;
@@ -119,8 +93,8 @@ namespace Taskool
 
             Txt_Saudacao.Text = saudacao;
 
-            string mensagemMotivacional = gerenciadorFrases.ObterFraseAleatoria().Mensagem;
-            string autorMotivacional = gerenciadorFrases.ObterFraseAleatoria().Autor;
+            string mensagemMotivacional = gerenciadorFrases.CarregarFrases().Mensagem;
+            string autorMotivacional = gerenciadorFrases.CarregarFrases().Autor;
 
             Txt_Frase.Text = $"{mensagemMotivacional}";
             Txt_Autor.Text = $"{autorMotivacional}";

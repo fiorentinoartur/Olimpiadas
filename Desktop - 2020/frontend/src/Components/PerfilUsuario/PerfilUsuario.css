@@ -1,0 +1,8 @@
+.perfil-usuario{
+    color: var(--color-white);
+    font-size: 16px;
+    font-weight: 400;
+}
+.perfil-user-flex{
+    gap: 10px;
+}
