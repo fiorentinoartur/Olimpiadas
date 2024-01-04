@@ -18,6 +18,12 @@ export const cadastrarUserResource = '/FirstCadastro'
 //Rota para notificacoes
 export const notificacoesResource = '/Notificacoes'
 
+//Rota para jogos
+export const jogosResource = '/Jogos'
+
+//Rota para rodadas
+export const rodadasResource = '/Rodada'
+
 const apiPort = '7099';
 const localApiUri = `https://localhost:${apiPort}/api`
 

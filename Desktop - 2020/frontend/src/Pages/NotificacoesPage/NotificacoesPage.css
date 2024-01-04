@@ -14,7 +14,7 @@ hr {
     width: 230px;
 }
 
-table {
+.table-notificacoes  {
     margin-top: 70px;
     margin-bottom: 50px;
     width: 100%;
@@ -29,7 +29,7 @@ table {
     padding-left: 8px;
 }
 
-tbody {
+.table-notificacoes tbody {
     max-height: 600px;
     overflow-y: auto;
     padding:20px 0;
@@ -41,7 +41,7 @@ tbody {
     margin-right: 8px;
 }
 
-tr {
+.table-notificacoes tr {
     background-color: #04A65B;
     color: var(--color-white);
     min-height: 100px;
@@ -50,7 +50,7 @@ tr {
     margin: 0 8px;
 }
 
-td {
+.table-notificacoes td {
     justify-content: space-between;
     width: 100%;
 

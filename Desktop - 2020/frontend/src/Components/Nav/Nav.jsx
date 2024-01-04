@@ -8,7 +8,7 @@ const Nav = () => {
     const {userData, setUserData} = useContext(UseContext);
     return (
         <nav className='navbar d-flex'>
-              {userData.nome && userData.role === "0" ? (
+              {userData.nome && userData.role === '0' ? (
 <>
 <Link to="jogos-page">Jogos</Link>
 <Link to="/notificacoes-page">Notificacoes</Link>

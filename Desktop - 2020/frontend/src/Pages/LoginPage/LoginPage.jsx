@@ -17,8 +17,8 @@ const LoginPage = () => {
 
     //Criar um state pra usuario
     const [user, setUser] = useState({
-        email: "administrador@email.com",
-        senha: ""
+        email: "artur@senai.com",
+        senha: "artur123"
     })
     const { userData, setUserData } = useContext(UseContext)
     const [manterConectado, setManterConectado] = useState()
@@ -47,9 +47,13 @@ const LoginPage = () => {
                 console.log(promise.data.token);
 
                 const userFullToken = userDecodeToken(promise.data.token);
-                setUserData(userFullToken)
                 localStorage.setItem("token", JSON.stringify(userFullToken))
-                navigate('/notificacoes-page')
+                setUserData(userFullToken)
+
+                if(userFullToken.role === "0"){
+
+                    navigate('/notificacoes-page')
+                }
                 
 
                 

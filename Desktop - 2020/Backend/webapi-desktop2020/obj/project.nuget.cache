@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "6m++J5jLrAySX3XjO3m+nbGq23h5XGFR309CpF/nl7rmcV1X37Dg3AJQ74R2e53tg32TSUovUFPjrxmlWMfU2w==",
+  "dgSpecHash": "NjxtIfnh07FEJbBQOt48dEt8EzXql8IumPFz9DVmIuQr3XM9+xKVNuwvhGZSNR0fB816KXgQqb/z/odCJ6zd3Q==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Artur Fiorentino\\Downloads\\Desktop - 2020\\Backend\\webapi-desktop2020\\webapi-desktop2020.csproj",
+  "projectFilePath": "C:\\Users\\Artur Fiorentino\\OneDrive\\Área de Trabalho\\Olimpiadas\\Desktop - 2020\\Backend\\webapi-desktop2020\\webapi-desktop2020.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Artur Fiorentino\\.nuget\\packages\\azure.core\\1.25.0\\azure.core.1.25.0.nupkg.sha512",
     "C:\\Users\\Artur Fiorentino\\.nuget\\packages\\azure.identity\\1.7.0\\azure.identity.1.7.0.nupkg.sha512",
