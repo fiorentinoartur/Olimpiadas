@@ -17,8 +17,8 @@ const LoginPage = () => {
 
     //Criar um state pra usuario
     const [user, setUser] = useState({
-        email: "artur@senai.com",
-        senha: "artur123"
+        email: "administrador@email.com",
+        senha: ""
     })
     const { userData, setUserData } = useContext(UseContext)
     const [manterConectado, setManterConectado] = useState()
