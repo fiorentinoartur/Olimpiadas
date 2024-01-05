@@ -14,5 +14,8 @@ namespace webapi_desktop2020.Usuarios
         Usuario BuscarPorEmail(string email);
 
         public void FirstCadastro(FirstCadastro usuario);
+
+
+        Usuario BuscarPorId(int id);
     }
 }

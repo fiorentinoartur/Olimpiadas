@@ -4,7 +4,6 @@ import Header from '../Header/Header';
 import Container from '../Container/Container';
 import { Button, Input, Select } from '../FormComponents/Form';
 import api, { atualizarUserResource, timesResource, usuriosResource } from '../../Services/Service'
-import { truncateDateFromDb } from '../../Utils/stringFunctions';
 import { Navigate } from 'react-router-dom';
 
 const ModalSenha = ({

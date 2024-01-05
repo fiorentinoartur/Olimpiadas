@@ -37,7 +37,7 @@ public partial class Jogo
         {
             if (Rodada != null && Rodada.DataInicio != null)
             {
-                return Rodada.DataInicio.AddDays(7);
+                return Rodada.DataInicio.AddDays(8);
             }
             return null;
         }

@@ -62,6 +62,20 @@ namespace webapi_desktop2020.Controllers
                 throw;
             }
         }
+        [HttpGet("{id}")]
+        public IActionResult GetById(int id) 
+        {
+
+            try
+            {
+                return Ok(_usuariosRepository.BuscarPorId(id));
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
+        }
 
 
     }

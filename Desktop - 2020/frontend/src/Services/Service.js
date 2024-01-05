@@ -24,6 +24,9 @@ export const jogosResource = '/Jogos'
 //Rota para rodadas
 export const rodadasResource = '/Rodada'
 
+//Rota para jogadores
+export const jogadoresResource = '/Jogadores'
+
 const apiPort = '7099';
 const localApiUri = `https://localhost:${apiPort}/api`
 

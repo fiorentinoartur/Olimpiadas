@@ -39,12 +39,13 @@ namespace webapi_desktop2020.Controllers
                 return StatusCode(401, "Email ou senha inválido");
             }
 
-            var claims = new[]
-            {
+                var claims = new[]
+                {
                 new Claim(JwtRegisteredClaimNames.Email, usuarioBuscado.Email),
                 new Claim(JwtRegisteredClaimNames.Name, usuarioBuscado.Nome),
                 new Claim(JwtRegisteredClaimNames.Jti, usuarioBuscado.Id.ToString()),
                 new Claim("role", usuarioBuscado.Perfil),
+          
             };
 
 

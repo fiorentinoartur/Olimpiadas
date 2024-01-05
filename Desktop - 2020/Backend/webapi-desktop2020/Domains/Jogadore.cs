@@ -11,7 +11,7 @@ public partial class Jogadore
 
     public int NumeroCamisa { get; set; }
 
-    public int? SelecaoId { get; set; }
+    public int SelecaoId { get; set; }
 
     public int? PosicaoId { get; set; }
 

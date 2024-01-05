@@ -10,43 +10,49 @@ import api, { jogosResource, rodadasResource } from '../../Services/Service'
 
 const JogosPage = () => {
     const [jogos, setJogos] = useState([]);
-    const [rodadaAtual, setRodadaAtual] = useState()
+    const [rodadaAtual, setRodadaAtual] = useState(0)
     const [rodada, setRodada] = useState([]);
     const [inicioRodada, setInicioRodada] = useState(null)
     const [terminoRodada, setTerminoRodada] = useState(null)
     useEffect(() => {
         const loadJogos = async () => {
             const promiseRodadas = await api.get(rodadasResource);
+
             setRodada(promiseRodadas.data.map(rodada => rodada.id));
-            setRodadaAtual(0);
-            const promiseJogos = await api.get(`${jogosResource}?rodada=${promiseRodadas.data[0].id}`);
-            setTerminoRodada(promiseJogos.data[0].dataTerminoRodada);
+   
+            const promiseJogos = await api.get(`${jogosResource}?rodada=${promiseRodadas.data[rodadaAtual].id}`);
+            console.log(promiseJogos.data);
+
             setInicioRodada(promiseJogos.data[0].inicioRodada);
+            setTerminoRodada(promiseJogos.data[0].dataTerminoRodada);
+            console.log(rodadaAtual);
             setJogos(promiseJogos.data);
-
-         
-
+            
+            
+            
         }
-
+        
         loadJogos();
     }, []);
-
-
+    
+    
     const nextPrev = async (direction) => {
         try {
-        
+            console.log(rodada[1]);
             let novaRodada;
             if(direction == 'next')
             {
                 novaRodada = rodadaAtual + 1;
-             
+
+                
             }
             else if(direction === 'prev')
             {
-                novaRodada = rodadaAtual -1 
+                novaRodada = rodadaAtual - 1 
+
 
             }
-
+            
             if(novaRodada >= 0 && novaRodada < rodada.length)
             {
                 setRodadaAtual(novaRodada)
@@ -55,6 +61,9 @@ const JogosPage = () => {
 
                 const promiseJogos = await api.get(`${jogosResource}?rodada=${novaRodadaId}`)
 
+                setInicioRodada(promiseJogos.data[0].inicioRodada);
+                setTerminoRodada(promiseJogos.data[0].dataTerminoRodada);
+                console.log(promiseJogos.data);
                 setJogos(promiseJogos.data)
             }
             else{

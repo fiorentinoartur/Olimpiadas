@@ -68,7 +68,7 @@ namespace webapi_desktop2020.Repositories
         private DateTime CriarNovaRodada()
         {
             var rodadas = ctx.Rodadas.ToList();
-            DateTime novaRodada = rodadas.OrderByDescending(r => r.DataInicio).Select(r => r.DataInicio).FirstOrDefault().AddDays(14);
+            DateTime novaRodada = rodadas.OrderByDescending(r => r.DataInicio).Select(r => r.DataInicio).FirstOrDefault().AddDays(8);
 
 
             return novaRodada;
@@ -90,7 +90,7 @@ namespace webapi_desktop2020.Repositories
                     PlacarVisitante = x.PlacarVisitante,
                     Data = x.Data,
                     RodadaId = x.RodadaId,
-                    DataTerminoRodada = x.Rodada.DataInicio.AddDays(7),
+                    DataTerminoRodada = x.Rodada.DataInicio.AddDays(1),
 
                     HorarioJogo = horarioJogoBase.Add(new TimeSpan(2 * ((x.Id - 1) % 4), 0, 0)),
 

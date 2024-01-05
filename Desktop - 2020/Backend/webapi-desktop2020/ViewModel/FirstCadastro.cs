@@ -10,7 +10,7 @@
         
         public DateTime Nascimento { get; set; }
 
-        public IFormFile Foto { get; set; }
+        public IFormFile? Foto { get; set; }
 
         public string Email { get; set; }
 

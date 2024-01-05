@@ -17,8 +17,8 @@ const LoginPage = () => {
 
     //Criar um state pra usuario
     const [user, setUser] = useState({
-        email: "administrador@email.com",
-        senha: ""
+        email: "artur@senai.com",
+        senha: "artur123"
     })
     const { userData, setUserData } = useContext(UseContext)
     const [manterConectado, setManterConectado] = useState()
@@ -53,6 +53,10 @@ const LoginPage = () => {
                 if(userFullToken.role === "0"){
 
                     navigate('/notificacoes-page')
+                }
+                else if(userFullToken.role === "1")
+                {
+                    navigate('/userComum-page')
                 }
                 
 

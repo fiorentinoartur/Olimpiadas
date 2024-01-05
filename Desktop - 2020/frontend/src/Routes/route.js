@@ -9,6 +9,7 @@ import { PrivateRoute } from './PrivateRoute';
 import NotificacoesPage from '../Pages/NotificacoesPage/NotificacoesPage';
 import JogosPage from '../Pages/JogosPage/JogosPage';
 import Test from '../Pages/Test/Test';
+import UserComum from '../Pages/UserComumPage/UserComum';
 const Rotas = () => {
     return (
         <BrowserRouter>
@@ -35,6 +36,13 @@ const Rotas = () => {
                         <JogosPage />
                     </PrivateRoute>
                 } path='/jogos-page'
+                />
+
+                <Route element = {
+                    <PrivateRoute>
+                        <UserComum />
+                    </PrivateRoute>
+                } path='/userComum-page'
                 />
 
             <Route element ={<Test />}

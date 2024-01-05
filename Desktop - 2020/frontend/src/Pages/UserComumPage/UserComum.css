@@ -1,0 +1,39 @@
+.margin-text{
+    margin-top: 80px;
+    margin-bottom: 100px;
+    font-size: 32px;
+}
+.table-user{
+    justify-content: start;
+    padding-left: 170px;
+}
+.table-user-classificacao{
+justify-content: center;
+}
+.table-body-title{
+    cursor: pointer;
+}
+.hr-jogos-user{
+    width: 150px;
+}
+.table-user-selecao{
+    justify-content: space-around;
+}
+.table-header-user{
+    height: 40px;
+    justify-content: flex-end;
+    align-items: center;
+}
+.table-header-user h1{
+    color: white;
+    font-size: 15px;
+    font-weight: 500;
+    margin-top: 10px;
+    margin-right: 5px;
+    cursor: pointer;
+}
+.pontos-selecao{
+    font-size: 24px;
+    margin-left: 30px;
+    margin-top: 30px;
+}

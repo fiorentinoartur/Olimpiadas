@@ -20,7 +20,7 @@ const FirstCadastro = () => {
     const [dados, setDados] = useState({
         nomeUser: "",
         sexo: "",
-        time: null,
+        time: "",
         nascimento: "",
         foto: null,
         email: "",
