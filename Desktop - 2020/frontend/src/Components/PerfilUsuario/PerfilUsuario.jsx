@@ -16,26 +16,26 @@ const PerfilUsuario = () => {
     const [user, setUser] = useState();
     const navigate = useNavigate();
 
-    useEffect(() => {
-        const loadUsuario = async () => {
-            try {
-                const promise = await api.get(`${usuriosResource}/${userData.userId}`);
-                const data = promise.data;
-                console.log(data.nome);
+    // useEffect(() => {
+    //     const loadUsuario = async () => {
+    //         try {
+    //             const promise = await api.get(`${usuriosResource}/${userData.userId}`);
+    //             const data = promise.data;
+     
 
-                setUser(data)
-                const arrayDeBytes = [data.foto];
+    //             setUser(data)
+    //             // const arrayDeBytes = [data.foto];
 
-                const blob = new Blob([new Uint8Array(arrayDeBytes)], {type: 'image/*'});
+    //             // const blob = new Blob([new Uint8Array(arrayDeBytes)], {type: 'image/*'});
 
-                const imageUrl = URL.createObjectURL(blob)
-                console.log(imageUrl);
-            } catch (error) {
-                console.error("Erro ao carregar usuário:", error);
-            }
-        };
-        loadUsuario();
-    }, [userData.userId]);
+    //             // const imageUrl = URL.createObjectURL(blob)
+    //             // console.log(imageUrl);
+    //         } catch (error) {
+    //             console.error("Erro ao carregar usuário:", error);
+    //         }
+    //     };
+    //     loadUsuario();
+    // },[]);
 
     const logout = () => {
         localStorage.removeItem("token");

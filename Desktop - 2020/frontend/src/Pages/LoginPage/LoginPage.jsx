@@ -49,14 +49,14 @@ const LoginPage = () => {
                 const userFullToken = userDecodeToken(promise.data.token);
                 localStorage.setItem("token", JSON.stringify(userFullToken))
                 setUserData(userFullToken)
-
+console.log(userFullToken);
                 if(userFullToken.role === "0"){
 
                     navigate('/notificacoes-page')
                 }
                 else if(userFullToken.role === "1")
                 {
-                    navigate('/userComum-page')
+                    navigate('/')
                 }
                 
 

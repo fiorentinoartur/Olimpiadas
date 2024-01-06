@@ -1,6 +1,7 @@
 ﻿using webapi_desktop2020.Contexts;
 using webapi_desktop2020.Domains;
 using webapi_desktop2020.Interfaces;
+using webapi_desktop2020.ViewModel;
 
 namespace webapi_desktop2020.Repositories
 {
@@ -8,17 +9,19 @@ namespace webapi_desktop2020.Repositories
     {
         DesktopContext ctx = new DesktopContext();
 
-        public List<Jogadore> GetById(int idSelecao)
+        public List<JogadoresViewModal> GetById(int idSelecao)
         {
 
 
           return  ctx.Jogadores.Select(
-                x => new Jogadore { 
+                x => new JogadoresViewModal { 
                 Id = x.Id,
-                Nome = x.Nome,
+                NomeJogador = x.Nome,
                 NumeroCamisa = x.NumeroCamisa,
                 SelecaoId = x.SelecaoId,
-                PosicaoId = x.PosicaoId,
+                PosicaoId = (int)x.PosicaoId,
+               NomePosicao = x.Posicao.Nome,
+            
                 
                 }
                 ).Where(x =>  x.SelecaoId == idSelecao).ToList();

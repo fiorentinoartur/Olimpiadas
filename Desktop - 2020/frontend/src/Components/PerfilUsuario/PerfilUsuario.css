@@ -22,3 +22,6 @@
     width: 25px;
     height: 25px;
 }
+.perfil-usuario__icon{
+    cursor: pointer;
+}

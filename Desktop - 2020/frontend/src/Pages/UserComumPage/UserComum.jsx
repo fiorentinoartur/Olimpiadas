@@ -14,9 +14,10 @@ const UserComum = () => {
     const [jogos, setJogos] = useState([]);
     const [rodadaAtual, setRodadaAtual] = useState()
     const [idJogo, setIdJogo] = useState()
-    const [idSelecaoCasa, setIdSelecaoCasa] = useState()
+   const [nomeSelecao, setNomeSelecao] = useState();
     const [modal, setModal] = useState(true);
     const [rodada, setRodada] = useState([]);
+    const [jogadores, setJogadores] = useState([]);
 
     useEffect(() => {
         const loadJogos = async () => {
@@ -49,24 +50,36 @@ const UserComum = () => {
                 console.log(`${jogadoresResource}/${idSelecaoCasa}`);
                 const promiseJogadores = await api.get(`${jogadoresResource}/${idSelecaoCasa}`);
                 console.log(promiseJogadores.data);
+                setJogadores(promiseJogadores.data)
             } catch (error) {
                 console.log('Deu erro');
                 console.log(error.message);
             }
+            setNomeSelecao(jogos[indiceDoId].nomeSelecaoCasa)
         }
 
-        alert(indiceDoId);
-        setIdJogo(indiceDoId);
         modal ? setModal(false) : setModal(true);
     }
 
-    // ... (restante do código)
 
 
-    const showHideModalVisitante = (idJogo) => {
+
+    const showHideModalVisitante = async (idJogo) => {
         const indiceDoId = jogos.findIndex(x => x.id === idJogo)
-        alert(indiceDoId);
-        setIdJogo(indiceDoId)
+ 
+         if (indiceDoId !== - 1 && jogos[indiceDoId].selecaoVisitanteId) {
+            const idSelecaoVisitante = jogos[indiceDoId].selecaoVisitanteId
+            try {
+                const promise = await api.get(`${jogadoresResource}/${idSelecaoVisitante}`)
+
+                setJogadores(promise.data)
+            } catch (error) {
+                
+            }
+
+            setNomeSelecao(jogos[indiceDoId].nomeSelecaoVisitante)
+         }
+  
         modal ? setModal(false) : setModal(true)
     }
 
@@ -133,7 +146,7 @@ const UserComum = () => {
                 ) :
                     (<>
                         <div className="container-title d-flex-column margin-text">
-                            <h1>{jogos[idJogo].nomeSelecaoCasa}</h1>
+                            <h1>{nomeSelecao}</h1>
                             <hr />
                         </div>
                         <div className="container-table container-table-user">
@@ -154,17 +167,18 @@ const UserComum = () => {
                                     </tr>
                                 </thead>
                                 <tbody>
-                                    {jogos.map((e) => (
+                                    {jogadores.map((e) => (
 
                                         <tr className='table-body-row' key={e.id}>
 
                          
-                                            <td className='table-body-title'>{e.placarVisitante}</td>
+                                            <td className='table-body-title'>{e.numeroCamisa}</td>
                                             <td className='table-body-title'
-                                            >{e.nomeSelecaoVisitante}</td>
+                                            >{e.nomeJogador}</td>
 
                                             <td className='table-body-title'>
-                                                <img src={CommentaryIcon} alt="" defaultValue={""} /></td>
+                                            {e.nomePosicao}
+                                            </td>
                                         </tr>
                                     ))}
                                 </tbody>
