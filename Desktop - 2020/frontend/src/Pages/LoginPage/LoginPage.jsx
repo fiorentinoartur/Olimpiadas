@@ -14,26 +14,23 @@ import { Button, Input } from '../../Components/FormComponents/Form';
 import ModalSenha from '../../Components/ModalAlterarSenha/ModalSenha';
 import ModalNotificacao from '../../Components/ModalNotificacoes/ModalNotificacao';
 const LoginPage = () => {
-
-    //Criar um state pra usuario
     const [user, setUser] = useState({
         email: "artur@senai.com",
         senha: "artur123"
-    })
-    const { userData, setUserData } = useContext(UseContext)
-    const [manterConectado, setManterConectado] = useState()
-    const [showModal, setShowModal] = useState(false)
+    });
+
+    const { userData, setUserData} = useContext(UseContext);
+    const [showModal, setShowModal] = useState(false);
+    const [manterConectado, setManterConectado] = useState();
     const navigate = useNavigate();
 
 
-    // useEffect(() => {
-    //     if(userData.nome) Navigate('/login')
-    // },[userData])
+
 
 
     const handleSubmit = async (e) => {
         e.preventDefault();
-
+        let userFullToken;
         if (user.senha.length >= 3) {
             try {
                 
@@ -45,12 +42,15 @@ const LoginPage = () => {
                 console.log("Dados do Usuário");
 
                 console.log(promise.data.token);
-
-                const userFullToken = userDecodeToken(promise.data.token);
-                localStorage.setItem("token", JSON.stringify(userFullToken))
+    
+                    userFullToken = userDecodeToken(promise.data.token);
+                   localStorage.setItem("token", JSON.stringify(userFullToken))
+                    
+                        localStorage.setItem("valor", JSON.stringify(manterConectado))
+                    
                 setUserData(userFullToken)
-console.log(userFullToken);
                 if(userFullToken.role === "0"){
+                    console.log(userFullToken);
 
                     navigate('/notificacoes-page')
                 }
@@ -63,7 +63,7 @@ console.log(userFullToken);
                 
 
             } catch (error) {
-                alert('Preencha os dados corretamentes')
+                alert('Ocorreu um erro, verifique seus dados')
             console.log(error);
             }
         }

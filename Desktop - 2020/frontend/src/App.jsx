@@ -9,14 +9,13 @@ import { UseContext } from './Context/AuthContext';
 
 function App() {
   const [userData, setUserData] = useState({});
-
   useEffect(() => {
     const token = localStorage.getItem("token");
     setUserData(token === null ? {} : JSON.parse(token))
   }, [])
   return (
     <>
-      <UseContext.Provider value={{ userData, setUserData }}>
+      <UseContext.Provider value={{ userData, setUserData}}>
         <Rotas />
       </UseContext.Provider>
     </>
