@@ -17,7 +17,7 @@ const ModalSenha = ({
     const [newSenha, setNewSenha] = useState()
     const [frmEditData, setFrmEditData] = useState({});
 
-    
+
     useEffect(() => {
         const loadTimes = async () => {
             try {
@@ -60,6 +60,7 @@ const ModalSenha = ({
             }
             return;
         }
+
         try {
             const promise = await api.put(`${atualizarUserResource}/${emailUser}`, {
                 senha: frmEditData.senha,
@@ -75,9 +76,7 @@ const ModalSenha = ({
     const confirmSenha = () => {
         validarSenhasIguais(newSenha, frmEditData.senha)
     }
-    // const confirmNivelSenha = () => {
-    //     verificarSenhaForte(frmEditData.senha)
-    // }
+
     const validarSenhasIguais = (senha, confirmSenha) => {
         const spanConfirmSenha = document.getElementById('confirm-senha');
 
@@ -96,9 +95,9 @@ const ModalSenha = ({
     // const verificarSenhaForte = (senha) => {
     //     const spanSenha = document.getElementById('new-senha');
     //     const repeticoes = {};
-    
+
     //     let todasDiferentes = true;
-    
+
     //     for (const char of senha) {
     //         if (repeticoes[char]) {
     //             repeticoes[char]++;
@@ -107,7 +106,7 @@ const ModalSenha = ({
     //             repeticoes[char] = 1;
     //         }
     //     }
-    
+
     //     if (todasDiferentes) {
     //         spanSenha.textContent = "Forte";
     //         spanSenha.style.backgroundColor = "Green";
@@ -148,7 +147,7 @@ const ModalSenha = ({
                             <label htmlFor="">Time Favorito: </label>
                             <Select
 
-                             
+
                                 options={times}
                                 manipulationFunction={(e) => {
                                     setFrmEditData({
@@ -169,7 +168,7 @@ const ModalSenha = ({
                                 manipulationFunction={(e) => {
                                     setNewSenha(e.target.value)
                                 }}
-                                // onBlur={confirmNivelSenha}
+                            // onBlur={confirmNivelSenha}
                             />
                             <span id='new-senha'></span>
                         </div>

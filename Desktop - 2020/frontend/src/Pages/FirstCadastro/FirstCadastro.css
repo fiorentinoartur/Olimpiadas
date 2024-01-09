@@ -2,6 +2,7 @@
     justify-content: center;
     align-items: center;
 }
+
 .cadastro-first {
     width: 654px;
     height: 973px;
@@ -47,6 +48,7 @@
     height: 25px;
     width: 25px;
 }
+
 .container-sexo {
     margin-top: 15px;
 }
@@ -90,6 +92,7 @@ input[type="file"]
     padding: 10px 25px;
     border-radius: 5px;
     color: white;
+    cursor: pointer;
 }
 .salvar-form{
     justify-content: space-between;
@@ -104,6 +107,7 @@ input[type="file"]
     border-radius: 5px;
     border: none;
     font-size: 16px;
+    cursor: pointer;
 }
 .salvar-form div{
     gap: 10px;

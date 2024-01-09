@@ -7,6 +7,9 @@
     height: 821px;
 
 }
+.form-cadastrar{
+    width: 764px;
+}
 .cadastro-form h1{
     font-size: 32px;
     font-weight: 600;
@@ -22,7 +25,11 @@
     width: 300px;
     position: relative;
     height: 1px;
-    margin: 0 auto 60px auto;
+   margin-top: 60px;
+   margin-left: 160px;
+}
+.registrtion-progress-dados-pessoais{
+    margin-bottom: 150px;
 }
 .circle{
     width: 40px;
@@ -70,7 +77,7 @@
     border-radius: 4px;
     border: none;
     cursor: pointer;
-    margin: 20px 0 50px 0;
+    margin: 40px 0 50px 0;
   }
 .cadastro-form label{
     font-weight: 600;
@@ -90,4 +97,22 @@
 }
 .exists-account a{
     color: #1CA656;
+}
+
+
+.input-email-cadastro{
+    margin-top: 50px  ;
+    width: 100%;
+    gap: 20px;
+    align-items: end;
+}
+.input-email-cadastro input{
+    width: 554px !important;
+
+}
+
+.input-email-cadastro p{
+
+    padding: 5px 15px;
+    border-radius: 2px;
 }
