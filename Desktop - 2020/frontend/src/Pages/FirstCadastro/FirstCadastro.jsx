@@ -54,8 +54,8 @@ const FirstCadastro = () => {
         loadTimes()
     }, []);
     const handleSalvar = () => {
-
-        if (dados.nomeUser.trim() == "" && dados.sexo.trim() == "" && dados.nascimento.trim() == "") {
+console.log(dados.nascimento.trim());
+        if (dados.nomeUser.trim() == "" || dados.sexo.trim() == "" || dados.nascimento.trim() == "" ) {
             alert("Preencha todos os campos corretamente");
             return;
         }
@@ -337,7 +337,7 @@ if (dados.foto != null) {
                                 <div className="nascimento d-flex-column">
                                     <label htmlFor="">Data Nascimento</label>
                                     <Input
-                                    required={true}
+                                        required={true}
                                         type="date"
                                         value={dados.nascimento}
                                         manipulationFunction={(e) => {
