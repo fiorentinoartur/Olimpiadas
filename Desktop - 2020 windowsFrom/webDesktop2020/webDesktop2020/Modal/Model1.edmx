@@ -103,6 +103,18 @@
           <Property Name="TimeFavoritoId" Type="int" />
           <Property Name="perfil" Type="char" MaxLength="1" />
         </EntityType>
+        <Association Name="FK_Comentario_Jogos">
+          <End Role="Jogos" Type="Self.Jogos" Multiplicity="0..1" />
+          <End Role="Comentario" Type="Self.Comentario" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Jogos">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Comentario">
+              <PropertyRef Name="IdJogo" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
         <Association Name="FK_Comentario_Usuarios">
           <End Role="Usuarios" Type="Self.Usuarios" Multiplicity="0..1" />
           <End Role="Comentario" Type="Self.Comentario" Multiplicity="*" />
@@ -187,6 +199,18 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
+        <Association Name="FK_NotificacoesUsuarios_Notificacoes">
+          <End Role="Notificacoes" Type="Self.Notificacoes" Multiplicity="0..1" />
+          <End Role="NotificacoesUsuarios" Type="Self.NotificacoesUsuarios" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Notificacoes">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="NotificacoesUsuarios">
+              <PropertyRef Name="NotificacaoId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
         <Association Name="FK_NotificacoesUsuarios_Usuarios">
           <End Role="Usuarios" Type="Self.Usuarios" Multiplicity="0..1" />
           <End Role="NotificacoesUsuarios" Type="Self.NotificacoesUsuarios" Multiplicity="*" />
@@ -195,7 +219,7 @@
               <PropertyRef Name="Id" />
             </Principal>
             <Dependent Role="NotificacoesUsuarios">
-              <PropertyRef Name="NotificacaoId" />
+              <PropertyRef Name="UsuarioId" />
             </Dependent>
           </ReferentialConstraint>
         </Association>
@@ -222,6 +246,10 @@
           <EntitySet Name="Selecoes" EntityType="Self.Selecoes" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagrams" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="Usuarios" EntityType="Self.Usuarios" Schema="dbo" store:Type="Tables" />
+          <AssociationSet Name="FK_Comentario_Jogos" Association="Self.FK_Comentario_Jogos">
+            <End Role="Jogos" EntitySet="Jogos" />
+            <End Role="Comentario" EntitySet="Comentario" />
+          </AssociationSet>
           <AssociationSet Name="FK_Comentario_Usuarios" Association="Self.FK_Comentario_Usuarios">
             <End Role="Usuarios" EntitySet="Usuarios" />
             <End Role="Comentario" EntitySet="Comentario" />
@@ -250,6 +278,10 @@
             <End Role="Selecoes" EntitySet="Selecoes" />
             <End Role="Notificacoes" EntitySet="Notificacoes" />
           </AssociationSet>
+          <AssociationSet Name="FK_NotificacoesUsuarios_Notificacoes" Association="Self.FK_NotificacoesUsuarios_Notificacoes">
+            <End Role="Notificacoes" EntitySet="Notificacoes" />
+            <End Role="NotificacoesUsuarios" EntitySet="NotificacoesUsuarios" />
+          </AssociationSet>
           <AssociationSet Name="FK_NotificacoesUsuarios_Usuarios" Association="Self.FK_NotificacoesUsuarios_Usuarios">
             <End Role="Usuarios" EntitySet="Usuarios" />
             <End Role="NotificacoesUsuarios" EntitySet="NotificacoesUsuarios" />
@@ -273,6 +305,7 @@
           <Property Name="DataHoraComentario" Type="DateTime" Precision="3" />
           <Property Name="IdJogo" Type="Int32" />
           <Property Name="IdUsuario" Type="Int32" />
+          <NavigationProperty Name="Jogos" Relationship="Self.FK_Comentario_Jogos" FromRole="Comentario" ToRole="Jogos" />
           <NavigationProperty Name="Usuarios" Relationship="Self.FK_Comentario_Usuarios" FromRole="Comentario" ToRole="Usuarios" />
         </EntityType>
         <EntityType Name="Jogadores">
@@ -298,6 +331,7 @@
           <Property Name="PlacarVisitante" Type="Int32" />
           <Property Name="Data" Type="DateTime" Precision="3" />
           <Property Name="RodadaId" Type="Int32" />
+          <NavigationProperty Name="Comentario" Relationship="Self.FK_Comentario_Jogos" FromRole="Jogos" ToRole="Comentario" />
           <NavigationProperty Name="Rodadas" Relationship="Self.FK_Jogos_Rodadas" FromRole="Jogos" ToRole="Rodadas" />
           <NavigationProperty Name="Selecoes" Relationship="Self.FK_Jogos_Selecoes" FromRole="Jogos" ToRole="Selecoes" />
           <NavigationProperty Name="Selecoes1" Relationship="Self.FK_Jogos_Selecoes1" FromRole="Jogos" ToRole="Selecoes" />
@@ -314,6 +348,7 @@
           <Property Name="Importancia" Type="String" MaxLength="255" FixedLength="false" Unicode="false" Nullable="false" />
           <Property Name="SelecaoId" Type="Int32" />
           <NavigationProperty Name="Selecoes" Relationship="Self.FK_Notificacoes_Selecoes" FromRole="Notificacoes" ToRole="Selecoes" />
+          <NavigationProperty Name="NotificacoesUsuarios" Relationship="Self.FK_NotificacoesUsuarios_Notificacoes" FromRole="Notificacoes" ToRole="NotificacoesUsuarios" />
         </EntityType>
         <EntityType Name="NotificacoesUsuarios">
           <Key>
@@ -323,6 +358,7 @@
           <Property Name="Status" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
           <Property Name="UsuarioId" Type="Int32" />
           <Property Name="NotificacaoId" Type="Int32" />
+          <NavigationProperty Name="Notificacoes" Relationship="Self.FK_NotificacoesUsuarios_Notificacoes" FromRole="NotificacoesUsuarios" ToRole="Notificacoes" />
           <NavigationProperty Name="Usuarios" Relationship="Self.FK_NotificacoesUsuarios_Usuarios" FromRole="NotificacoesUsuarios" ToRole="Usuarios" />
         </EntityType>
         <EntityType Name="Posicoes">
@@ -380,6 +416,18 @@
           <NavigationProperty Name="NotificacoesUsuarios" Relationship="Self.FK_NotificacoesUsuarios_Usuarios" FromRole="Usuarios" ToRole="NotificacoesUsuarios" />
           <NavigationProperty Name="Selecoes" Relationship="Self.FK_Usuarios_Selecoes" FromRole="Usuarios" ToRole="Selecoes" />
         </EntityType>
+        <Association Name="FK_Comentario_Jogos">
+          <End Role="Jogos" Type="Self.Jogos" Multiplicity="0..1" />
+          <End Role="Comentario" Type="Self.Comentario" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Jogos">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Comentario">
+              <PropertyRef Name="IdJogo" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
         <Association Name="FK_Comentario_Usuarios">
           <End Role="Usuarios" Type="Self.Usuarios" Multiplicity="0..1" />
           <End Role="Comentario" Type="Self.Comentario" Multiplicity="*" />
@@ -464,6 +512,18 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
+        <Association Name="FK_NotificacoesUsuarios_Notificacoes">
+          <End Role="Notificacoes" Type="Self.Notificacoes" Multiplicity="0..1" />
+          <End Role="NotificacoesUsuarios" Type="Self.NotificacoesUsuarios" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Notificacoes">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="NotificacoesUsuarios">
+              <PropertyRef Name="NotificacaoId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
         <Association Name="FK_NotificacoesUsuarios_Usuarios">
           <End Role="Usuarios" Type="Self.Usuarios" Multiplicity="0..1" />
           <End Role="NotificacoesUsuarios" Type="Self.NotificacoesUsuarios" Multiplicity="*" />
@@ -472,7 +532,7 @@
               <PropertyRef Name="Id" />
             </Principal>
             <Dependent Role="NotificacoesUsuarios">
-              <PropertyRef Name="NotificacaoId" />
+              <PropertyRef Name="UsuarioId" />
             </Dependent>
           </ReferentialConstraint>
         </Association>
@@ -488,7 +548,7 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <EntityContainer Name="Sessao5Entities1" annotation:LazyLoadingEnabled="true">
+        <EntityContainer Name="Sessao5Entities2" annotation:LazyLoadingEnabled="true">
           <EntitySet Name="Comentario" EntityType="Self.Comentario" />
           <EntitySet Name="Jogadores" EntityType="Self.Jogadores" />
           <EntitySet Name="Jogos" EntityType="Self.Jogos" />
@@ -499,6 +559,10 @@
           <EntitySet Name="Selecoes" EntityType="Self.Selecoes" />
           <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagrams" />
           <EntitySet Name="Usuarios" EntityType="Self.Usuarios" />
+          <AssociationSet Name="FK_Comentario_Jogos" Association="Self.FK_Comentario_Jogos">
+            <End Role="Jogos" EntitySet="Jogos" />
+            <End Role="Comentario" EntitySet="Comentario" />
+          </AssociationSet>
           <AssociationSet Name="FK_Comentario_Usuarios" Association="Self.FK_Comentario_Usuarios">
             <End Role="Usuarios" EntitySet="Usuarios" />
             <End Role="Comentario" EntitySet="Comentario" />
@@ -527,6 +591,10 @@
             <End Role="Selecoes" EntitySet="Selecoes" />
             <End Role="Notificacoes" EntitySet="Notificacoes" />
           </AssociationSet>
+          <AssociationSet Name="FK_NotificacoesUsuarios_Notificacoes" Association="Self.FK_NotificacoesUsuarios_Notificacoes">
+            <End Role="Notificacoes" EntitySet="Notificacoes" />
+            <End Role="NotificacoesUsuarios" EntitySet="NotificacoesUsuarios" />
+          </AssociationSet>
           <AssociationSet Name="FK_NotificacoesUsuarios_Usuarios" Association="Self.FK_NotificacoesUsuarios_Usuarios">
             <End Role="Usuarios" EntitySet="Usuarios" />
             <End Role="NotificacoesUsuarios" EntitySet="NotificacoesUsuarios" />
@@ -541,7 +609,7 @@
     <!-- C-S mapping content -->
     <edmx:Mappings>
       <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
-        <EntityContainerMapping StorageEntityContainer="Sessao5ModelStoreContainer" CdmEntityContainer="Sessao5Entities1">
+        <EntityContainerMapping StorageEntityContainer="Sessao5ModelStoreContainer" CdmEntityContainer="Sessao5Entities2">
           <EntitySetMapping Name="Comentario">
             <EntityTypeMapping TypeName="Sessao5Model.Comentario">
               <MappingFragment StoreEntitySet="Comentario">

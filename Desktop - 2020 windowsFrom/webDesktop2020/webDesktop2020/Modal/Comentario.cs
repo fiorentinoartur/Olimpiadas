@@ -20,6 +20,7 @@ namespace webDesktop2020.Modal
         public Nullable<int> IdJogo { get; set; }
         public Nullable<int> IdUsuario { get; set; }
     
+        public virtual Jogos Jogos { get; set; }
         public virtual Usuarios Usuarios { get; set; }
     }
 }

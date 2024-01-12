@@ -14,6 +14,12 @@ namespace webDesktop2020.Modal
     
     public partial class Notificacoes
     {
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
+        public Notificacoes()
+        {
+            this.NotificacoesUsuarios = new HashSet<NotificacoesUsuarios>();
+        }
+    
         public int Id { get; set; }
         public string Titulo { get; set; }
         public string Descricao { get; set; }
@@ -23,5 +29,7 @@ namespace webDesktop2020.Modal
         public Nullable<int> SelecaoId { get; set; }
     
         public virtual Selecoes Selecoes { get; set; }
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<NotificacoesUsuarios> NotificacoesUsuarios { get; set; }
     }
 }

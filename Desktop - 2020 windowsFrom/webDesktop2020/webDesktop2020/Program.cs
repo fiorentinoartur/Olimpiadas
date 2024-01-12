@@ -19,4 +19,15 @@ namespace webDesktop2020
             Application.Run(new Form1());
         }
     }
+
+
+
+
+    public static class ME
+    {
+        public static DialogResult Alert(this string text)
+        {
+            return MessageBox.Show(text, "Alert", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+        }
+    }
 }

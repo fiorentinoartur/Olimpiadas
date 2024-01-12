@@ -14,6 +14,12 @@ namespace webDesktop2020.Modal
     
     public partial class Jogos
     {
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
+        public Jogos()
+        {
+            this.Comentario = new HashSet<Comentario>();
+        }
+    
         public int Id { get; set; }
         public Nullable<int> SelecaoCasaId { get; set; }
         public Nullable<int> PlacarCasa { get; set; }
@@ -22,6 +28,8 @@ namespace webDesktop2020.Modal
         public Nullable<System.DateTime> Data { get; set; }
         public Nullable<int> RodadaId { get; set; }
     
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<Comentario> Comentario { get; set; }
         public virtual Rodadas Rodadas { get; set; }
         public virtual Selecoes Selecoes { get; set; }
         public virtual Selecoes Selecoes1 { get; set; }

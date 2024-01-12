@@ -13,10 +13,10 @@ namespace webDesktop2020.Modal
     using System.Data.Entity;
     using System.Data.Entity.Infrastructure;
     
-    public partial class Sessao5Entities1 : DbContext
+    public partial class Sessao5Entities2 : DbContext
     {
-        public Sessao5Entities1()
-            : base("name=Sessao5Entities1")
+        public Sessao5Entities2()
+            : base("name=Sessao5Entities2")
         {
         }
     

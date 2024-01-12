@@ -26,5 +26,50 @@ namespace webDesktop2020.Properties
                 return defaultInstance;
             }
         }
+
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("0")]
+        public int video
+        {
+            get
+            {
+                return ((int)(this["video"]));
+            }
+            set
+            {
+                this["video"] = value;
+            }
+        }
+
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("0")]
+        public int idUser
+        {
+            get
+            {
+                return ((int)(this["idUser"]));
+            }
+            set
+            {
+                this["idUser"] = value;
+            }
+        }
+
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("False")]
+        public bool keep
+        {
+            get
+            {
+                return ((bool)(this["keep"]));
+            }
+            set
+            {
+                this["keep"] = value;
+            }
+        }
     }
 }

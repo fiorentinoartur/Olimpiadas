@@ -19,6 +19,7 @@ namespace webDesktop2020.Modal
         public Nullable<int> UsuarioId { get; set; }
         public Nullable<int> NotificacaoId { get; set; }
     
+        public virtual Notificacoes Notificacoes { get; set; }
         public virtual Usuarios Usuarios { get; set; }
     }
 }

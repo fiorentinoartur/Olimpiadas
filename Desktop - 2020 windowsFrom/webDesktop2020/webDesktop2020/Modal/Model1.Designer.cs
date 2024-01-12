@@ -1,4 +1,4 @@
-﻿// T4 code generation is enabled for model 'C:\Users\admin\Desktop\Olimpiadas\Desktop - 2020 windowsFrom\webDesktop2020\webDesktop2020\Modal\Model1.edmx'. 
+﻿// T4 code generation is enabled for model 'C:\Users\Artur Fiorentino\OneDrive\Área de Trabalho\Olimpiadas\Desktop - 2020 windowsFrom\webDesktop2020\webDesktop2020\Modal\Model1.edmx'. 
 // To enable legacy code generation, change the value of the 'Code Generation Strategy' designer
 // property to 'Legacy ObjectContext'. This property is available in the Properties Window when the model
 // is open in the designer.
