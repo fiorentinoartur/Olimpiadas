@@ -1247,24 +1247,24 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Artur Fiorentino\\.nuget\\packages\\": {},
+    "C:\\Users\\admin\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Artur Fiorentino\\OneDrive\\Área de Trabalho\\Olimpiadas\\MobileMg\\wsTower\\wsTower.iOS\\wsTower.iOS.csproj",
+      "projectUniqueName": "C:\\Users\\admin\\Desktop\\Olimpiadas\\MobileMg\\wsTower\\wsTower.iOS\\wsTower.iOS.csproj",
       "projectName": "wsTower.iOS",
-      "projectPath": "C:\\Users\\Artur Fiorentino\\OneDrive\\Área de Trabalho\\Olimpiadas\\MobileMg\\wsTower\\wsTower.iOS\\wsTower.iOS.csproj",
-      "packagesPath": "C:\\Users\\Artur Fiorentino\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Artur Fiorentino\\OneDrive\\Área de Trabalho\\Olimpiadas\\MobileMg\\wsTower\\wsTower.iOS\\obj\\",
+      "projectPath": "C:\\Users\\admin\\Desktop\\Olimpiadas\\MobileMg\\wsTower\\wsTower.iOS\\wsTower.iOS.csproj",
+      "packagesPath": "C:\\Users\\admin\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\admin\\Desktop\\Olimpiadas\\MobileMg\\wsTower\\wsTower.iOS\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\Artur Fiorentino\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -1278,8 +1278,8 @@
       "frameworks": {
         "xamarinios10": {
           "projectReferences": {
-            "C:\\Users\\Artur Fiorentino\\OneDrive\\Área de Trabalho\\Olimpiadas\\MobileMg\\wsTower\\wsTower\\wsTower.csproj": {
-              "projectPath": "C:\\Users\\Artur Fiorentino\\OneDrive\\Área de Trabalho\\Olimpiadas\\MobileMg\\wsTower\\wsTower\\wsTower.csproj"
+            "C:\\Users\\admin\\Desktop\\Olimpiadas\\MobileMg\\wsTower\\wsTower\\wsTower.csproj": {
+              "projectPath": "C:\\Users\\admin\\Desktop\\Olimpiadas\\MobileMg\\wsTower\\wsTower\\wsTower.csproj"
             }
           }
         }

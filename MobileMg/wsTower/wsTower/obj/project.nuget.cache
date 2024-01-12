@@ -1,14 +1,14 @@
 {
   "version": 2,
-  "dgSpecHash": "Rnw6uF+ZH3AQq1U3++R+9upF0fiXa+jS0sSTVc7hINghjq4LrRRIuyzH4V8YixPrHf9UCNz3rabYKn1YakJDAA==",
+  "dgSpecHash": "mhZzLWG9+4t1QzGCL6lZrZWeGzWVbzzkJ2kXFNaMn2rDlvzP8R8bnj/vH5Pj0FhoXDk+rJm5g1J/AmInw3gHjQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Artur Fiorentino\\OneDrive\\Área de Trabalho\\Olimpiadas\\MobileMg\\wsTower\\wsTower\\wsTower.csproj",
+  "projectFilePath": "C:\\Users\\admin\\Desktop\\Olimpiadas\\MobileMg\\wsTower\\wsTower\\wsTower.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\Artur Fiorentino\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
-    "C:\\Users\\Artur Fiorentino\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512",
-    "C:\\Users\\Artur Fiorentino\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",
-    "C:\\Users\\Artur Fiorentino\\.nuget\\packages\\xamarin.essentials\\1.7.0\\xamarin.essentials.1.7.0.nupkg.sha512",
-    "C:\\Users\\Artur Fiorentino\\.nuget\\packages\\xamarin.forms\\5.0.0.2196\\xamarin.forms.5.0.0.2196.nupkg.sha512"
+    "C:\\Users\\admin\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Users\\admin\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512",
+    "C:\\Users\\admin\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",
+    "C:\\Users\\admin\\.nuget\\packages\\xamarin.essentials\\1.7.0\\xamarin.essentials.1.7.0.nupkg.sha512",
+    "C:\\Users\\admin\\.nuget\\packages\\xamarin.forms\\5.0.0.2196\\xamarin.forms.5.0.0.2196.nupkg.sha512"
   ],
   "logs": []
 }
