@@ -20,6 +20,8 @@ namespace desktop2020
             InitializeComponent();
             Txt_Email.Leave += TxtEmail_Leave;
             Txt_Senha.PasswordChar = '*';
+            Txt_Email.Text = "administrador@email.com";
+            Txt_Senha.Text = "admin123";
         }
 
         private void LoginForm_Load(object sender, EventArgs e)
@@ -77,13 +79,14 @@ namespace desktop2020
             if(email == null) 
             {
                 "Invalid email".Alert();
-                new ForgotPassForm().Show();
             }
+            Dados.Logged = email;
+                new ForgotPassForm().Show();
         }
 
         private void linkLabel3_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            new CadastroForm().Show();
+            new SingUpForm().Show();
         }
     }
 }

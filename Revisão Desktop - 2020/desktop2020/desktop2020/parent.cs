@@ -62,4 +62,21 @@ namespace desktop2020
         }
 
     }
+        public static class ME
+        {
+            public static DialogResult Alert(this string text)
+            {
+                return MessageBox.Show(text, "Alert", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+            public static DialogResult Confirmation(this string text)
+            {
+                return MessageBox.Show(text, "Confirmation", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            }
+
+            public static DialogResult Information(this string text)
+            {
+                return MessageBox.Show(text, "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+
+        }
 }

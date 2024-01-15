@@ -66,5 +66,10 @@ namespace desktop2020
         {
 
         }
+
+        private void axWindowsMediaPlayer1_Enter(object sender, EventArgs e)
+        {
+
+        }
     }
 }
