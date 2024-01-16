@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="App1.LoginPage">
+    <ContentPage.Content >
+        <StackLayout  VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand" Spacing="20">
+            <Label Text="Acessar!" HorizontalOptions="Center" FontSize="18"/>
+
+
+            <Entry x:Name="entry_user" WidthRequest="300" Placeholder="Usuário" />
+            <Entry x:Name="entry_senha" WidthRequest="300" Placeholder="Senha" />
+            <Button  
+               
+                Text="Login"
+                Clicked="Button_Clicked"
+                BackgroundColor="White"
+                BorderColor="Black"
+                BorderWidth="4"
+                WidthRequest="120"
+                HeightRequest="40"
+                HorizontalOptions="Center"
+                />
+            <Label x:Name="labelInvalido" BackgroundColor="gray" HeightRequest="50"  WidthRequest="40" VerticalOptions="Fill" HorizontalOptions="Fill" HorizontalTextAlignment="Center"  VerticalTextAlignment="Center" TextColor="White" Text="Usuário/Senha Inválidos"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
+    

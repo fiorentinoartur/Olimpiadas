@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ApiMobileAl")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+88170f16c94976450662588ffc87def655b913ce")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+8af86df633af456c1a4a680412cc4b45a8c91031")]
 [assembly: System.Reflection.AssemblyProductAttribute("ApiMobileAl")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ApiMobileAl")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
