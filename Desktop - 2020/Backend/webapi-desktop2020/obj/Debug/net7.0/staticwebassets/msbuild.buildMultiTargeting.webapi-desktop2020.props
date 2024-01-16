@@ -1,3 +1,0 @@
-﻿<Project>
-  <Import Project="..\build\webapi-desktop2020.props" />
-</Project>
