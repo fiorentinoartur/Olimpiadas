@@ -31,3 +31,25 @@ C:\Users\admin\Desktop\Olimpiadas\MobileMg\App1\App1\obj\Debug\netstandard2.0\Xa
 C:\Users\admin\Desktop\Olimpiadas\MobileMg\App1\App1\obj\Debug\netstandard2.0\App1.dll
 C:\Users\admin\Desktop\Olimpiadas\MobileMg\App1\App1\obj\Debug\netstandard2.0\refint\App1.dll
 C:\Users\admin\Desktop\Olimpiadas\MobileMg\App1\App1\obj\Debug\netstandard2.0\App1.pdb
+C:\Users\Artur Fiorentino\OneDrive\Área de Trabalho\Olimpiadas\MobileMG - Nacional 2020\App1\App1\bin\Debug\netstandard2.0\App1.deps.json
+C:\Users\Artur Fiorentino\OneDrive\Área de Trabalho\Olimpiadas\MobileMG - Nacional 2020\App1\App1\bin\Debug\netstandard2.0\App1.dll
+C:\Users\Artur Fiorentino\OneDrive\Área de Trabalho\Olimpiadas\MobileMG - Nacional 2020\App1\App1\bin\Debug\netstandard2.0\ref\App1.dll
+C:\Users\Artur Fiorentino\OneDrive\Área de Trabalho\Olimpiadas\MobileMG - Nacional 2020\App1\App1\bin\Debug\netstandard2.0\App1.pdb
+C:\Users\Artur Fiorentino\OneDrive\Área de Trabalho\Olimpiadas\MobileMG - Nacional 2020\App1\App1\obj\Debug\netstandard2.0\App1.csproj.AssemblyReference.cache
+C:\Users\Artur Fiorentino\OneDrive\Área de Trabalho\Olimpiadas\MobileMG - Nacional 2020\App1\App1\obj\Debug\netstandard2.0\App1.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Artur Fiorentino\OneDrive\Área de Trabalho\Olimpiadas\MobileMG - Nacional 2020\App1\App1\obj\Debug\netstandard2.0\App.xaml.g.cs
+C:\Users\Artur Fiorentino\OneDrive\Área de Trabalho\Olimpiadas\MobileMG - Nacional 2020\App1\App1\obj\Debug\netstandard2.0\LoginPage.xaml.g.cs
+C:\Users\Artur Fiorentino\OneDrive\Área de Trabalho\Olimpiadas\MobileMG - Nacional 2020\App1\App1\obj\Debug\netstandard2.0\MainPage.xaml.g.cs
+C:\Users\Artur Fiorentino\OneDrive\Área de Trabalho\Olimpiadas\MobileMG - Nacional 2020\App1\App1\obj\Debug\netstandard2.0\App1.AssemblyInfoInputs.cache
+C:\Users\Artur Fiorentino\OneDrive\Área de Trabalho\Olimpiadas\MobileMG - Nacional 2020\App1\App1\obj\Debug\netstandard2.0\App1.AssemblyInfo.cs
+C:\Users\Artur Fiorentino\OneDrive\Área de Trabalho\Olimpiadas\MobileMG - Nacional 2020\App1\App1\obj\Debug\netstandard2.0\App1.csproj.CoreCompileInputs.cache
+C:\Users\Artur Fiorentino\OneDrive\Área de Trabalho\Olimpiadas\MobileMG - Nacional 2020\App1\App1\obj\Debug\netstandard2.0\XamlC.stamp
+C:\Users\Artur Fiorentino\OneDrive\Área de Trabalho\Olimpiadas\MobileMG - Nacional 2020\App1\App1\obj\Debug\netstandard2.0\App1.dll
+C:\Users\Artur Fiorentino\OneDrive\Área de Trabalho\Olimpiadas\MobileMG - Nacional 2020\App1\App1\obj\Debug\netstandard2.0\refint\App1.dll
+C:\Users\Artur Fiorentino\OneDrive\Área de Trabalho\Olimpiadas\MobileMG - Nacional 2020\App1\App1\obj\Debug\netstandard2.0\App1.pdb
+C:\Users\Artur Fiorentino\OneDrive\Área de Trabalho\Olimpiadas\MobileMG - Nacional 2020\App1\App1\obj\Debug\netstandard2.0\WsTowerFlyout.xaml.g.cs
+C:\Users\Artur Fiorentino\OneDrive\Área de Trabalho\Olimpiadas\MobileMG - Nacional 2020\App1\App1\obj\Debug\netstandard2.0\WsTowerFlyoutDetail.xaml.g.cs
+C:\Users\Artur Fiorentino\OneDrive\Área de Trabalho\Olimpiadas\MobileMG - Nacional 2020\App1\App1\obj\Debug\netstandard2.0\WsTowerFlyoutFlyout.xaml.g.cs
+C:\Users\Artur Fiorentino\OneDrive\Área de Trabalho\Olimpiadas\MobileMG - Nacional 2020\App1\App1\bin\Debug\netstandard2.0\Newtonsoft.Json.dll
+C:\Users\Artur Fiorentino\OneDrive\Área de Trabalho\Olimpiadas\MobileMG - Nacional 2020\App1\App1\bin\Debug\netstandard2.0\Newtonsoft.Json.xml
+C:\Users\Artur Fiorentino\OneDrive\Área de Trabalho\Olimpiadas\MobileMG - Nacional 2020\App1\App1\obj\Debug\netstandard2.0\App1.csproj.CopyComplete

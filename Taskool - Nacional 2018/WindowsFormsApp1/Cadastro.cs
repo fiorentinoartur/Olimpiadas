@@ -63,6 +63,11 @@ namespace WindowsFormsApp1
 
         private void button2_Click(object sender, EventArgs e)
         {
+            if (string.IsNullOrEmpty(textBox1.Text))
+            {
+                "Nome e nascimento devem ser preenchidos corretamente!".Alert();
+                return;
+            }
             string[] nomes = textBox1.Text.Split(' ');
             string apelido = $"{nomes[0]}.{nomes[nomes.Length - 1]}{dateTimePicker1.Value.Year.ToString().Substring(2,2)}";
 

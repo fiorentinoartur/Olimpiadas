@@ -2,17 +2,18 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="App1.LoginPage">
-    <ContentPage.Content >
-        <StackLayout  VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand" Spacing="20">
+
+    <Grid>
+        
+        <StackLayout Grid.Row="0"  VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand" Spacing="20">
             <Label Text="Acessar!" HorizontalOptions="Center" FontSize="18"/>
 
 
             <Entry x:Name="entry_user" WidthRequest="300" Placeholder="Usuário" />
             <Entry x:Name="entry_senha" WidthRequest="300" Placeholder="Senha" />
             <Button  
-               
+               x:Name="btn_Login"
                 Text="Login"
-                Clicked="Button_Clicked"
                 BackgroundColor="White"
                 BorderColor="Black"
                 BorderWidth="4"
@@ -20,8 +21,11 @@
                 HeightRequest="40"
                 HorizontalOptions="Center"
                 />
-            <Label x:Name="labelInvalido" BackgroundColor="gray" HeightRequest="50"  WidthRequest="40" VerticalOptions="Fill" HorizontalOptions="Fill" HorizontalTextAlignment="Center"  VerticalTextAlignment="Center" TextColor="White" Text="Usuário/Senha Inválidos"/>
         </StackLayout>
-    </ContentPage.Content>
+        <Label x:Name="labelInvalido" BackgroundColor="#505050" HeightRequest="50"  WidthRequest="40" VerticalOptions="End" HorizontalOptions="FillAndExpand" HorizontalTextAlignment="Center"  VerticalTextAlignment="Center" TextColor="White" />
+    </Grid>
+
+
 </ContentPage>
     
+                <!--Clicked="Button_Clicked"-->
