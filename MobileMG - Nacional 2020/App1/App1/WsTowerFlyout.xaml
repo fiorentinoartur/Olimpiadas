@@ -2,7 +2,9 @@
 <FlyoutPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="App1.WsTowerFlyout"
+            IconImageSource="baseline_info_24"
              xmlns:pages="clr-namespace:App1">
+    
   <FlyoutPage.Flyout>
     <pages:WsTowerFlyoutFlyout x:Name="FlyoutPage" />
   </FlyoutPage.Flyout>
