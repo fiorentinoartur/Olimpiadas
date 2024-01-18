@@ -16,5 +16,10 @@ namespace App1
         {
             InitializeComponent();
         }
+
+        private void AbrirModal(object sender, EventArgs e)
+        {
+            Navigation.PushModalAsync(new ModalInformation());
+        }
     }
 }

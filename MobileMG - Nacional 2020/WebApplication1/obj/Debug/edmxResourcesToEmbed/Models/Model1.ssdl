@@ -18,16 +18,6 @@
     <Property Name="longitude" Type="decimal" Precision="18" Scale="8" Nullable="false" />
     <Property Name="usuarioid" Type="int" />
   </EntityType>
-  <EntityType Name="sysdiagrams">
-    <Key>
-      <PropertyRef Name="diagram_id" />
-    </Key>
-    <Property Name="name" Type="nvarchar" MaxLength="128" Nullable="false" />
-    <Property Name="principal_id" Type="int" Nullable="false" />
-    <Property Name="diagram_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
-    <Property Name="version" Type="int" />
-    <Property Name="definition" Type="varbinary(max)" />
-  </EntityType>
   <EntityType Name="Usuario">
     <Key>
       <PropertyRef Name="id" />
@@ -66,7 +56,6 @@
   <EntityContainer Name="SessaoMobileModelStoreContainer">
     <EntitySet Name="Funcao" EntityType="Self.Funcao" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="Relatos" EntityType="Self.Relatos" Schema="dbo" store:Type="Tables" />
-    <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagrams" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="Usuario" EntityType="Self.Usuario" Schema="dbo" store:Type="Tables" />
     <AssociationSet Name="FK_Relatos_Usuario" Association="Self.FK_Relatos_Usuario">
       <End Role="Usuario" EntitySet="Usuario" />

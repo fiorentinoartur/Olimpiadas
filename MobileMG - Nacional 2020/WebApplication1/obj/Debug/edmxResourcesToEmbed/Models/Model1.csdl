@@ -20,16 +20,6 @@
     <Property Name="usuarioid" Type="Int32" />
     <NavigationProperty Name="Usuario" Relationship="Self.FK_Relatos_Usuario" FromRole="Relatos" ToRole="Usuario" />
   </EntityType>
-  <EntityType Name="sysdiagrams">
-    <Key>
-      <PropertyRef Name="diagram_id" />
-    </Key>
-    <Property Name="name" Type="String" MaxLength="128" FixedLength="false" Unicode="true" Nullable="false" />
-    <Property Name="principal_id" Type="Int32" Nullable="false" />
-    <Property Name="diagram_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
-    <Property Name="version" Type="Int32" />
-    <Property Name="definition" Type="Binary" MaxLength="Max" FixedLength="false" />
-  </EntityType>
   <EntityType Name="Usuario">
     <Key>
       <PropertyRef Name="id" />
@@ -70,7 +60,6 @@
   <EntityContainer Name="SessaoMobileEntities" annotation:LazyLoadingEnabled="true">
     <EntitySet Name="Funcao" EntityType="Self.Funcao" />
     <EntitySet Name="Relatos" EntityType="Self.Relatos" />
-    <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagrams" />
     <EntitySet Name="Usuario" EntityType="Self.Usuario" />
     <AssociationSet Name="FK_Usuario_Funcao" Association="Self.FK_Usuario_Funcao">
       <End Role="Funcao" EntitySet="Funcao" />

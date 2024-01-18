@@ -27,7 +27,6 @@ namespace WebApplication1.Models
     
         public virtual DbSet<Funcao> Funcao { get; set; }
         public virtual DbSet<Relatos> Relatos { get; set; }
-        public virtual DbSet<sysdiagrams> sysdiagrams { get; set; }
         public virtual DbSet<Usuario> Usuario { get; set; }
     }
 }

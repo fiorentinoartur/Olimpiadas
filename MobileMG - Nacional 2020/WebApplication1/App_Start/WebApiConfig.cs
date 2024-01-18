@@ -9,9 +9,9 @@ namespace WebApplication1
     {
         public static void Register(HttpConfiguration config)
         {
-            // Web API configuration and services
+            // Configuração e serviços de API Web
 
-            // Web API routes
+            // Rotas de API Web
             config.MapHttpAttributeRoutes();
 
             config.Routes.MapHttpRoute(
@@ -19,6 +19,12 @@ namespace WebApplication1
                 routeTemplate: "api/{controller}/{id}",
                 defaults: new { id = RouteParameter.Optional }
             );
+
+            var json = config.Formatters.JsonFormatter;
+            json.SerializerSettings.NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore;
+            json.SerializerSettings.ReferenceLoopHandling = Newtonsoft.Json.ReferenceLoopHandling.Ignore;
+
+            config.Formatters.Remove(config.Formatters.XmlFormatter);
         }
     }
 }

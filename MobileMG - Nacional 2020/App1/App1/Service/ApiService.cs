@@ -1,4 +1,5 @@
-﻿using Newtonsoft.Json;
+﻿using App1.Models;
+using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
 using System.Net.Http;
@@ -19,66 +20,56 @@ namespace App1.Service
                 if (client == null)
                 {
                     client = new HttpClient();
-                    client.BaseAddress = new Uri("http://10.0.2.2:55542/api/");
+                    client.BaseAddress = new Uri("http://10.0.2.2:5500/api/");
                 }
                 return client;
             }
 
         }
 
-        public static async Task<bool> Login(string userName, string password)
+        public static async Task<T> Login(LoginUser usuario)
         {
-            try
+           
+                var jsonLoginModel = JsonConvert.SerializeObject(usuario);
+            var response = await Client.PostAsync("login", new StringContent(jsonLoginModel, Encoding.UTF8, "application/json"));
+
+            if(response.IsSuccessStatusCode)
             {
-                var loginModel = new { UserName = userName, Password = password };
+                var jsonResponse = await response.Content.ReadAsStringAsync();
+                var result = JsonConvert.DeserializeObject<T>(jsonResponse);
 
-                var jsonCredentials = JsonConvert.SerializeObject(loginModel);
-
-                var content = new StringContent(jsonCredentials, Encoding.UTF8, "application/json");
-
-                var response = await Client.PostAsync("login", content);
-
-                if(response.IsSuccessStatusCode) 
-                { 
-                return true;
-                }
-                else
-                {
-                    return false;
-                }
+                return result;
             }
-            catch (Exception)
-            {
+       return null;
+                //var loginModel = new {  usuarios.email, usuarios.senha };
 
-                return false;
-            }
+                //var jsonCredentials = JsonConvert.SerializeObject(loginModel);
+
+                //var content = new StringContent(jsonCredentials, Encoding.UTF8, "application/json");
+
+                //var response = await Client.PostAsync("login", content);
+                //var contentt = await response.Content.ReadAsStringAsync();  
+                //var json = JsonConvert.DeserializeObject<T>(contentt);
+
+
+                //if (response.IsSuccessStatusCode)
+                //{
+                //    return true;
+                //}
+                //else
+                //{
+                //    return false;
+                //}
+          
         }
 
         public async static Task<List<T>> GetList(string url)
         {
-            try
-            {
-                var response = await Client.GetAsync(url);
-
-                if (response.IsSuccessStatusCode)
-                {
-                    var content = await response.Content.ReadAsStringAsync();
-                    var result = JsonConvert.DeserializeObject<List<T>>(content);
-                    return result;
-                }
-                else
-                {
-                    // Adicione o tratamento para obter mais informações sobre o erro
-                    var errorMessage = await response.Content.ReadAsStringAsync();
-                    Console.WriteLine($"Error: {errorMessage}");
-                    return null;
-                }
-            }
-            catch (Exception ex)
-            {
-                Console.WriteLine($"Exception: {ex.Message}");
-                return null;
-            }
+            var response = await Client.GetAsync(url);
+            var content = await response.Content.ReadAsStringAsync();
+            var result = new List<T>();
+            var json = JsonConvert.DeserializeObject<List<T>>(content);
+            return json;
         }
 
     }

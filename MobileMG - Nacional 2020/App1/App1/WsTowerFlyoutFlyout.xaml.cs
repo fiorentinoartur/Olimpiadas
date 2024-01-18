@@ -33,12 +33,16 @@ namespace App1
             {
                 MenuItems = new ObservableCollection<WsTowerFlyoutFlyoutMenuItem>(new[]
                 {
-                    new WsTowerFlyoutFlyoutMenuItem { Id = 0, Title = "Page 1" },
-                    new WsTowerFlyoutFlyoutMenuItem { Id = 1, Title = "Page 2" },
-                    new WsTowerFlyoutFlyoutMenuItem { Id = 2, Title = "Page 3" },
-                    new WsTowerFlyoutFlyoutMenuItem { Id = 3, Title = "Page 4" },
-                    new WsTowerFlyoutFlyoutMenuItem { Id = 4, Title = "Page 5" },
+                    new WsTowerFlyoutFlyoutMenuItem { Id = 0, Title = "Home" },
+                    new WsTowerFlyoutFlyoutMenuItem { Id = 1, Title = "Reportar Ação" },
+                    new WsTowerFlyoutFlyoutMenuItem { Id = 2, Title = "Visualizar" },
+                    new WsTowerFlyoutFlyoutMenuItem { Id = 3, Title = "Sair" },
+                 
+                   
+                   
                 });
+ 
+                
             }
             
             #region INotifyPropertyChanged Implementation
