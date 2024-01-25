@@ -28,13 +28,15 @@ namespace WindowsFormsApp1
 
             string path = "C:\\colors";
             string file = path + $"\\{logado.Codigo}.txt";
-            if(!Directory.Exists(path))
+
+            if (!Directory.Exists(path))
             {
-                Directory.CreateDirectory(path);
+                Directory.CreateDirectory(path);    
             }
-            if(File.Exists(file)) 
+
+            if(File.Exists(file))
             {
-            string text = File.ReadAllText(file);
+                var text = File.ReadAllText(file);
                 hex = ColorTranslator.FromHtml(text);
             }
 
@@ -48,38 +50,49 @@ namespace WindowsFormsApp1
                 pictureBox1.Image = Image.FromStream(ms);
             }
 
-           var text = Encoding.UTF8.GetString(Properties.Resources.mensagens);
 
-            var lista = JsonConvert.DeserializeObject<JsonMessage[]>(text).ToList();
+            var caminhoArquivoJson = Encoding.UTF8.GetString(Properties.Resources.mensagens);
+
+
+            var jsonDeserializado = JsonConvert.DeserializeObject<JsonMessage[]>(caminhoArquivoJson).ToList();
+
             Random random = new Random();
-            int i = random.Next(lista.Count);
-            var json = lista[i];
+
+            int i = random.Next(jsonDeserializado.Count - 1);
+
+
+            var json = jsonDeserializado[i];
+
             label3.Text = json.Mensagem;
             label4.Text = json.Autor;
-            SetSong();
+
+            setSong();
+       
         }
 
-        private void SetSong()
+
+        private void setSong()
         {
-            Random rand = new Random();
 
-            var playList = wmp.playlistCollection.newPlaylist("playList");
-            //  var path = Environment.GetFolderPath(Environment.SpecialFolder.MyMusic);
-            var path = @"C:\Users\Artur Fiorentino\OneDrive\Área de Trabalho\Olimpiadas\Revisão Taskool - 2018\WindowsFormsApp1\bin\Debug\musicas-teste";
+            var playlist = wmp.playlistCollection.newPlaylist("playlist");
+
+            var path =  AppDomain.CurrentDomain.BaseDirectory + "musicas-teste";
+            
+            Random random = new Random();
+
+            var musicas = Directory.GetFiles(path, "*.mp3").OrderBy(x => random.Next());
 
 
-            int i = rand.Next(3);
-            var files = Directory.GetFiles(path, "*.mp3").OrderBy(x => rand.Next());
-
-            foreach(var item in files)
+            foreach (var item in musicas)
             {
                 var media = wmp.newMedia(item);
-                playList.appendItem(media);
+                playlist.appendItem(media);
             }
-            wmp.currentPlaylist = playList;
+
+            wmp.currentPlaylist = playlist;
             wmp.controls.stop();
-         
         }
+ 
 
         private void timer1_Tick(object sender, EventArgs e)
         {
@@ -139,7 +152,7 @@ namespace WindowsFormsApp1
             if(play.Text == "Play")
             {
                 wmp.controls.play();
-                label5.Text = "Pause";
+                play.Text = "Pause";
             }
             else
             {

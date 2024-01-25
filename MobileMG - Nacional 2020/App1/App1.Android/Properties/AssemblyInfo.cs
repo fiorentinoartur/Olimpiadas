@@ -16,6 +16,13 @@ using Android.App;
 [assembly: AssemblyCulture("")]
 [assembly: ComVisible(false)]
 
+//Needed for taking photo/video
+[assembly: UsesPermission(Android.Manifest.Permission.WriteExternalStorage)]
+[assembly: UsesPermission(Android.Manifest.Permission.Camera)]
+
+//Add these if you would like to filter out devices that do not have cameras, or set to false to make them optional
+[assembly: UsesFeature("android.hardware.camera", Required = true)]
+[assembly: UsesFeature("android.hardware.camera.autofocus", Required = true)]
 // Version information for an assembly consists of the following four values:
 //
 //      Major Version

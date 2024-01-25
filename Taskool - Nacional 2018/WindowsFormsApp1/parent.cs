@@ -14,7 +14,7 @@ namespace WindowsFormsApp1
 {
     public partial class parent : Form
     {
-       public dbTarefasEntities1 ctx = new dbTarefasEntities1();
+       public dbTarefasEntities2 ctx = new dbTarefasEntities2();
         public static Usuario logado = new Usuario();
         public static Color hex = Color.White;
         public parent()

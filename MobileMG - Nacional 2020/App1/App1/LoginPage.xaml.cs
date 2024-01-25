@@ -3,6 +3,7 @@ using App1.Service;
 using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
+using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -21,77 +22,61 @@ namespace App1
         public LoginPage()
         {
             InitializeComponent();
-            labelInvalido.IsVisible = false;
-            entry_senha.IsPassword = true;
 
-            entry_user.Text = "juliane2009@gmail.com";
-            entry_senha.Text = "6654";
-            //entry_senha.TextChanged += EntrySenha_TextChanged;
+            email.Text = "Jota.rc1@hotmail.com";
+            senha.Text = "65885";
+
 
         }
-        //private void EntrySenha_TextChanged(object sender, TextChangedEventArgs e)
-        //{
-        //    senhaAtual = e.NewTextValue;
-        //    entry_senha.Text = new string('*', e.NewTextValue.Length);
-        //}
+
 
         protected override void OnAppearing()
         {
             base.OnAppearing();
-            LoadData();
+            MessagingCenter.Send(this, "ForcePortrait");
         }
 
-        private async void LoadData()
+        private async void btnLogin_Clicked(object sender, EventArgs e)
         {
-            var listaUsuario = await ApiService<UsuarioViewModel>.GetList("usuarios");
-            foreach (var item in listaUsuario)
+            if(email.Text == null || senha.Text == null) 
             {
-                ListaUsuarios.Add(item);
-            }
-        }
-
-        private async void Button_Clicked(object sender, EventArgs e)
-        {
-
-            var loginModel = new LoginUser
-            {
-                email = entry_user.Text,
-                senha = entry_senha.Text
-            };
-            var isAuthenticated = await ApiService<LoginUser>.Login(loginModel);
-            if (isAuthenticated == null)
-            {
-
-                labelInvalido.Text = "Usuário/Senha Inválidos";
-                labelInvalido.IsVisible = true;
+                DependencyService.Get<IToast>().Show("Usuário/Senha inválidos");
                 contador++;
-
-                if (contador >= 3)
-                {
-                    entry_senha.IsEnabled = false;
-                    entry_user.IsEnabled = false;
-                    btn_Login.IsEnabled = false;
-                    labelInvalido.Text = "Login Bloqueado aguarde 30s";
-                    await Task.Delay(5000);
-
-                    contador = 0;
-                    labelInvalido.IsVisible = false;
-                    entry_senha.IsEnabled = true;
-                    entry_user.IsEnabled = true;
-                    btn_Login.IsEnabled = true;
-
-                }
+                await BlockLogin();
                 return;
-
             }
-           
-                App.Current.MainPage = new WsTowerFlyout();
 
-            
-           
-            
-            
+            string emailString = email.Text;
+            string senhaString = senha.Text;
 
+            var response = await ApiService<UsuarioViewModel>.Get($"login?email={emailString}&senha={senhaString}");
+
+            if(response == null) 
+            {
+                DependencyService.Get<IToast>().Show("Usuário/Senha inválidos");
+                contador++;
+                await BlockLogin();
+                return;
+            }
+            UserDados.Usuario = response;
+            await DisplayAlert("Informação", $"Bem-vindo {response.nome}!", "Ok");
+            App.Current.MainPage = new NavigationPage(new WsTowerFlyout());
+        }
+
+        private async Task BlockLogin()
+        {
+            if (contador == 3)
+            {
+                DependencyService.Get<IToast>().Show("Login bloqueado: aguardar 30s!");
+                email.IsEnabled = false;
+                senha.IsEnabled = false;
+                btnLogin.IsEnabled = false;
+                await Task.Delay(30000);
+                email.IsEnabled = true;
+                senha.IsEnabled = true;
+                btnLogin.IsEnabled = true;
+            }
         }
     }
-}
+    }
+

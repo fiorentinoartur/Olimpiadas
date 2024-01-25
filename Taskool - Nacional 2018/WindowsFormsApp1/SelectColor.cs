@@ -23,50 +23,39 @@ namespace WindowsFormsApp1
 
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
-            try
+            if (textBox1.Focused)
             {
-                if (textBox1.Focused)
+                if (textBox1.Text == "")
                 {
-                    if (textBox1.Text == "")
-                    {
-                        textBox2.Text = "";
-                        return;
-                    }
-                    hex = ColorTranslator.FromHtml(textBox1.Text);
-                    textBox2.Text = $"rgb({hex.R},{hex.G},{hex.B})";
+                    textBox2.Text = "";
+                    return;
                 }
+            }
+            hex = ColorTranslator.FromHtml(textBox1.Text);
+            textBox2.Text = $"rgb({hex.R},{hex.G},{hex.B})";
 
-            }
-            catch (Exception)
-            {
-                return;
-                throw;
-            }
         }
 
         private void textBox2_TextChanged(object sender, EventArgs e)
         {
-            try
+            if (textBox2.Focused)
             {
-                if (textBox2.Focused)
+                if (textBox2.Text == "")
                 {
-                    if (textBox2.Text == "")
-                    {
-                        textBox1.Text = "";
-                        return;
-                    }
-                    string text = textBox2.Text.Replace("rgb(", "");
-                    text = text.Replace(")", "");
-                    string[] colors = text.Split(',');
-                    hex = Color.FromArgb(Convert.ToInt32(colors[0]), Convert.ToInt32(colors[1]), Convert.ToInt32(colors[2]));
-                    textBox1.Text = "#" + hex.Name;
+                    textBox1.Text = "";
+                    return;
                 }
+
+           string texto =     textBox2.Text.Replace("rgb(", "");
+                texto = textBox2.Text.Replace(")", "");
+
+                string[] cores = texto.Split(',');
+
+                hex = Color.FromArgb(Convert.ToInt32(cores[0]), Convert.ToInt32(cores[1]), Convert.ToInt32(cores[2]));
+                textBox1.Text = hex.Name;
             }
-            catch (Exception)
-            {
-                return;
-                throw;
-            }
+
+
         }
 
         private void button2_Click(object sender, EventArgs e)

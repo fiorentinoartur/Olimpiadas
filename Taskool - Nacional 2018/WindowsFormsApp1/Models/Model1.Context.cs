@@ -13,10 +13,10 @@ namespace WindowsFormsApp1.Models
     using System.Data.Entity;
     using System.Data.Entity.Infrastructure;
     
-    public partial class dbTarefasEntities1 : DbContext
+    public partial class dbTarefasEntities2 : DbContext
     {
-        public dbTarefasEntities1()
-            : base("name=dbTarefasEntities1")
+        public dbTarefasEntities2()
+            : base("name=dbTarefasEntities2")
         {
         }
     

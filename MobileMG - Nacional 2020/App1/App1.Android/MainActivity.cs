@@ -4,6 +4,9 @@ using Android.App;
 using Android.Content.PM;
 using Android.Runtime;
 using Android.OS;
+using Android.Views;
+using Android.Widget;
+using Xamarin.Forms;
 
 namespace App1.Droid
 {
@@ -12,6 +15,16 @@ namespace App1.Droid
     {
         protected override void OnCreate(Bundle savedInstanceState)
         {
+            MessagingCenter.Subscribe<LoginPage>(this, "ForcePortrait", sender =>
+            {
+                RequestedOrientation = ScreenOrientation.Portrait;
+            });
+
+            MessagingCenter.Subscribe<WsTowerFlyout>(this, "Leave", sender =>
+            {
+                RequestedOrientation = ScreenOrientation.Sensor;
+            });
+
             base.OnCreate(savedInstanceState);
 
             Xamarin.Essentials.Platform.Init(this, savedInstanceState);
@@ -24,5 +37,8 @@ namespace App1.Droid
 
             base.OnRequestPermissionsResult(requestCode, permissions, grantResults);
         }
+
+
+        
     }
 }

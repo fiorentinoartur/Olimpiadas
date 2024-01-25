@@ -1,31 +1,19 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             NavigationPage.HasBackButton="False"
              x:Class="App1.LoginPage">
 
-    <Grid>
-        
-        <StackLayout Grid.Row="0"  VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand" Spacing="20">
-            <Label Text="Acessar!" HorizontalOptions="Center" FontSize="18"/>
 
+    <ContentPage.Content>
+        <StackLayout VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand" Spacing="20">
+            <Label Text="Acessar" FontSize="25" Margin="0,0,0,20" TextColor="Black" HorizontalOptions="CenterAndExpand"/>
+            <Entry x:Name="email" Placeholder="Usuário" WidthRequest="250"/>
+            <Entry x:Name="senha" Placeholder="Senha" WidthRequest="250" IsPassword="True"/>
+            <Button x:Name="btnLogin" TextColor="White" BackgroundColor="#004aad" Text="Login" Clicked="btnLogin_Clicked"/>
 
-            <Entry x:Name="entry_user" WidthRequest="300" Placeholder="Usuário" />
-            <Entry x:Name="entry_senha" WidthRequest="300" Placeholder="Senha" />
-            <Button  
-               x:Name="btn_Login"
-                Clicked="Button_Clicked"
-                Text="Login"
-                BackgroundColor="White"
-                BorderColor="Black"
-                BorderWidth="4"
-                WidthRequest="120"
-                HeightRequest="40"
-                HorizontalOptions="Center"
-                />
         </StackLayout>
-        <Label x:Name="labelInvalido" BackgroundColor="#505050" HeightRequest="50"  WidthRequest="40" VerticalOptions="End" HorizontalOptions="FillAndExpand" HorizontalTextAlignment="Center"  VerticalTextAlignment="Center" TextColor="White" />
-    </Grid>
-
+    </ContentPage.Content>
 
 </ContentPage>
     

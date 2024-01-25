@@ -27,48 +27,20 @@ namespace App1.Service
 
         }
 
-        public static async Task<T> Login(LoginUser usuario)
-        {
-           
-                var jsonLoginModel = JsonConvert.SerializeObject(usuario);
-            var response = await Client.PostAsync("login", new StringContent(jsonLoginModel, Encoding.UTF8, "application/json"));
-
-            if(response.IsSuccessStatusCode)
-            {
-                var jsonResponse = await response.Content.ReadAsStringAsync();
-                var result = JsonConvert.DeserializeObject<T>(jsonResponse);
-
-                return result;
-            }
-       return null;
-                //var loginModel = new {  usuarios.email, usuarios.senha };
-
-                //var jsonCredentials = JsonConvert.SerializeObject(loginModel);
-
-                //var content = new StringContent(jsonCredentials, Encoding.UTF8, "application/json");
-
-                //var response = await Client.PostAsync("login", content);
-                //var contentt = await response.Content.ReadAsStringAsync();  
-                //var json = JsonConvert.DeserializeObject<T>(contentt);
-
-
-                //if (response.IsSuccessStatusCode)
-                //{
-                //    return true;
-                //}
-                //else
-                //{
-                //    return false;
-                //}
-          
-        }
-
-        public async static Task<List<T>> GetList(string url)
+      public static async Task<List<T>> GetList(string url)
         {
             var response = await Client.GetAsync(url);
+            response.EnsureSuccessStatusCode();
             var content = await response.Content.ReadAsStringAsync();
-            var result = new List<T>();
             var json = JsonConvert.DeserializeObject<List<T>>(content);
+            return json;
+        }
+        public static async Task<T> Get(string url)
+        {
+            var response = await Client.GetAsync(url);
+            response.EnsureSuccessStatusCode();
+            var content = await response.Content.ReadAsStringAsync();
+            var json = JsonConvert.DeserializeObject<T>(content);
             return json;
         }
 

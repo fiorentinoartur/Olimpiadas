@@ -44,7 +44,7 @@ namespace WindowsFormsApp1
             user.Email = textBox2.Text;
             user.Telefone = textBox3.Text;
             user.Usuario1 = textBox4.Text;
-            user.DataNascimento = dateTimePicker1.Value;
+           
 
             var ms = new MemoryStream();
             pictureBox1.Image.Save(ms, pictureBox1.Image.RawFormat);

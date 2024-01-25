@@ -20,6 +20,7 @@ namespace WindowsFormsApp1
             InitializeComponent();
             label4.Visible = false;
             panel1.BackColor = Color.White;
+            textBox1.Text = "artur.kennez24";
         }
 
         private void Form1_Load(object sender, EventArgs e)
@@ -30,7 +31,7 @@ namespace WindowsFormsApp1
         private void pictureBox1_Click(object sender, EventArgs e)
         {
             OpenFileDialog opd = new OpenFileDialog();
-            opd.Filter = "Images | *.png; *.jpg;";
+            opd.Filter = "Images | *.png; *.jpg;*.jpeg;*";
             if (opd.ShowDialog() == DialogResult.OK)
             {
                 pictureBox1.Image = Image.FromFile(opd.FileName);

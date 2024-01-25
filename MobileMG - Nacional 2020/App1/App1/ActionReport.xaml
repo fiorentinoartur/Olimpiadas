@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:App1"
+             x:Class="App1.ActionReport">
+
+    <NavigationPage.TitleView>
+        <StackLayout Margin="0,0,70,0" HorizontalOptions="CenterAndExpand" Orientation="Horizontal">
+            <Image Source="ic_pine_tree_white_24dp"/>
+        </StackLayout>
+    </NavigationPage.TitleView>
+    <ContentPage.Content>
+        <ScrollView>
+            
+        <StackLayout Padding="20" Spacing="20">
+            <StackLayout Orientation="Horizontal" Spacing="20">
+                <Label FontSize="18" Text="{Binding Source={x:Static local:UserDados.Usuario},Path=id}"/>
+                <Label  FontSize="18" Text="{Binding Source={x:Static local:UserDados.Usuario},Path=nome}"/>
+            </StackLayout>
+            <Label  FontSize="18" Text="{Binding Source={x:Static local:UserDados.Usuario},Path=email}"/>
+            <StackLayout Orientation="Horizontal" >
+                <Label  FontSize="18" Text="Relatar Anonimamente?" HorizontalOptions="StartAndExpand"/>
+                <Switch x:Name="mySwitch" Toggled="OnSwitchToggled" HorizontalOptions="EndAndExpand" />
+
+            </StackLayout>
+            <Label Text="Relato"  FontSize="18"/>
+            <Frame BorderColor="Gray" CornerRadius="5" Padding="5">
+                <Editor HeightRequest="200" x:Name="relatoTexto" FontSize="12" BackgroundColor="Transparent"/>
+            </Frame>
+
+            <StackLayout Orientation="Horizontal" Spacing="20">
+                <Label FontSize="18" Text="Imagem"  VerticalOptions="Center"/>
+                <Button Text="Fotografar" FontSize="14" HorizontalOptions="Start" Clicked="Selecionar_Imagem"/>
+            </StackLayout>
+            <StackLayout HorizontalOptions="CenterAndExpand" Spacing="30" Orientation="Horizontal">
+                <Image  x:Name="imgFoto" HeightRequest="180" WidthRequest="180" VerticalOptions="StartAndExpand" HorizontalOptions="Start" Aspect="AspectFit" />
+                <StackLayout  >
+                    <Label Text="Localização"/>
+                    <Label x:Name="LabelLatitute"  FontSize="14"/>
+                    <Label Text="X" HorizontalOptions="Center"/>
+                        <Label x:Name="LabelLongitude"  FontSize="14" />
+                    <Button Text="Localizar" Clicked="GerarLocalizacao" FontSize="14"/>
+                </StackLayout>
+                
+            </StackLayout>
+            <StackLayout Orientation="Horizontal">
+                <Button Text="Salvar" HorizontalOptions="StartAndExpand" WidthRequest="150" Clicked="Cadastrar_Relato"/>
+                <Button Text="Cancelar" HorizontalOptions="EndAndExpand" WidthRequest="150"/>
+              
+            </StackLayout>
+        </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

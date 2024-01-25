@@ -22,21 +22,26 @@ namespace App1
             InitializeComponent();
 
             BindingContext = new WsTowerFlyoutFlyoutViewModel();
+ 
             ListView = MenuItemsListView;
         }
 
         class WsTowerFlyoutFlyoutViewModel : INotifyPropertyChanged
         {
+     
             public ObservableCollection<WsTowerFlyoutFlyoutMenuItem> MenuItems { get; set; }
             
             public WsTowerFlyoutFlyoutViewModel()
             {
+                var usuario = UserDados.Usuario;
+
+                bool isAdmin = usuario != null && usuario.funcaoid == 1;
                 MenuItems = new ObservableCollection<WsTowerFlyoutFlyoutMenuItem>(new[]
                 {
-                    new WsTowerFlyoutFlyoutMenuItem { Id = 0, Title = "Home" },
-                    new WsTowerFlyoutFlyoutMenuItem { Id = 1, Title = "Reportar Ação" },
-                    new WsTowerFlyoutFlyoutMenuItem { Id = 2, Title = "Visualizar" },
-                    new WsTowerFlyoutFlyoutMenuItem { Id = 3, Title = "Sair" },
+                    new WsTowerFlyoutFlyoutMenuItem { Id = 0, Title = "Home" , Imagem= "baseline_home_black_24", TargetType= typeof(WsTowerFlyoutDetail) },
+                    new WsTowerFlyoutFlyoutMenuItem { Id = 1, Title = "Reportar Ação",Imagem= "baseline_exit_to_app_black_24", TargetType = typeof(ActionReport) },
+                    new WsTowerFlyoutFlyoutMenuItem { Id = 2, Title = "Visualizar",Imagem="baseline_pageview_black_24", TargetType = typeof(NewsView) , isEnable = isAdmin},
+                    new WsTowerFlyoutFlyoutMenuItem { Id = 3, Title = "Sair",Imagem="baseline_exit_to_app_black_24",TargetType= typeof(LoginPage)},
                  
                    
                    
@@ -44,7 +49,8 @@ namespace App1
  
                 
             }
-            
+
+
             #region INotifyPropertyChanged Implementation
             public event PropertyChangedEventHandler PropertyChanged;
             void OnPropertyChanged([CallerMemberName] string propertyName = "")

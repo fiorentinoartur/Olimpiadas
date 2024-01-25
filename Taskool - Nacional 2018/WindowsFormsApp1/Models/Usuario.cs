@@ -18,8 +18,8 @@ namespace WindowsFormsApp1.Models
         public string Nome { get; set; }
         public string Email { get; set; }
         public string Usuario1 { get; set; }
+        public string Senha { get; set; }
         public string Telefone { get; set; }
         public byte[] Foto { get; set; }
-        public Nullable<System.DateTime> DataNascimento { get; set; }
     }
 }

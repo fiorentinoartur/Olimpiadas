@@ -6,13 +6,13 @@
     </Key>
     <Property Name="Codigo" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
     <Property Name="Nome" Type="String" MaxLength="80" FixedLength="false" Unicode="false" Nullable="false" />
-    <Property Name="Email" Type="String" MaxLength="80" FixedLength="false" Unicode="false" />
+    <Property Name="Email" Type="String" MaxLength="80" FixedLength="false" Unicode="false" Nullable="false" />
     <Property Name="Usuario1" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Senha" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
     <Property Name="Telefone" Type="String" MaxLength="15" FixedLength="false" Unicode="false" Nullable="false" />
-    <Property Name="Foto" Type="Binary" MaxLength="Max" FixedLength="false" />
-    <Property Name="DataNascimento" Type="DateTime" Precision="0" />
+    <Property Name="Foto" Type="Binary" MaxLength="Max" FixedLength="false" Nullable="false" />
   </EntityType>
-  <EntityContainer Name="dbTarefasEntities1" annotation:LazyLoadingEnabled="true">
+  <EntityContainer Name="dbTarefasEntities2" annotation:LazyLoadingEnabled="true">
     <EntitySet Name="Usuario" EntityType="Self.Usuario" />
   </EntityContainer>
 </Schema>
