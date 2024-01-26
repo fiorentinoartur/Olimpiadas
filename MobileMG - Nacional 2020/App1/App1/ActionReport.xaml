@@ -3,52 +3,51 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:local="clr-namespace:App1"
              x:Class="App1.ActionReport">
-
     <NavigationPage.TitleView>
-        <StackLayout Margin="0,0,70,0" HorizontalOptions="CenterAndExpand" Orientation="Horizontal">
-            <Image Source="ic_pine_tree_white_24dp"/>
+        <StackLayout HorizontalOptions="CenterAndExpand">
+            <Image Source="tree"  Margin="0,0,10,0" HorizontalOptions="CenterAndExpand"/>
         </StackLayout>
     </NavigationPage.TitleView>
     <ContentPage.Content>
-        <ScrollView>
-            
-        <StackLayout Padding="20" Spacing="20">
-            <StackLayout Orientation="Horizontal" Spacing="20">
-                <Label FontSize="18" Text="{Binding Source={x:Static local:UserDados.Usuario},Path=id}"/>
-                <Label  FontSize="18" Text="{Binding Source={x:Static local:UserDados.Usuario},Path=nome}"/>
-            </StackLayout>
-            <Label  FontSize="18" Text="{Binding Source={x:Static local:UserDados.Usuario},Path=email}"/>
-            <StackLayout Orientation="Horizontal" >
-                <Label  FontSize="18" Text="Relatar Anonimamente?" HorizontalOptions="StartAndExpand"/>
-                <Switch x:Name="mySwitch" Toggled="OnSwitchToggled" HorizontalOptions="EndAndExpand" />
+        <StackLayout Padding="5">
+            <StackLayout x:Name="container1">
+                <StackLayout Orientation="Horizontal">
+                    <Label x:Name="id" />
+                    <Label x:Name="nome" />
 
-            </StackLayout>
-            <Label Text="Relato"  FontSize="18"/>
-            <Frame BorderColor="Gray" CornerRadius="5" Padding="5">
-                <Editor HeightRequest="200" x:Name="relatoTexto" FontSize="12" BackgroundColor="Transparent"/>
-            </Frame>
-
-            <StackLayout Orientation="Horizontal" Spacing="20">
-                <Label FontSize="18" Text="Imagem"  VerticalOptions="Center"/>
-                <Button Text="Fotografar" FontSize="14" HorizontalOptions="Start" Clicked="Selecionar_Imagem"/>
-            </StackLayout>
-            <StackLayout HorizontalOptions="CenterAndExpand" Spacing="30" Orientation="Horizontal">
-                <Image  x:Name="imgFoto" HeightRequest="180" WidthRequest="180" VerticalOptions="StartAndExpand" HorizontalOptions="Start" Aspect="AspectFit" />
-                <StackLayout  >
-                    <Label Text="Localização"/>
-                    <Label x:Name="LabelLatitute"  FontSize="14"/>
-                    <Label Text="X" HorizontalOptions="Center"/>
-                        <Label x:Name="LabelLongitude"  FontSize="14" />
-                    <Button Text="Localizar" Clicked="GerarLocalizacao" FontSize="14"/>
                 </StackLayout>
-                
+                <Label x:Name="email" />
             </StackLayout>
-            <StackLayout Orientation="Horizontal">
-                <Button Text="Salvar" HorizontalOptions="StartAndExpand" WidthRequest="150" Clicked="Cadastrar_Relato"/>
-                <Button Text="Cancelar" HorizontalOptions="EndAndExpand" WidthRequest="150"/>
-              
+            <StackLayout x:Name="container2">
+                <StackLayout>
+                    <StackLayout Orientation="Horizontal">
+                        <Label Text="Relatar anonimamente?" HorizontalOptions="StartAndExpand"/>
+                        <Switch x:Name="switch1" Margin="150,0,30,0" IsToggled="False"/>
+                    </StackLayout>
+                    <Label Text="Relato"/>
+                    <Editor x:Name="editor" HeightRequest="150"/>
+                </StackLayout>
+                <StackLayout x:Name="end">
+                    <StackLayout Orientation="Horizontal">
+                        <Label Text="Imagem"/>
+                        <Button Text="Fotografar" x:Name="foto" Clicked="foto_Clicked"></Button>
+                    </StackLayout>
+                    <StackLayout Orientation="Horizontal">
+                        <Image WidthRequest="200" x:Name="imgFoto"/>
+                        <StackLayout>
+                            <Label Text="Localização" FontSize="20" TextColor="Black"/>
+                            <Label x:Name="latitude" FontSize="16" Text="Latitude"/>
+                            <Label FontSize="18" Text="X" Margin="10,0,10,0"/>
+                            <Label x:Name="longitude" FontSize="16" Text="Longitude"/>
+                            <Button Text="Localizar" x:Name="localizar" Clicked="localizar_Clicked"/>
+                        </StackLayout>
+                    </StackLayout>
+                </StackLayout>
+            </StackLayout>
+            <StackLayout HorizontalOptions="CenterAndExpand" VerticalOptions="EndAndExpand" Orientation="Horizontal">
+                <Button  HorizontalOptions="StartAndExpand" WidthRequest="150" Text="Salvar" Clicked="save_Clicked" x:Name="save"/>
+                <Button WidthRequest="150" Text="Cancelar" Clicked="cancelar_Clicked" x:Name="cancelar"/>
             </StackLayout>
         </StackLayout>
-        </ScrollView>
     </ContentPage.Content>
 </ContentPage>

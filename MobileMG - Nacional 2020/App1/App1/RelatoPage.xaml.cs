@@ -15,27 +15,56 @@ namespace App1
 	[XamlCompilation(XamlCompilationOptions.Compile)]
 	public partial class RelatoPage : ContentPage
 	{
-		public ObservableCollection<Relatos> RelatoX { get; set; } = new ObservableCollection<Relatos>();
-        int IdFoto;
-		public RelatoPage (int id)
-		{
-			InitializeComponent ();
+        private Relatos relato;
 
-			IdFoto = id;
-		    BindingContext = this;
-
-		}
-
-        protected override void OnAppearing()
+        public RelatoPage()
         {
-            base.OnAppearing();
-	
+            InitializeComponent();
         }
 
-
-        private void OnOptionsButtonClicked(object sender, EventArgs e)
+        public RelatoPage(Relatos relato)
         {
+            InitializeComponent();
+            this.relato = relato;
+            BindingContext = relato;
+        }
 
+        protected override void OnSizeAllocated(double width, double height)
+        {
+            base.OnSizeAllocated(width, height);
+            if (width > height)
+            {
+                container.Orientation = StackOrientation.Horizontal;
+                container2.Orientation = StackOrientation.Horizontal;
+                image.WidthRequest = 150;
+            }
+            else
+            {
+                container.Orientation = StackOrientation.Vertical;
+                container2.Orientation = StackOrientation.Vertical;
+            }
+        }
+
+        private async void excluir_Clicked(object sender, EventArgs e)
+        {
+            await ApiService<Relatos>.GetList($"relatos/excluir?id={relato.id}");
+            await DisplayAlert("Informação", "Relato excluido com sucesso!", "OK");
+            await Navigation.PopAsync();
+        }
+
+        private void close_Clicked(object sender, EventArgs e)
+        {
+            modal.IsVisible = false;
+        }
+
+        private void showModal_Clicked(object sender, EventArgs e)
+        {
+            modal.IsVisible = true;
+        }
+
+        private async void edit_Clicked(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new ActionReport(relato));
         }
     }
 }

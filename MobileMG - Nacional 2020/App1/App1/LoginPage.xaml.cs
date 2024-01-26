@@ -60,7 +60,15 @@ namespace App1
             }
             UserDados.Usuario = response;
             await DisplayAlert("Informação", $"Bem-vindo {response.nome}!", "Ok");
-            App.Current.MainPage = new NavigationPage(new WsTowerFlyout());
+         
+            var wsTowerFlyoutPage = new WsTowerFlyout();
+
+            // Configuração para ocultar a barra de navegação na página WsTowerFlyout
+            NavigationPage.SetHasNavigationBar(wsTowerFlyoutPage, false);
+
+            // Defina a nova MainPage como uma NavigationPage
+            App.Current.MainPage = new NavigationPage(wsTowerFlyoutPage);
+
         }
 
         private async Task BlockLogin()

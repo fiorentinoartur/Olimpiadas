@@ -2,36 +2,73 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              Title=""
              x:Class="App1.NewsView">
-
     <NavigationPage.TitleView>
-        <StackLayout Orientation="Horizontal" HorizontalOptions="CenterAndExpand"  Margin="0 ,0, 70,0">
-            <Image Source="ic_pine_tree_white_24dp" />
+        <StackLayout HorizontalOptions="CenterAndExpand">
+            <Image Source="tree" Margin="0,0,35,0" HorizontalOptions="CenterAndExpand"/>
         </StackLayout>
     </NavigationPage.TitleView>
 
-
     <ContentPage.Content>
-        <StackLayout>
-            <Label Text="Relatos"
-                 HorizontalOptions="CenterAndExpand"
-                   Margin="0,30,0,0"
-                   FontSize="24"
-              />
-            <CollectionView ItemsSource="{Binding ListaRelatos}">
+        <StackLayout Padding="20">
+            <Label Margin="0,10,0,10" HorizontalOptions="CenterAndExpand" Text="Relatos" FontSize="22" TextColor="black"/>
+            <ListView x:Name="listView" 
+                      SeparatorVisibility="None"
+                      HasUnevenRows="true"
+                      SelectionMode="Single"
+                      ItemsSource="{Binding Relatos}"
+                      ItemSelected="listView_ItemSelected">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <StackLayout Orientation="Horizontal">
+                                <StackLayout BackgroundColor="#e9e9e9">
+                                    <Image WidthRequest="200" Source="{Binding imagem, Converter={x:StaticResource imageConverter}}"/>
+
+                                </StackLayout>
+                                <StackLayout>
+                                    <Label Text="{Binding Usuario.nome}"/>
+                                    <Label Text="{Binding Usuario.telefone}"/>
+                                    <Label Text="{Binding latitude}"/>
+                                    <Label Text="{Binding longitude}"/>
+                                </StackLayout>
+                            </StackLayout>
+
+                            <ViewCell.ContextActions>
+                                <MenuItem Text="Deseja exluir este relato?"/>
+                                <MenuItem BindingContext="{Binding id}" Clicked="MenuItem_Clicked" Text="Sim"/>
+                                <MenuItem Text="Não"/>
+                            </ViewCell.ContextActions>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+
+            <CollectionView x:Name="Collection"
+                            ItemsSource="{Binding Relatos}"
+                             SelectionMode="Single"
+                            SelectionChanged="Collection_SelectionChanged">
+
                 <CollectionView.ItemTemplate>
-                    <DataTemplate >
-                        <StackLayout Orientation="Horizontal" HorizontalOptions="CenterAndExpand"  Padding="50,0,0,0">
-                            <ImageButton Source="{Binding Imagem}"  WidthRequest="150" HeightRequest="150" BackgroundColor="Transparent" Clicked="AbrirRelato" CommandParameter="{Binding Id}" Margin="0,0,10,0"/>
-                            <StackLayout Spacing="10" VerticalOptions="Center" >
-                                <Label Text="{Binding UserName}"/>
-                                <Label Text="{Binding Telefone}"/>
-                                <Label Text="{Binding Latitude}"/>
-                                <Label Text="{Binding Longitude}"/>
+                    <DataTemplate>
+                        <StackLayout>
+                            <StackLayout Orientation="Horizontal">
+                                <StackLayout BackgroundColor="#e9e9e9">
+                                    <Image WidthRequest="200" Source="{Binding imagem, Converter={x:StaticResource imageConverter}}"/>
+
+                                </StackLayout>
+                                <StackLayout>
+                                    <Label Text="{Binding Usuario.nome}"/>
+                                    <Label Text="{Binding Usuario.telefone}"/>
+                                    <Label Text="{Binding latitude}"/>
+                                    <Label Text="{Binding longitude}"/>
+                                </StackLayout>
                             </StackLayout>
                         </StackLayout>
-                        
                     </DataTemplate>
                 </CollectionView.ItemTemplate>
+                <CollectionView.ItemsLayout>
+                    <GridItemsLayout Span="2" Orientation="Vertical" VerticalItemSpacing="20"></GridItemsLayout>
+                </CollectionView.ItemsLayout>
             </CollectionView>
         </StackLayout>
     </ContentPage.Content>

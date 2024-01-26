@@ -61,21 +61,12 @@ namespace WebApplication1.Controllers
                 return BadRequest(e.Message);
             }
         }
-        [HttpGet]
-        [Route("relatos/exluir")]
-        public IHttpActionResult Excluir(int id)
-        {
-            var relato = ctx.Relatos.Find(id);
+  
 
-            ctx.Relatos.Remove(relato);
-            ctx.SaveChanges();
-            return Ok();
-        }
         [HttpGet]
         [Route("relatos/salvar")]
-        public IHttpActionResult DeleteRelatos(string relato, string imagem, decimal latitude, decimal longitude, int id)
+        public IHttpActionResult Salvar(string relato, string imagem, decimal latitude, decimal longitude, int id)
         {
-
             Relatos Rel = new Relatos();
             Rel.relato = relato;
             Rel.imagem = imagem;
@@ -86,13 +77,20 @@ namespace WebApplication1.Controllers
             {
                 Rel.usuarioid = null;
             }
-
             ctx.Relatos.Add(Rel);
+            ctx.SaveChanges();
+            return Ok(Rel);
+        }
+
+        [HttpGet]
+        [Route("relatos/excluir")]
+        public IHttpActionResult Excluir(int id)
+        {
+            var relato = ctx.Relatos.Find(id);
+            ctx.Relatos.Remove(relato);
             ctx.SaveChanges();
             return Ok();
         }
-
-
 
 
 

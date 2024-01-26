@@ -3,37 +3,47 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="App1.RelatoPage">
 
-    <ContentPage.ToolbarItems>
-        <ToolbarItem IconImageSource="{FileImageSource File=ic_menu.xml}" Clicked="OnOptionsButtonClicked"/>
-    </ContentPage.ToolbarItems>
-    <NavigationPage.TitleView>
-        <StackLayout Orientation="Horizontal" HorizontalOptions="CenterAndExpand" Margin="0,0,50,0" Background="black">
-            <Image  Source="ic_pine_tree_white_24dp"/>
+        <NavigationPage.TitleView>
+        <StackLayout HorizontalOptions="CenterAndExpand">
+            <Image Source="tree"  Margin="0,0,10,0" HorizontalOptions="CenterAndExpand"/>
         </StackLayout>
     </NavigationPage.TitleView>
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Text="Editar" x:Name="edit" Clicked="edit_Clicked" Order="Secondary"/>
+        <ToolbarItem Text="Excluir" Order="Secondary" Clicked="showModal_Clicked" x:Name="showModal"/>
+    </ContentPage.ToolbarItems>
     <ContentPage.Content>
-        <StackLayout HorizontalOptions="FillAndExpand" Padding="30,0" >
-            <Label Text="Relato" HorizontalOptions="Center" Margin="0,30" FontSize="24"/>
 
-            <CollectionView ItemsSource="{Binding RelatoX}">
-                <CollectionView.ItemTemplate>
-                    <DataTemplate>
-                        <StackLayout>
-                            <Image Source="{Binding Imagem}" HeightRequest="200" HorizontalOptions="Fill" WidthRequest="400"/>
-                            <Label Text="Relato" Margin="0,15" FontSize="16"/>
-                            <Label Text="{Binding Relato}" Margin="0,15"/>
-                            <StackLayout Orientation="Horizontal" Spacing="10">
-                                <Label  Text="{Binding Latitude}"/>
-                                <Label Text="X"/>
-                                <Label Text="{Binding Longitude}"/>
-                            </StackLayout>
-                            <Label Text="{Binding UserName}"/>
-                            <Label Text="{Binding Telefone}"/>
-                            <Label  Text="{Binding Email}"/>
+
+        <AbsoluteLayout>
+            <StackLayout AbsoluteLayout.LayoutBounds="0,0,1,1" AbsoluteLayout.LayoutFlags="All">
+                <Label Margin="0,10,0,10" HorizontalOptions="CenterAndExpand" Text="Relato" FontSize="22" TextColor="black"/>
+                <StackLayout Padding="20" x:Name="container">
+                    <Image x:Name="image" WidthRequest="150" Source="{Binding imagem, Converter={x:StaticResource imageConverter}}"></Image>
+                    <StackLayout >
+                        <Label FontSize="16" Text="{Binding relato}"/>
+                        <StackLayout Orientation="Horizontal">
+                            <Label FontSize="16" Text="{Binding latitude}"/>
+                            <Label FontSize="18" Text="X" Margin="10,0,10,0"/>
+                            <Label FontSize="16" Text="{Binding longitude}"/>
                         </StackLayout>
-                    </DataTemplate>
-                </CollectionView.ItemTemplate>
-            </CollectionView>
-        </StackLayout>
+                        
+                    </StackLayout>
+                </StackLayout>
+                <StackLayout Orientation="Vertical" Padding="20" x:Name="container2">
+                    <Label FontSize="16" Text="{Binding Usuario.nome}"/>
+                    <Label Margin="10,0,10,0" FontSize="16" Text="{Binding Usuario.telefone}"/>
+                    <Label FontSize="16" Text="{Binding Usuario.email}"/>
+                </StackLayout>
+            </StackLayout>
+
+            <AbsoluteLayout x:Name="modal" IsVisible="false" BackgroundColor="#AA000000" AbsoluteLayout.LayoutBounds="0,0,1,1" AbsoluteLayout.LayoutFlags="All">
+                <StackLayout  WidthRequest="300" HeightRequest="200" AbsoluteLayout.LayoutBounds=".5,.5" AbsoluteLayout.LayoutFlags="PositionProportional">
+                    <Label HorizontalOptions="CenterAndExpand" TextColor="White" FontSize="22" Text="Deseja excluir o relato?"></Label>
+                    <Button x:Name="excluir" Clicked="excluir_Clicked" Text="Sim"></Button>
+                    <Button x:Name="close" Clicked="close_Clicked" Text="não"></Button>
+                </StackLayout>
+            </AbsoluteLayout>
+        </AbsoluteLayout>
     </ContentPage.Content>
 </ContentPage>

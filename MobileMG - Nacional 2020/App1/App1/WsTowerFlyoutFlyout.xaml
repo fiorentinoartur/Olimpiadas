@@ -20,7 +20,7 @@
                     </StackLayout>
       
 
-                    <!-- Adicionar o e-mail do usuário -->
+         
                 </StackLayout>
             </ListView.Header>
             <ListView.ItemTemplate>

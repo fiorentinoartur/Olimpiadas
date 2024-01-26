@@ -12,6 +12,52 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="Images\020220200935.jpg" />
+    <None Remove="Images\030120201555.jpg" />
+    <None Remove="Images\050220191722.jpg" />
+    <None Remove="Images\070820201643.jpg" />
+    <None Remove="Images\070820201753.jpg" />
+    <None Remove="Images\080820201055.jpg" />
+    <None Remove="Images\080820201422.jpg" />
+    <None Remove="Images\080820201836.jpg" />
+    <None Remove="Images\090820201655.jpg" />
+    <None Remove="Images\100820201233.jpg" />
+    <None Remove="Images\101220201225.jpg" />
+    <None Remove="Images\120220201750.jpg" />
+    <None Remove="Images\151020200932.jpg" />
+    <None Remove="Images\151020202233.jpg" />
+    <None Remove="Images\220220200932.jpg" />
+    <None Remove="Images\240220201351.jpg" />
+    <None Remove="Images\250220191035.jpg" />
+    <None Remove="Images\310620201022.jpg" />
+    <None Remove="Images\310620202133.jpg" />
+    <None Remove="Images\default.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="Images\020220200935.jpg" />
+    <EmbeddedResource Include="Images\030120201555.jpg" />
+    <EmbeddedResource Include="Images\050220191722.jpg" />
+    <EmbeddedResource Include="Images\070820201643.jpg" />
+    <EmbeddedResource Include="Images\070820201753.jpg" />
+    <EmbeddedResource Include="Images\080820201055.jpg" />
+    <EmbeddedResource Include="Images\080820201422.jpg" />
+    <EmbeddedResource Include="Images\080820201836.jpg" />
+    <EmbeddedResource Include="Images\090820201655.jpg" />
+    <EmbeddedResource Include="Images\100820201233.jpg" />
+    <EmbeddedResource Include="Images\101220201225.jpg" />
+    <EmbeddedResource Include="Images\120220201750.jpg" />
+    <EmbeddedResource Include="Images\151020200932.jpg" />
+    <EmbeddedResource Include="Images\151020202233.jpg" />
+    <EmbeddedResource Include="Images\220220200932.jpg" />
+    <EmbeddedResource Include="Images\240220201351.jpg" />
+    <EmbeddedResource Include="Images\250220191035.jpg" />
+    <EmbeddedResource Include="Images\310620201022.jpg" />
+    <EmbeddedResource Include="Images\310620202133.jpg" />
+    <EmbeddedResource Include="Images\default.png" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="Xamarin.Forms" Version="5.0.0.2196" />
     <PackageReference Include="Xamarin.Essentials" Version="1.7.0" />
   </ItemGroup>
@@ -32,16 +78,7 @@
     <EmbeddedResource Update="FlyoutPageFlyout.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
-    <EmbeddedResource Update="HomePage.xaml">
-      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
-    </EmbeddedResource>
     <EmbeddedResource Update="LoginPage.xaml">
-      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
-    </EmbeddedResource>
-    <EmbeddedResource Update="Logout.xaml">
-      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
-    </EmbeddedResource>
-    <EmbeddedResource Update="ModalInformation.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
     <EmbeddedResource Update="NewsView.xaml">

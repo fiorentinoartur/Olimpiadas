@@ -19,7 +19,7 @@ namespace App1
             InitializeComponent();
             FlyoutPage.ListView.ItemSelected += ListView_ItemSelected;
             MessagingCenter.Send(this, "Leave");
-
+           
             
         }
 

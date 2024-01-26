@@ -4,10 +4,12 @@ using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
+using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading.Tasks;
 using Xamarin.Essentials;
 using Xamarin.Forms;
+using Xamarin.Forms.PlatformConfiguration;
 using Xamarin.Forms.Xaml;
 
 namespace App1
@@ -15,132 +17,98 @@ namespace App1
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class ActionReport : ContentPage
     {
+        private Relatos relato;
         protected String PhotoPath { get; set; }
         public bool isVisible { get; set; }
         public ActionReport()
         {
             InitializeComponent();
         }
-
-        async Task TakePhotoAsync()
+        public ActionReport(Relatos relato)
         {
-
-            var photo = await MediaPicker.CapturePhotoAsync();
-            await LoadPhotoAsync(photo);
-
+            InitializeComponent();
+            this.relato = relato;
+            editor.Text = relato.relato;
+            longitude.Text = relato.longitude.ToString();
+            latitude.Text = relato.latitude.ToString();
+            imgFoto.Source = ImageSource.FromResource($"{relato.imagem.Split('.')[0]}.jpg");
         }
 
-        async Task LoadPhotoAsync(FileResult photo)
+        protected override void OnAppearing()
         {
-            if (photo == null)
+            base.OnAppearing();
+            email.Text = UserDados.Usuario.email;
+            id.Text = UserDados.Usuario.id.ToString();
+            nome.Text = UserDados.Usuario.nome.ToString();
+        }
+
+        protected override void OnSizeAllocated(double width, double height)
+        {
+            base.OnSizeAllocated(width, height);
+            if (width > height)
             {
-                PhotoPath = null;
-                return;
-            }
-            var newFile = Path.Combine(FileSystem.CacheDirectory, photo.FileName);
-
-            using (var stream = await photo.OpenReadAsync())
-            using (var newStream = File.OpenWrite(newFile))
-                await stream.CopyToAsync(newStream);
-
-            PhotoPath = newFile;
-
-        }
-
-        private async void Selecionar_Imagem(object sender, EventArgs e)
-        {
-
-            Device.BeginInvokeOnMainThread(async () =>
-            {
-                await TakePhotoAsync();
-
-                imgFoto.Source = ImageSource.FromFile(PhotoPath);
-            });
-
-
-        }
-
-        private void OnSwitchToggled(object sender, ToggledEventArgs e)
-        {
-           isVisible = e.Value;
-        }
-
-
-
-
-        private async void Cadastrar_Relato(object sender, EventArgs e)
-        {
-
-     
-            if (!isVisible)
-            {
-                var cadastrarRelato = new CadastrarRelato
-                {
-                    usuarioId = UserDados.Usuario.id,
-                    Longitude = decimal.Parse(LabelLongitude.Text),
-                    Latitude = decimal.Parse(LabelLatitute.Text),
-                    Imagem = PhotoPath,
-                    Relato = relatoTexto.Text,
-
-                };
-                
+                container1.Orientation = StackOrientation.Horizontal;
+                container2.Orientation = StackOrientation.Horizontal;
+                save.WidthRequest = 250;
+                cancelar.WidthRequest = 250;
+                end.Margin = new Thickness(200, 0, 0, 0);
 
             }
             else
             {
-                var cadastrarRelatoo = new CadastrarRelato
-                {
-       
-                    Longitude = decimal.Parse(LabelLongitude.Text),
-                    Latitude = decimal.Parse(LabelLatitute.Text),
-
-                    Relato = relatoTexto.Text,
-
-                };
-              
+                container1.Orientation = StackOrientation.Vertical;
+                container2.Orientation = StackOrientation.Vertical;
+                save.WidthRequest = 150;
+                cancelar.WidthRequest = 150;
+                end.Margin = new Thickness(0, 0, 0, 0);
             }
-                
 
-           
-            //else
-            //{
-            //    relato.Longitude = decimal.Parse(LabelLongitude.Text);
-            //    relato.Latitude = decimal.Parse(LabelLongitude.Text);
-            //    relato.Imagem = PhotoPath;
-            //    relato.Relato = relatoTexto.Text;
-            //}
-  
 
         }
 
-        private async void GerarLocalizacao(object sender, EventArgs e)
+        private async void foto_Clicked(object sender, EventArgs e)
+        {
+            var file = await MediaPicker.CapturePhotoAsync();
+            imgFoto.Source = ImageSource.FromFile(file.FullPath);
+        }
+
+        private async void localizar_Clicked(object sender, EventArgs e)
+        {
+            var location = await Geolocation.GetLocationAsync();
+            latitude.Text = location.Latitude.ToString();
+            longitude.Text = location.Longitude.ToString();
+
+        }
+
+        private async void save_Clicked(object sender, EventArgs e)
         {
             try
             {
-                var location = await Geolocation.GetLocationAsync();
-
-                if (location != null)
+                string relato = editor.Text;
+                string img = "default.png";
+                decimal latitudeD = Convert.ToDecimal(latitude.Text);
+                decimal longitudeD = Convert.ToDecimal(longitude.Text);
+                int idUser = UserDados.Usuario.id;
+                if (switch1.IsToggled)
+                    idUser = 0;
+                var response = await ApiService<Relatos>.Get($"relatos/salvar?relato={relato}&imagem={img}&latitude={latitudeD}&longitude={longitudeD}&id={idUser}");
+                if (response != null)
                 {
-                    double latitude = location.Latitude;
-                    double longitude = location.Longitude;
-
-                    LabelLatitute.Text = $"{latitude}";
-                    LabelLongitude.Text = $"{longitude}";
-
-
-                }
-                else
-                {
-                    LabelLatitute.Text = $"Indisponivel";
-                    LabelLongitude.Text = $"Indisponivel";
+                    await DisplayAlert("Informação", "Relato Salvo com sucesso!", "OK");
+                    await Navigation.PopToRootAsync();
                 }
             }
-            catch (Exception ex)
+            catch (Exception)
             {
-
-                Console.WriteLine($"Feature not supported: {ex.Message}");
+                await DisplayAlert("Alerta", "É preciso informar a localização e o relato", "OK");
+                return;
+                throw;
             }
- 
+        }
+
+        private async void cancelar_Clicked(object sender, EventArgs e)
+        {
+            await Navigation.PopToRootAsync();
         }
     }
 }

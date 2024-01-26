@@ -20,7 +20,8 @@ namespace WebApplication1.Models
         public decimal latitude { get; set; }
         public decimal longitude { get; set; }
         public Nullable<int> usuarioid { get; set; }
-    
+        public int MyProperty { get; set; }
+
         public virtual Usuario Usuario { get; set; }
     }
 }
