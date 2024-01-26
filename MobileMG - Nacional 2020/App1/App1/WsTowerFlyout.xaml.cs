@@ -18,31 +18,49 @@ namespace App1
         {
             InitializeComponent();
             FlyoutPage.ListView.ItemSelected += ListView_ItemSelected;
-
+            MessagingCenter.Send(this, "Leave");
 
             
         }
 
-        private void ListView_ItemSelected(object sender, SelectedItemChangedEventArgs e)
+        private async void ListView_ItemSelected(object sender, SelectedItemChangedEventArgs e)
         {
             var item = e.SelectedItem as WsTowerFlyoutFlyoutMenuItem;
             if (item == null)
                 return;
 
-            if(item.Id == 3)
+            if(item.Id == 0)
             {
+                Changed();
+            }
+            else if (item.Id == 1)
+            {
+                Changed();
+                await Navigation.PushAsync(new ActionReport());
+            }
+            else if(item.Id == 2) 
+            {
+                Changed();
+                await Navigation.PushAsync(new NewsView());
+            }
+          else  if(item.Id == 3)
+            {
+                Changed();
                 App.Current.MainPage = new LoginPage();
             }
-            if (item == null || !item.isEnable)
-            {
-                DisplayAlert("Alerta", "Acesso apenas para administradores!", "OK");
-                return;
 
-            }
-            var page = (Page)Activator.CreateInstance(item.TargetType);
-            page.Title = item.Title;
+            //var page = (Page)Activator.CreateInstance(item.TargetType);
+            //page.Title = item.Title;
 
-            Detail = new NavigationPage(page);
+            //Detail = new NavigationPage(page);
+            //IsPresented = false;
+
+            //FlyoutPage.ListView.SelectedItem = null;
+            Changed();
+        }
+
+        private void Changed()
+        {
             IsPresented = false;
 
             FlyoutPage.ListView.SelectedItem = null;

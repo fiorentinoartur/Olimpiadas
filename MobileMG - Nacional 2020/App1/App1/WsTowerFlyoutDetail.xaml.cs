@@ -19,7 +19,7 @@ namespace App1
 
         private async void AbrirModal(object sender, EventArgs e)
         {
-            await DisplayAlert("Informação", "V1.0.0 Desenvolvido por <Artur Fiorentino> <DR> durante a seletiva escolar de 2024.", "OK");
+            await DisplayAlert("Informação", "V1.0.0 Desenvolvido por <Artur Fiorentino> <SP> durante a seletiva escolar de 2024.", "OK");
         }
 
     }

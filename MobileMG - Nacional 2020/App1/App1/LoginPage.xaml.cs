@@ -45,7 +45,7 @@ namespace App1
                 await BlockLogin();
                 return;
             }
-
+         
             string emailString = email.Text;
             string senhaString = senha.Text;
 
@@ -72,6 +72,7 @@ namespace App1
                 senha.IsEnabled = false;
                 btnLogin.IsEnabled = false;
                 await Task.Delay(30000);
+                contador = 0;
                 email.IsEnabled = true;
                 senha.IsEnabled = true;
                 btnLogin.IsEnabled = true;

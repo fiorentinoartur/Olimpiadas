@@ -16,9 +16,9 @@ namespace App1
         }
         public int Id { get; set; }
         public string Title { get; set; }
-        public string Imagem { get; set; }
+        public string IconSource { get; set; }
         public Type TargetType { get; set; }
-        public ICommand Command { get; set; }
-        public bool isEnable { get; set; } = true;
+        public bool Enable { get; set; } 
+       
     }
 }

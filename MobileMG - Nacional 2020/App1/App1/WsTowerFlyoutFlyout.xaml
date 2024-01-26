@@ -3,27 +3,33 @@
              x:Class="App1.WsTowerFlyoutFlyout"
              xmlns:local="clr-namespace:App1"
              Title="Flyout">
-    <StackLayout>
+    <StackLayout BackgroundColor="#00903E">
         <ListView x:Name="MenuItemsListView"
               SeparatorVisibility="None"
               HasUnevenRows="true"
               ItemsSource="{Binding MenuItems}">
             <ListView.Header>
-                <StackLayout BackgroundColor="#03A9F4" Orientation="Horizontal" Padding="10" HeightRequest="150">
-                    <!-- Adicionar a imagem do usuário -->
-                    <Image Source="defaultImage.jpg" WidthRequest="50" HeightRequest="50" HorizontalOptions="Start" />
+                <StackLayout Padding="20" BackgroundColor="#004AAD">
+                    <StackLayout>
+                        <Image WidthRequest="60" Source="avatar"/>
+                    </StackLayout>
+                    <StackLayout>
+
+                        <Label x:Name="nome"></Label>
+                        <Label x:Name="email"></Label>
+                    </StackLayout>
+      
 
                     <!-- Adicionar o e-mail do usuário -->
-                    <Label FontSize="12" Text="{Binding Source={x:Static local:UserDados.Usuario}, Path=email}" Style="{DynamicResource SubtitleStyle}" HorizontalOptions="End" VerticalOptions="CenterAndExpand" />
                 </StackLayout>
             </ListView.Header>
             <ListView.ItemTemplate>
                 <DataTemplate>
-                    <ViewCell>
-                        <StackLayout Padding="15,10" HorizontalOptions="FillAndExpand" Orientation="Horizontal">
+                    <ViewCell IsEnabled="{Binding Enable}">
+                        <StackLayout IsEnabled="{Binding Enable}" Padding="20,10" HorizontalOptions="FillAndExpand" Orientation="Horizontal">
 
-                            <Image Source="{Binding Imagem}"/>
-                            <Label VerticalOptions="FillAndExpand" 
+                            <Image IsEnabled="{Binding Enable}" Source="{Binding IconSource}" WidthRequest="20"/>
+                            <Label IsEnabled="{Binding Enable}" VerticalOptions="FillAndExpand" 
                                     VerticalTextAlignment="Center" 
                                     Text="{Binding Title}" 
                                     FontSize="24"/>
