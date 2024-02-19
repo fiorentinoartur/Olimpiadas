@@ -183,10 +183,7 @@ C:\Olimpiadas\MobileMG - Nacional 2020\App1\App1\obj\Debug\netstandard2.0\App1.c
 C:\Olimpiadas\MobileMG - Nacional 2020\App1\App1\obj\Debug\netstandard2.0\App1.GeneratedMSBuildEditorConfig.editorconfig
 C:\Olimpiadas\MobileMG - Nacional 2020\App1\App1\obj\Debug\netstandard2.0\ActionReport.xaml.g.cs
 C:\Olimpiadas\MobileMG - Nacional 2020\App1\App1\obj\Debug\netstandard2.0\App.xaml.g.cs
-C:\Olimpiadas\MobileMG - Nacional 2020\App1\App1\obj\Debug\netstandard2.0\HomePage.xaml.g.cs
 C:\Olimpiadas\MobileMG - Nacional 2020\App1\App1\obj\Debug\netstandard2.0\LoginPage.xaml.g.cs
-C:\Olimpiadas\MobileMG - Nacional 2020\App1\App1\obj\Debug\netstandard2.0\Logout.xaml.g.cs
-C:\Olimpiadas\MobileMG - Nacional 2020\App1\App1\obj\Debug\netstandard2.0\ModalInformation.xaml.g.cs
 C:\Olimpiadas\MobileMG - Nacional 2020\App1\App1\obj\Debug\netstandard2.0\NewsView.xaml.g.cs
 C:\Olimpiadas\MobileMG - Nacional 2020\App1\App1\obj\Debug\netstandard2.0\RelatoPage.xaml.g.cs
 C:\Olimpiadas\MobileMG - Nacional 2020\App1\App1\obj\Debug\netstandard2.0\SplashScreen.xaml.g.cs

@@ -28,7 +28,16 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            this.SuspendLayout();
+            // 
+            // NotifyForm
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.ClientSize = new System.Drawing.Size(1067, 554);
+            this.Name = "NotifyForm";
+            this.Load += new System.EventHandler(this.NotifyForm_Load);
+            this.ResumeLayout(false);
+
         }
 
         #endregion

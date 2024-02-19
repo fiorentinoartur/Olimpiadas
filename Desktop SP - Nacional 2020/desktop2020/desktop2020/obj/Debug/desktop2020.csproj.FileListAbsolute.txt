@@ -60,3 +60,37 @@ C:\Users\Artur Fiorentino\OneDrive\Área de Trabalho\Olimpiadas\Revisão Desktop
 C:\Users\Artur Fiorentino\OneDrive\Área de Trabalho\Olimpiadas\Revisão Desktop - 2020\desktop2020\desktop2020\obj\Debug\desktop2020.ForgotPassForm.resources
 C:\Users\Artur Fiorentino\OneDrive\Área de Trabalho\Olimpiadas\Revisão Desktop - 2020\desktop2020\desktop2020\obj\Debug\desktop2020.SingUpForm.resources
 C:\Users\Artur Fiorentino\OneDrive\Área de Trabalho\Olimpiadas\Revisão Desktop - 2020\desktop2020\desktop2020\obj\Debug\desktop2020.JogadoresForm.resources
+C:\Olimpiadas\Desktop SP - Nacional 2020\desktop2020\desktop2020\bin\Debug\desktop2020.exe.config
+C:\Olimpiadas\Desktop SP - Nacional 2020\desktop2020\desktop2020\bin\Debug\desktop2020.exe
+C:\Olimpiadas\Desktop SP - Nacional 2020\desktop2020\desktop2020\bin\Debug\desktop2020.pdb
+C:\Olimpiadas\Desktop SP - Nacional 2020\desktop2020\desktop2020\bin\Debug\EntityFramework.dll
+C:\Olimpiadas\Desktop SP - Nacional 2020\desktop2020\desktop2020\bin\Debug\EntityFramework.SqlServer.dll
+C:\Olimpiadas\Desktop SP - Nacional 2020\desktop2020\desktop2020\bin\Debug\EntityFramework.xml
+C:\Olimpiadas\Desktop SP - Nacional 2020\desktop2020\desktop2020\bin\Debug\EntityFramework.SqlServer.xml
+C:\Olimpiadas\Desktop SP - Nacional 2020\desktop2020\desktop2020\bin\Debug\Interop.WMPLib.dll
+C:\Olimpiadas\Desktop SP - Nacional 2020\desktop2020\desktop2020\bin\Debug\AxInterop.WMPLib.dll
+C:\Olimpiadas\Desktop SP - Nacional 2020\desktop2020\desktop2020\obj\Debug\desktop2020.csproj.AssemblyReference.cache
+C:\Olimpiadas\Desktop SP - Nacional 2020\desktop2020\desktop2020\obj\Debug\Interop.MediaPlayer.dll
+C:\Olimpiadas\Desktop SP - Nacional 2020\desktop2020\desktop2020\obj\Debug\Interop.WMLSS.dll
+C:\Olimpiadas\Desktop SP - Nacional 2020\desktop2020\desktop2020\obj\Debug\Interop.WMPDXMLib.dll
+C:\Olimpiadas\Desktop SP - Nacional 2020\desktop2020\desktop2020\obj\Debug\Interop.WMPLauncher.dll
+C:\Olimpiadas\Desktop SP - Nacional 2020\desktop2020\desktop2020\obj\Debug\Interop.WMPLib.dll
+C:\Olimpiadas\Desktop SP - Nacional 2020\desktop2020\desktop2020\obj\Debug\AxInterop.WMPLib.dll
+C:\Olimpiadas\Desktop SP - Nacional 2020\desktop2020\desktop2020\obj\Debug\desktop2020.csproj.ResolveComReference.cache
+C:\Olimpiadas\Desktop SP - Nacional 2020\desktop2020\desktop2020\obj\Debug\desktop2020.AdmForm.resources
+C:\Olimpiadas\Desktop SP - Nacional 2020\desktop2020\desktop2020\obj\Debug\desktop2020.Components.NotifyControl.resources
+C:\Olimpiadas\Desktop SP - Nacional 2020\desktop2020\desktop2020\obj\Debug\desktop2020.ForgotPassForm.resources
+C:\Olimpiadas\Desktop SP - Nacional 2020\desktop2020\desktop2020\obj\Debug\desktop2020.Form1.resources
+C:\Olimpiadas\Desktop SP - Nacional 2020\desktop2020\desktop2020\obj\Debug\desktop2020.InsertNotificationForm.resources
+C:\Olimpiadas\Desktop SP - Nacional 2020\desktop2020\desktop2020\obj\Debug\desktop2020.JogadoresForm.resources
+C:\Olimpiadas\Desktop SP - Nacional 2020\desktop2020\desktop2020\obj\Debug\desktop2020.LoginForm.resources
+C:\Olimpiadas\Desktop SP - Nacional 2020\desktop2020\desktop2020\obj\Debug\desktop2020.NotifyForm.resources
+C:\Olimpiadas\Desktop SP - Nacional 2020\desktop2020\desktop2020\obj\Debug\desktop2020.parent.resources
+C:\Olimpiadas\Desktop SP - Nacional 2020\desktop2020\desktop2020\obj\Debug\desktop2020.Properties.Resources.resources
+C:\Olimpiadas\Desktop SP - Nacional 2020\desktop2020\desktop2020\obj\Debug\desktop2020.SingUpForm.resources
+C:\Olimpiadas\Desktop SP - Nacional 2020\desktop2020\desktop2020\obj\Debug\desktop2020.UserForm.resources
+C:\Olimpiadas\Desktop SP - Nacional 2020\desktop2020\desktop2020\obj\Debug\desktop2020.csproj.GenerateResource.cache
+C:\Olimpiadas\Desktop SP - Nacional 2020\desktop2020\desktop2020\obj\Debug\desktop2020.csproj.CoreCompileInputs.cache
+C:\Olimpiadas\Desktop SP - Nacional 2020\desktop2020\desktop2020\obj\Debug\desktop2020.csproj.CopyComplete
+C:\Olimpiadas\Desktop SP - Nacional 2020\desktop2020\desktop2020\obj\Debug\desktop2020.exe
+C:\Olimpiadas\Desktop SP - Nacional 2020\desktop2020\desktop2020\obj\Debug\desktop2020.pdb

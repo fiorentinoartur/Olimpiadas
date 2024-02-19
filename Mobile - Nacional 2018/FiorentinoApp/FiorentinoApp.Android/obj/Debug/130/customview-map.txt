@@ -1,0 +1,50 @@
+@string/appbar_scrolling_view_behavior;C:\Review-Olimpiadas\Mobile - Nacional 2018\FiorentinoApp\FiorentinoApp.Android\obj\Debug\130\lp\54\jl\res\layout\rootlayout.xml
+adaptive-icon;obj\Debug\130\res\mipmap-anydpi-v26\icon.xml
+adaptive-icon;obj\Debug\130\res\mipmap-anydpi-v26\icon_round.xml
+alpha;C:\Review-Olimpiadas\Mobile - Nacional 2018\FiorentinoApp\FiorentinoApp.Android\obj\Debug\130\lp\54\jl\res\anim\enterfromleft.xml
+alpha;C:\Review-Olimpiadas\Mobile - Nacional 2018\FiorentinoApp\FiorentinoApp.Android\obj\Debug\130\lp\54\jl\res\anim\exittoleft.xml
+androidx.appcompat.widget.Toolbar;C:\Review-Olimpiadas\Mobile - Nacional 2018\FiorentinoApp\FiorentinoApp.Android\obj\Debug\130\lp\54\jl\res\layout\fallbacktoolbardonotuse.xml
+androidx.appcompat.widget.Toolbar;C:\Review-Olimpiadas\Mobile - Nacional 2018\FiorentinoApp\FiorentinoApp.Android\obj\Debug\130\lp\54\jl\res\layout\rootlayout.xml
+androidx.appcompat.widget.Toolbar;C:\Review-Olimpiadas\Mobile - Nacional 2018\FiorentinoApp\FiorentinoApp.Android\obj\Debug\130\lp\54\jl\res\layout\shellcontent.xml
+androidx.appcompat.widget.Toolbar;C:\Review-Olimpiadas\Mobile - Nacional 2018\FiorentinoApp\FiorentinoApp.Android\obj\Debug\130\lp\54\jl\res\layout\toolbar.xml
+androidx.coordinatorlayout.widget.CoordinatorLayout;C:\Review-Olimpiadas\Mobile - Nacional 2018\FiorentinoApp\FiorentinoApp.Android\obj\Debug\130\lp\54\jl\res\layout\rootlayout.xml
+androidx.coordinatorlayout.widget.CoordinatorLayout;C:\Review-Olimpiadas\Mobile - Nacional 2018\FiorentinoApp\FiorentinoApp.Android\obj\Debug\130\lp\54\jl\res\layout\shellcontent.xml
+attr;C:\Review-Olimpiadas\Mobile - Nacional 2018\FiorentinoApp\FiorentinoApp.Android\obj\Debug\130\lp\54\jl\res\values\attrs.xml
+background;obj\Debug\130\res\mipmap-anydpi-v26\icon.xml
+background;obj\Debug\130\res\mipmap-anydpi-v26\icon_round.xml
+cache-path;C:\Review-Olimpiadas\Mobile - Nacional 2018\FiorentinoApp\FiorentinoApp.Android\obj\Debug\130\lp\53\jl\res\xml\xamarin_essentials_fileprovider_file_paths.xml
+color;obj\Debug\130\res\values\colors.xml
+com.google.android.material.appbar.AppBarLayout;C:\Review-Olimpiadas\Mobile - Nacional 2018\FiorentinoApp\FiorentinoApp.Android\obj\Debug\130\lp\54\jl\res\layout\flyoutcontent.xml
+com.google.android.material.appbar.AppBarLayout;C:\Review-Olimpiadas\Mobile - Nacional 2018\FiorentinoApp\FiorentinoApp.Android\obj\Debug\130\lp\54\jl\res\layout\rootlayout.xml
+com.google.android.material.appbar.AppBarLayout;C:\Review-Olimpiadas\Mobile - Nacional 2018\FiorentinoApp\FiorentinoApp.Android\obj\Debug\130\lp\54\jl\res\layout\shellcontent.xml
+com.google.android.material.bottomnavigation.BottomNavigationView;C:\Review-Olimpiadas\Mobile - Nacional 2018\FiorentinoApp\FiorentinoApp.Android\obj\Debug\130\lp\54\jl\res\layout\bottomtablayout.xml
+com.google.android.material.tabs.TabLayout;C:\Review-Olimpiadas\Mobile - Nacional 2018\FiorentinoApp\FiorentinoApp.Android\obj\Debug\130\lp\54\jl\res\layout\fallbacktabbardonotuse.xml
+com.google.android.material.tabs.TabLayout;C:\Review-Olimpiadas\Mobile - Nacional 2018\FiorentinoApp\FiorentinoApp.Android\obj\Debug\130\lp\54\jl\res\layout\rootlayout.xml
+com.google.android.material.tabs.TabLayout;C:\Review-Olimpiadas\Mobile - Nacional 2018\FiorentinoApp\FiorentinoApp.Android\obj\Debug\130\lp\54\jl\res\layout\tabbar.xml
+declare-styleable;C:\Review-Olimpiadas\Mobile - Nacional 2018\FiorentinoApp\FiorentinoApp.Android\obj\Debug\130\lp\54\jl\res\values\attrs.xml
+external-cache-path;C:\Review-Olimpiadas\Mobile - Nacional 2018\FiorentinoApp\FiorentinoApp.Android\obj\Debug\130\lp\53\jl\res\xml\xamarin_essentials_fileprovider_file_paths.xml
+external-path;C:\Review-Olimpiadas\Mobile - Nacional 2018\FiorentinoApp\FiorentinoApp.Android\obj\Debug\130\lp\53\jl\res\xml\xamarin_essentials_fileprovider_file_paths.xml
+foreground;obj\Debug\130\res\mipmap-anydpi-v26\icon.xml
+foreground;obj\Debug\130\res\mipmap-anydpi-v26\icon_round.xml
+FrameLayout;C:\Review-Olimpiadas\Mobile - Nacional 2018\FiorentinoApp\FiorentinoApp.Android\obj\Debug\130\lp\54\jl\res\layout\bottomtablayout.xml
+item;C:\Review-Olimpiadas\Mobile - Nacional 2018\FiorentinoApp\FiorentinoApp.Android\obj\Debug\130\lp\54\jl\res\values\styles.xml
+LinearLayout;C:\Review-Olimpiadas\Mobile - Nacional 2018\FiorentinoApp\FiorentinoApp.Android\obj\Debug\130\lp\54\jl\res\layout\bottomtablayout.xml
+paths;C:\Review-Olimpiadas\Mobile - Nacional 2018\FiorentinoApp\FiorentinoApp.Android\obj\Debug\130\lp\53\jl\res\xml\xamarin_essentials_fileprovider_file_paths.xml
+resources;C:\Review-Olimpiadas\Mobile - Nacional 2018\FiorentinoApp\FiorentinoApp.Android\obj\Debug\130\lp\54\jl\res\values\attrs.xml
+resources;C:\Review-Olimpiadas\Mobile - Nacional 2018\FiorentinoApp\FiorentinoApp.Android\obj\Debug\130\lp\54\jl\res\values\strings.xml
+resources;C:\Review-Olimpiadas\Mobile - Nacional 2018\FiorentinoApp\FiorentinoApp.Android\obj\Debug\130\lp\54\jl\res\values\styles.xml
+resources;obj\Debug\130\res\values\colors.xml
+resources;obj\Debug\130\res\values\styles.xml
+set;C:\Review-Olimpiadas\Mobile - Nacional 2018\FiorentinoApp\FiorentinoApp.Android\obj\Debug\130\lp\54\jl\res\anim\enterfromleft.xml
+set;C:\Review-Olimpiadas\Mobile - Nacional 2018\FiorentinoApp\FiorentinoApp.Android\obj\Debug\130\lp\54\jl\res\anim\enterfromright.xml
+set;C:\Review-Olimpiadas\Mobile - Nacional 2018\FiorentinoApp\FiorentinoApp.Android\obj\Debug\130\lp\54\jl\res\anim\exittoleft.xml
+set;C:\Review-Olimpiadas\Mobile - Nacional 2018\FiorentinoApp\FiorentinoApp.Android\obj\Debug\130\lp\54\jl\res\anim\exittoright.xml
+string;C:\Review-Olimpiadas\Mobile - Nacional 2018\FiorentinoApp\FiorentinoApp.Android\obj\Debug\130\lp\54\jl\res\values\strings.xml
+style;C:\Review-Olimpiadas\Mobile - Nacional 2018\FiorentinoApp\FiorentinoApp.Android\obj\Debug\130\lp\54\jl\res\values\styles.xml
+style;obj\Debug\130\res\values\styles.xml
+translate;C:\Review-Olimpiadas\Mobile - Nacional 2018\FiorentinoApp\FiorentinoApp.Android\obj\Debug\130\lp\54\jl\res\anim\enterfromleft.xml
+translate;C:\Review-Olimpiadas\Mobile - Nacional 2018\FiorentinoApp\FiorentinoApp.Android\obj\Debug\130\lp\54\jl\res\anim\enterfromright.xml
+translate;C:\Review-Olimpiadas\Mobile - Nacional 2018\FiorentinoApp\FiorentinoApp.Android\obj\Debug\130\lp\54\jl\res\anim\exittoleft.xml
+translate;C:\Review-Olimpiadas\Mobile - Nacional 2018\FiorentinoApp\FiorentinoApp.Android\obj\Debug\130\lp\54\jl\res\anim\exittoright.xml
+xamarin.forms.platform.android.appcompat.FormsViewPager;C:\Review-Olimpiadas\Mobile - Nacional 2018\FiorentinoApp\FiorentinoApp.Android\obj\Debug\130\lp\54\jl\res\layout\rootlayout.xml
+xamarin.forms.platform.android.ShellFlyoutLayout;C:\Review-Olimpiadas\Mobile - Nacional 2018\FiorentinoApp\FiorentinoApp.Android\obj\Debug\130\lp\54\jl\res\layout\flyoutcontent.xml

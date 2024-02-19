@@ -65,7 +65,6 @@
             this.label4.Size = new System.Drawing.Size(93, 13);
             this.label4.TabIndex = 18;
             this.label4.Text = "Caps Lock Ligado";
-            this.label4.Click += new System.EventHandler(this.label4_Click);
             // 
             // linkLabel2
             // 
@@ -107,7 +106,7 @@
             this.label3.Size = new System.Drawing.Size(57, 13);
             this.label3.TabIndex = 14;
             this.label3.Text = "Credencial";
-            this.label3.Click += new System.EventHandler(this.label3_Click);
+
             // 
             // linkLabel1
             // 
@@ -127,7 +126,7 @@
             this.textBox1.ShortcutsEnabled = false;
             this.textBox1.Size = new System.Drawing.Size(158, 20);
             this.textBox1.TabIndex = 12;
-            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            
             // 
             // label2
             // 
@@ -137,7 +136,7 @@
             this.label2.Size = new System.Drawing.Size(43, 13);
             this.label2.TabIndex = 11;
             this.label2.Text = "Usuário";
-            this.label2.Click += new System.EventHandler(this.label2_Click);
+            
             // 
             // label1
             // 
@@ -148,7 +147,7 @@
             this.label1.Size = new System.Drawing.Size(403, 44);
             this.label1.TabIndex = 10;
             this.label1.Text = "Bem-Vindo ao Taskool";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
+            
             // 
             // timer1
             // 
@@ -162,7 +161,7 @@
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Name = "Form1";
             this.Text = "Form1";
-            this.Load += new System.EventHandler(this.Form1_Load);
+            
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();

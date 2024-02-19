@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="FiorentinoApp.MobileFlyoutDetail"
+             Title="Meus Projetos">
+
+
+    <NavigationPage.TitleView>
+        <StackLayout>
+            <StackLayout IsVisible="false" x:Name="barraPesquisa" Orientation="Horizontal" HorizontalOptions="FillAndExpand" Padding="10,0">
+                <Entry x:Name="inputPesquisa"  TextChanged="Entry_TextChanged" HorizontalOptions="FillAndExpand"  VerticalOptions="CenterAndExpand"/>
+                <ImageButton  Source="close.png"  HorizontalOptions="EndAndExpand" VerticalOptions="CenterAndExpand" Clicked="ImageButton_Clicked" BackgroundColor="Transparent" WidthRequest="30" HeightRequest="30" Aspect="AspectFit"/>
+            </StackLayout>
+            <StackLayout Orientation="Horizontal" IsVisible="true" x:Name="barraPadrao">
+                <Label Text="Meus Projetos" HorizontalOptions="StartAndExpand" TextColor="White" VerticalOptions="CenterAndExpand" FontSize="16"/>
+                <ImageButton Source="search" Clicked="ImageButton_Clicked_1"  WidthRequest="30" HeightRequest="30" Aspect="AspectFit" BackgroundColor="Transparent"/>
+            </StackLayout>
+        </StackLayout>
+        
+
+    </NavigationPage.TitleView>
+
+
+
+    <StackLayout Padding="20">
+        <SearchBar IsVisible="false" x:Name="searchBar"  />
+
+        <ListView
+            SeparatorVisibility="None"
+            SelectionMode="Single"
+            HasUnevenRows="True"
+            ItemSelected="ListView_ItemSelected"
+            ItemsSource="{Binding Projetos}">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                        <StackLayout Orientation="Horizontal" >
+                            <StackLayout >
+                                <Label FontSize="18" Text="{Binding Nome}"/>
+                                <Label FontSize="16" Text="{Binding Pendente, Converter={x:StaticResource pendentConverter}}"  />
+                            </StackLayout>
+                            <Image Source="ic_done_all_black_24dp" HeightRequest="25" WidthRequest="24" Aspect="AspectFit" HorizontalOptions="EndAndExpand"  VerticalOptions="Center" IsVisible="{Binding Pendente, Converter={x:StaticResource visibleConverte}}"/>
+                            <Frame IsVisible="{Binding Pendente,Converter={x:StaticResource visibleConverte},ConverterParameter='icon'}" BackgroundColor="Red" WidthRequest="35" HeightRequest="35" HorizontalOptions="EndAndExpand" CornerRadius="20" Padding="0" VerticalOptions="Center" >
+                                <Label Text="{Binding Pendente}" TextColor="White" HorizontalOptions="CenterAndExpand"  FontSize="16"  VerticalOptions="Center"/>
+                            </Frame>
+                        </StackLayout>
+                        <ViewCell.ContextActions>
+                            <MenuItem  Text="Sair do Projeto?"/>
+                            <MenuItem  IconImageSource="concluido2" Clicked="MenuItem_Clicked" IsDestructive="True" CommandParameter="{Binding .}"/>
+                            <MenuItem IconImageSource="close"/>
+                        </ViewCell.ContextActions>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+    </StackLayout>
+</ContentPage>

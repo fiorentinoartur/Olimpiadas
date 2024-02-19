@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="FiorentinoApp.MobileFlyoutFlyout"
+             Title="Flyout">
+    <StackLayout BackgroundColor="#A4A4A4">
+
+        <ListView x:Name="MenuItemsListView"
+              SeparatorVisibility="None"
+              HasUnevenRows="true"
+              ItemsSource="{Binding MenuItems}">
+            <ListView.Header>
+                <StackLayout HeightRequest="250" BackgroundColor="#A4A4A4">
+                    <StackLayout VerticalOptions="CenterAndExpand" Margin="15,10">
+                        <Label x:Name="userName" TextColor="White" FontSize="20"/>
+                        <Label x:Name="userEmail" TextColor="White" FontSize="16"/>
+                    </StackLayout>
+
+                    <StackLayout>
+                        <Button HeightRequest="60" VerticalOptions="EndAndExpand" BackgroundColor="Black" Text="Meu Calendário" TextColor="White" FontSize="18" Clicked="Button_Clicked"/>
+                        <DatePicker IsVisible="False" x:Name="datePicker"/>
+                    </StackLayout>
+                </StackLayout>
+            </ListView.Header>
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                        <StackLayout Padding="15,10" HorizontalOptions="FillAndExpand">
+                            <Label VerticalOptions="FillAndExpand" 
+                    VerticalTextAlignment="Center" 
+                    Text="{Binding Title}" 
+                    FontSize="24"/>
+                        </StackLayout>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+    </StackLayout>
+</ContentPage>

@@ -1,0 +1,14 @@
+{
+  "version": 2,
+  "dgSpecHash": "6yzx1eMrlXqaldEKrC3ESUQV8JL1LVEXLun0hg4+ugM56ye1dbEl6hoiVhfzjYom9/ltMDKOsuKFOswlm7bW9A==",
+  "success": true,
+  "projectFilePath": "C:\\Review-Olimpiadas\\Mobile - Nacional 2018\\FiorentinoApp\\FiorentinoApp\\FiorentinoApp.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\admin\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Users\\admin\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512",
+    "C:\\Users\\admin\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",
+    "C:\\Users\\admin\\.nuget\\packages\\xamarin.essentials\\1.7.0\\xamarin.essentials.1.7.0.nupkg.sha512",
+    "C:\\Users\\admin\\.nuget\\packages\\xamarin.forms\\5.0.0.2196\\xamarin.forms.5.0.0.2196.nupkg.sha512"
+  ],
+  "logs": []
+}

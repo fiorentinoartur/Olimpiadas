@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="FiorentinoApp.MainPage">
+
+    <StackLayout BackgroundColor="#2196F3">
+        <StackLayout HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand">
+            <Label Text="TASKOOL" FontSize="36" Margin="0,0,0,20" TextColor="White" HorizontalTextAlignment="Center"/>
+            <StackLayout Orientation="Horizontal" Spacing="40" > 
+                <Ellipse x:Name="circle1"  Fill="BLACK" HeightRequest="30" WidthRequest="30" StrokeThickness="1"  HorizontalOptions="StartAndExpand"/>
+                <Ellipse x:Name="circle2" Fill="BLACK" HeightRequest="30" WidthRequest="30" StrokeThickness="1"  HorizontalOptions="CenterAndExpand"/>
+                <Ellipse x:Name="circle3" Fill="Black" HeightRequest="30" WidthRequest="30" StrokeThickness="1" HorizontalOptions="EndAndExpand"/>
+            </StackLayout>
+        </StackLayout>         
+    </StackLayout>
+
+</ContentPage>

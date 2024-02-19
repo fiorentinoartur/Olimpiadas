@@ -44,6 +44,10 @@ namespace desktop2020
                 pictureBox1.Image.Save(ms, pictureBox1.Image.RawFormat);
                 user.Foto = ms.ToArray();
             }
+            if (comboBox1.SelectedIndex > 0)
+            {
+                user.TimeFavoritoId = comboBox1.SelectedIndex;
+            }
             user.Sexo = radioButton1.Checked ? "M" : "F";
             user.perfil = "1";
             ctx.Usuarios.Add(user); 

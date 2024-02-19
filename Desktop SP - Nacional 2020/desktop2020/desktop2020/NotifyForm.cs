@@ -14,5 +14,10 @@ namespace desktop2020
         {
             InitializeComponent();
         }
+
+        private void NotifyForm_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

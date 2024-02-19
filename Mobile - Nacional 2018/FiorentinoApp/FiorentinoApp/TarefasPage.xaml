@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="FiorentinoApp.TarefasPage">
+
+    <ContentPage.ToolbarItems>
+        <ToolbarItem  Clicked="ToolbarItem_Clicked" IconImageSource="filtro"/>
+    </ContentPage.ToolbarItems>
+    <ContentPage.Content>
+        <AbsoluteLayout>
+            <StackLayout>
+                <CollectionView ItemsSource="{Binding Tarefas}">
+                    <CollectionView.GroupHeaderTemplate>
+                        <DataTemplate>
+                            <StackLayout>
+                                <Label Text="{Binding Nome}" FontAttributes="Bold" />
+                            </StackLayout>
+                        </DataTemplate>
+                    </CollectionView.GroupHeaderTemplate>
+                    <CollectionView.ItemTemplate>
+                        <DataTemplate>
+                            <StackLayout Padding="20" >
+                                <Label Text="{Binding Nome}" FontAttributes="Bold" />
+                                <StackLayout  Orientation="Horizontal" >
+
+                                    <StackLayout Orientation="Horizontal">
+                                        <CheckBox  BindingContext="{Binding Codigo}"  IsChecked="{Binding isConcluida}" CheckedChanged="CheckBox_CheckedChanged"/>
+                                        <Label VerticalOptions="CenterAndExpand" Text="{Binding Texto}"/>
+                                    </StackLayout>
+                                    <Frame WidthRequest="40" HeightRequest="40" CornerRadius="20" Padding="0" HorizontalOptions="EndAndExpand"  BackgroundColor="Red">
+                                        <Label FontSize="16" Text="{Binding NomeResponsavel}" TextColor="White" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand"/>
+                                    </Frame>
+                                </StackLayout>
+                            </StackLayout>
+                        </DataTemplate>
+                    </CollectionView.ItemTemplate>
+                </CollectionView>
+            </StackLayout>
+
+
+            <AbsoluteLayout IsVisible="false" x:Name="Modal" AbsoluteLayout.LayoutBounds="0,0,1,1" AbsoluteLayout.LayoutFlags="All" BackgroundColor="#AA000000">
+                <StackLayout AbsoluteLayout.LayoutBounds=".5,.5" AbsoluteLayout.LayoutFlags="PositionProportional">
+                    <Button x:Name="Pendentes" Clicked="Pendentes_Clicked" Text="Tarefas Pendentes"/>
+                    <Button x:Name="MinhasPendentes" Clicked="MyPendent_Clicked" Text="Minhas Tarefas Pendentes"/>
+                    <Button x:Name="MinhasTarefas" Clicked="MyTasks_Clicked" Text="Minhas Tarefas"/>
+                    <Button x:Name="Concluidas" Clicked="Concluidas_Clicked" Text="Tarefas Concluidas"/>
+                    <Button x:Name="MinhasConcluidas" Clicked="MyConcluidas_Clicked" Text="Minhas Tarefas Concluidas"/>
+                    
+                </StackLayout>
+            </AbsoluteLayout>
+        </AbsoluteLayout>
+    </ContentPage.Content>
+</ContentPage>
+

@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Diagnostics;
 using System.Drawing;
 using System.IO;
 using System.Linq;
@@ -21,12 +22,31 @@ namespace WindowsFormsApp1
             label4.Visible = false;
             panel1.BackColor = Color.White;
             textBox1.Text = "artur.kennez24";
+            //Não permitdo copiar, nem recortar e colar um texto
+            textBox1.ShortcutsEnabled = false;
         }
 
-        private void Form1_Load(object sender, EventArgs e)
+        //Crie um botão para que o usuário possa abrir o teclado do computador e digitar o usuário. 
+        private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-
+            Process.Start("osk.exe");
         }
+
+        //Ao digitar o usuário e o CAPS LOCK estiver ligado, mostrar um aviso. 
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            if (IsKeyLocked(Keys.CapsLock))
+            {
+                label4.Visible = true;
+            }
+            else
+            {
+                label4.Visible = false;
+            }
+        }
+
+
+        //Logo após a digitação do usuário, deve informar a foto de autenticação. 
 
         private void pictureBox1_Click(object sender, EventArgs e)
         {
@@ -49,10 +69,6 @@ namespace WindowsFormsApp1
             new Cadastro().ShowDialog();
         }
 
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
 
         private void button1_Click(object sender, EventArgs e)
         {
@@ -63,7 +79,7 @@ namespace WindowsFormsApp1
                 SystemSounds.Beep.Play();
                 return;
             }
-            bool comparado = Enumerable.SequenceEqual(ConverterImage(), user.Foto);
+            bool comparado =  user.Foto.SequenceEqual(ConverterImage());
             string path = "C:\\USER_LOGS";
             string file = path + $"\\{user.Nome.Split(' ')[0]}{user.Codigo}.txt";
 
@@ -95,41 +111,6 @@ namespace WindowsFormsApp1
             this.Hide();
         }
 
-        private void label3_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
-        {
-            System.Diagnostics.Process.Start("osk.exe");
-        }
-
-        private void textBox1_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label4_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void timer1_Tick(object sender, EventArgs e)
-        {
-            if (IsKeyLocked(Keys.CapsLock))
-            {
-                label4.Visible = true;
-            }
-            else
-            {
-                label4.Visible = false;
-            }
-        }
+      
     }
 }

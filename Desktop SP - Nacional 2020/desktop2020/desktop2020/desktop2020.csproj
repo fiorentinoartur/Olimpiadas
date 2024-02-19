@@ -190,6 +190,9 @@
     <EmbeddedResource Include="LoginForm.resx">
       <DependentUpon>LoginForm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="NotifyForm.resx">
+      <DependentUpon>NotifyForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="parent.resx">
       <DependentUpon>parent.cs</DependentUpon>
     </EmbeddedResource>

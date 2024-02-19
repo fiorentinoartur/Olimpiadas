@@ -1,0 +1,67 @@
+C:\Users\Artur Fiorentino\OneDrive\Área de Trabalho\Mobile - Nacional 2018\FiorentinoApp\FiorentinoApp\obj\Debug\netstandard2.0\FiorentinoApp.csproj.AssemblyReference.cache
+C:\Users\Artur Fiorentino\OneDrive\Área de Trabalho\Mobile - Nacional 2018\FiorentinoApp\FiorentinoApp\obj\Debug\netstandard2.0\FiorentinoApp.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Artur Fiorentino\OneDrive\Área de Trabalho\Mobile - Nacional 2018\FiorentinoApp\FiorentinoApp\obj\Debug\netstandard2.0\App.xaml.g.cs
+C:\Users\Artur Fiorentino\OneDrive\Área de Trabalho\Mobile - Nacional 2018\FiorentinoApp\FiorentinoApp\obj\Debug\netstandard2.0\MainPage.xaml.g.cs
+C:\Users\Artur Fiorentino\OneDrive\Área de Trabalho\Mobile - Nacional 2018\FiorentinoApp\FiorentinoApp\obj\Debug\netstandard2.0\FiorentinoApp.AssemblyInfoInputs.cache
+C:\Users\Artur Fiorentino\OneDrive\Área de Trabalho\Mobile - Nacional 2018\FiorentinoApp\FiorentinoApp\obj\Debug\netstandard2.0\FiorentinoApp.AssemblyInfo.cs
+C:\Users\Artur Fiorentino\OneDrive\Área de Trabalho\Mobile - Nacional 2018\FiorentinoApp\FiorentinoApp\obj\Debug\netstandard2.0\FiorentinoApp.csproj.CoreCompileInputs.cache
+C:\Users\Artur Fiorentino\OneDrive\Área de Trabalho\Mobile - Nacional 2018\FiorentinoApp\FiorentinoApp\bin\Debug\netstandard2.0\FiorentinoApp.deps.json
+C:\Users\Artur Fiorentino\OneDrive\Área de Trabalho\Mobile - Nacional 2018\FiorentinoApp\FiorentinoApp\bin\Debug\netstandard2.0\FiorentinoApp.dll
+C:\Users\Artur Fiorentino\OneDrive\Área de Trabalho\Mobile - Nacional 2018\FiorentinoApp\FiorentinoApp\bin\Debug\netstandard2.0\ref\FiorentinoApp.dll
+C:\Users\Artur Fiorentino\OneDrive\Área de Trabalho\Mobile - Nacional 2018\FiorentinoApp\FiorentinoApp\bin\Debug\netstandard2.0\FiorentinoApp.pdb
+C:\Users\Artur Fiorentino\OneDrive\Área de Trabalho\Mobile - Nacional 2018\FiorentinoApp\FiorentinoApp\bin\Debug\netstandard2.0\Newtonsoft.Json.dll
+C:\Users\Artur Fiorentino\OneDrive\Área de Trabalho\Mobile - Nacional 2018\FiorentinoApp\FiorentinoApp\obj\Debug\netstandard2.0\XamlC.stamp
+C:\Users\Artur Fiorentino\OneDrive\Área de Trabalho\Mobile - Nacional 2018\FiorentinoApp\FiorentinoApp\obj\Debug\netstandard2.0\FiorentinoApp.csproj.CopyComplete
+C:\Users\Artur Fiorentino\OneDrive\Área de Trabalho\Mobile - Nacional 2018\FiorentinoApp\FiorentinoApp\obj\Debug\netstandard2.0\FiorentinoApp.dll
+C:\Users\Artur Fiorentino\OneDrive\Área de Trabalho\Mobile - Nacional 2018\FiorentinoApp\FiorentinoApp\obj\Debug\netstandard2.0\refint\FiorentinoApp.dll
+C:\Users\Artur Fiorentino\OneDrive\Área de Trabalho\Mobile - Nacional 2018\FiorentinoApp\FiorentinoApp\obj\Debug\netstandard2.0\FiorentinoApp.pdb
+C:\Users\Artur Fiorentino\OneDrive\Área de Trabalho\Mobile - Nacional 2018\FiorentinoApp\FiorentinoApp\obj\Debug\netstandard2.0\HomePage.xaml.g.cs
+C:\Users\Artur Fiorentino\OneDrive\Área de Trabalho\Mobile - Nacional 2018\FiorentinoApp\FiorentinoApp\obj\Debug\netstandard2.0\MobileFlyout.xaml.g.cs
+C:\Users\Artur Fiorentino\OneDrive\Área de Trabalho\Mobile - Nacional 2018\FiorentinoApp\FiorentinoApp\obj\Debug\netstandard2.0\MobileFlyoutDetail.xaml.g.cs
+C:\Users\Artur Fiorentino\OneDrive\Área de Trabalho\Mobile - Nacional 2018\FiorentinoApp\FiorentinoApp\obj\Debug\netstandard2.0\MobileFlyoutFlyout.xaml.g.cs
+C:\Mobile - Nacional 2018\FiorentinoApp\FiorentinoApp\bin\Debug\netstandard2.0\FiorentinoApp.deps.json
+C:\Mobile - Nacional 2018\FiorentinoApp\FiorentinoApp\bin\Debug\netstandard2.0\FiorentinoApp.dll
+C:\Mobile - Nacional 2018\FiorentinoApp\FiorentinoApp\bin\Debug\netstandard2.0\ref\FiorentinoApp.dll
+C:\Mobile - Nacional 2018\FiorentinoApp\FiorentinoApp\bin\Debug\netstandard2.0\FiorentinoApp.pdb
+C:\Mobile - Nacional 2018\FiorentinoApp\FiorentinoApp\bin\Debug\netstandard2.0\Newtonsoft.Json.dll
+C:\Mobile - Nacional 2018\FiorentinoApp\FiorentinoApp\obj\Debug\netstandard2.0\FiorentinoApp.csproj.AssemblyReference.cache
+C:\Mobile - Nacional 2018\FiorentinoApp\FiorentinoApp\obj\Debug\netstandard2.0\FiorentinoApp.GeneratedMSBuildEditorConfig.editorconfig
+C:\Mobile - Nacional 2018\FiorentinoApp\FiorentinoApp\obj\Debug\netstandard2.0\App.xaml.g.cs
+C:\Mobile - Nacional 2018\FiorentinoApp\FiorentinoApp\obj\Debug\netstandard2.0\HomePage.xaml.g.cs
+C:\Mobile - Nacional 2018\FiorentinoApp\FiorentinoApp\obj\Debug\netstandard2.0\MainPage.xaml.g.cs
+C:\Mobile - Nacional 2018\FiorentinoApp\FiorentinoApp\obj\Debug\netstandard2.0\MobileFlyout.xaml.g.cs
+C:\Mobile - Nacional 2018\FiorentinoApp\FiorentinoApp\obj\Debug\netstandard2.0\MobileFlyoutDetail.xaml.g.cs
+C:\Mobile - Nacional 2018\FiorentinoApp\FiorentinoApp\obj\Debug\netstandard2.0\MobileFlyoutFlyout.xaml.g.cs
+C:\Mobile - Nacional 2018\FiorentinoApp\FiorentinoApp\obj\Debug\netstandard2.0\FiorentinoApp.AssemblyInfoInputs.cache
+C:\Mobile - Nacional 2018\FiorentinoApp\FiorentinoApp\obj\Debug\netstandard2.0\FiorentinoApp.AssemblyInfo.cs
+C:\Mobile - Nacional 2018\FiorentinoApp\FiorentinoApp\obj\Debug\netstandard2.0\FiorentinoApp.csproj.CoreCompileInputs.cache
+C:\Mobile - Nacional 2018\FiorentinoApp\FiorentinoApp\obj\Debug\netstandard2.0\XamlC.stamp
+C:\Mobile - Nacional 2018\FiorentinoApp\FiorentinoApp\obj\Debug\netstandard2.0\FiorentinoApp.csproj.CopyComplete
+C:\Mobile - Nacional 2018\FiorentinoApp\FiorentinoApp\obj\Debug\netstandard2.0\FiorentinoApp.dll
+C:\Mobile - Nacional 2018\FiorentinoApp\FiorentinoApp\obj\Debug\netstandard2.0\refint\FiorentinoApp.dll
+C:\Mobile - Nacional 2018\FiorentinoApp\FiorentinoApp\obj\Debug\netstandard2.0\FiorentinoApp.pdb
+C:\Mobile - Nacional 2018\FiorentinoApp\FiorentinoApp\obj\Debug\netstandard2.0\TarefasPage.xaml.g.cs
+C:\Review-Olimpiadas\Mobile - Nacional 2018\FiorentinoApp\FiorentinoApp\obj\Debug\netstandard2.0\FiorentinoApp.csproj.AssemblyReference.cache
+C:\Review-Olimpiadas\Mobile - Nacional 2018\FiorentinoApp\FiorentinoApp\obj\Debug\netstandard2.0\FiorentinoApp.GeneratedMSBuildEditorConfig.editorconfig
+C:\Review-Olimpiadas\Mobile - Nacional 2018\FiorentinoApp\FiorentinoApp\obj\Debug\netstandard2.0\App.xaml.g.cs
+C:\Review-Olimpiadas\Mobile - Nacional 2018\FiorentinoApp\FiorentinoApp\obj\Debug\netstandard2.0\HomePage.xaml.g.cs
+C:\Review-Olimpiadas\Mobile - Nacional 2018\FiorentinoApp\FiorentinoApp\obj\Debug\netstandard2.0\MainPage.xaml.g.cs
+C:\Review-Olimpiadas\Mobile - Nacional 2018\FiorentinoApp\FiorentinoApp\obj\Debug\netstandard2.0\MobileFlyout.xaml.g.cs
+C:\Review-Olimpiadas\Mobile - Nacional 2018\FiorentinoApp\FiorentinoApp\obj\Debug\netstandard2.0\MobileFlyoutDetail.xaml.g.cs
+C:\Review-Olimpiadas\Mobile - Nacional 2018\FiorentinoApp\FiorentinoApp\obj\Debug\netstandard2.0\MobileFlyoutFlyout.xaml.g.cs
+C:\Review-Olimpiadas\Mobile - Nacional 2018\FiorentinoApp\FiorentinoApp\obj\Debug\netstandard2.0\SplashScreen.xaml.g.cs
+C:\Review-Olimpiadas\Mobile - Nacional 2018\FiorentinoApp\FiorentinoApp\obj\Debug\netstandard2.0\TarefasPage.xaml.g.cs
+C:\Review-Olimpiadas\Mobile - Nacional 2018\FiorentinoApp\FiorentinoApp\obj\Debug\netstandard2.0\FiorentinoApp.AssemblyInfoInputs.cache
+C:\Review-Olimpiadas\Mobile - Nacional 2018\FiorentinoApp\FiorentinoApp\obj\Debug\netstandard2.0\FiorentinoApp.AssemblyInfo.cs
+C:\Review-Olimpiadas\Mobile - Nacional 2018\FiorentinoApp\FiorentinoApp\obj\Debug\netstandard2.0\FiorentinoApp.csproj.CoreCompileInputs.cache
+C:\Review-Olimpiadas\Mobile - Nacional 2018\FiorentinoApp\FiorentinoApp\obj\Debug\netstandard2.0\FiorentinoApp.dll
+C:\Review-Olimpiadas\Mobile - Nacional 2018\FiorentinoApp\FiorentinoApp\obj\Debug\netstandard2.0\refint\FiorentinoApp.dll
+C:\Review-Olimpiadas\Mobile - Nacional 2018\FiorentinoApp\FiorentinoApp\obj\Debug\netstandard2.0\FiorentinoApp.pdb
+C:\Review-Olimpiadas\Mobile - Nacional 2018\FiorentinoApp\FiorentinoApp\bin\Debug\netstandard2.0\FiorentinoApp.deps.json
+C:\Review-Olimpiadas\Mobile - Nacional 2018\FiorentinoApp\FiorentinoApp\bin\Debug\netstandard2.0\FiorentinoApp.dll
+C:\Review-Olimpiadas\Mobile - Nacional 2018\FiorentinoApp\FiorentinoApp\bin\Debug\netstandard2.0\ref\FiorentinoApp.dll
+C:\Review-Olimpiadas\Mobile - Nacional 2018\FiorentinoApp\FiorentinoApp\bin\Debug\netstandard2.0\FiorentinoApp.pdb
+C:\Review-Olimpiadas\Mobile - Nacional 2018\FiorentinoApp\FiorentinoApp\bin\Debug\netstandard2.0\Newtonsoft.Json.dll
+C:\Review-Olimpiadas\Mobile - Nacional 2018\FiorentinoApp\FiorentinoApp\obj\Debug\netstandard2.0\XamlC.stamp
+C:\Review-Olimpiadas\Mobile - Nacional 2018\FiorentinoApp\FiorentinoApp\obj\Debug\netstandard2.0\FiorentinoApp.csproj.CopyComplete
+C:\Review-Olimpiadas\Mobile - Nacional 2018\FiorentinoApp\FiorentinoApp\obj\Debug\netstandard2.0\FiorentinoApp.sourcelink.json
