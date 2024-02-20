@@ -20,7 +20,7 @@ namespace FiorentionoDesktop
         public RankingForm()
         {
             InitializeComponent();
-            dt.Columns.Add("Bandeira", typeof(Image));
+            //dt.Columns.Add("Bandeira", typeof(Image));
             dt.Columns.Add("Equipe");
             dt.Columns.Add("Pts");
             dt.Columns.Add("PJ");
@@ -30,7 +30,7 @@ namespace FiorentionoDesktop
             dt.Columns.Add("GP");
             dt.Columns.Add("GC");
             dt.Columns.Add("SG");
-            dt.Columns.Add("Últimas 3");
+            //dt.Columns.Add("Últimas 3");
 
 
         }
@@ -95,7 +95,7 @@ namespace FiorentionoDesktop
 
                 
 
-                dt.Rows.Add(imagem,item.Nome, item.Pontos, item.PartidasJogadas, item.Vitorias, item.Empates, item.Derrotas, item.GolsPro, item.GolsContra, item.SaldoGols);
+                dt.Rows.Add(item.Nome, item.Pontos, item.PartidasJogadas, item.Vitorias, item.Empates, item.Derrotas, item.GolsPro, item.GolsContra, item.SaldoGols);
             }
             dataGridView1.DataSource = null;
             dataGridView1.DataSource = dt;
@@ -109,9 +109,9 @@ namespace FiorentionoDesktop
             dataGridView1.Columns["GC"].HeaderText = "GC";
             dataGridView1.Columns["SG"].HeaderText = "SG";
 
-            dataGridView1.Columns["Bandeira"].DefaultCellStyle.NullValue = null;
-            dataGridView1.Columns["Bandeira"].Width = 30;
-            dataGridView1.RowTemplate.Height = 30;
+            //dataGridView1.Columns["Bandeira"].DefaultCellStyle.NullValue = null;
+            //dataGridView1.Columns["Bandeira"].Width = 30;
+            //dataGridView1.RowTemplate.Height = 30;
 
         }
 

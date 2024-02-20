@@ -61,54 +61,57 @@
             this.configuracoesToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(1067, 28);
+            this.menuStrip1.Padding = new System.Windows.Forms.Padding(4, 2, 0, 2);
+            this.menuStrip1.Size = new System.Drawing.Size(800, 24);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
             // convidadosToolStripMenuItem
             // 
             this.convidadosToolStripMenuItem.Name = "convidadosToolStripMenuItem";
-            this.convidadosToolStripMenuItem.Size = new System.Drawing.Size(101, 24);
+            this.convidadosToolStripMenuItem.Size = new System.Drawing.Size(82, 20);
             this.convidadosToolStripMenuItem.Text = "Convidados";
             this.convidadosToolStripMenuItem.Click += new System.EventHandler(this.convidadosToolStripMenuItem_Click);
             // 
             // jogosToolStripMenuItem
             // 
             this.jogosToolStripMenuItem.Name = "jogosToolStripMenuItem";
-            this.jogosToolStripMenuItem.Size = new System.Drawing.Size(61, 24);
+            this.jogosToolStripMenuItem.Size = new System.Drawing.Size(49, 20);
             this.jogosToolStripMenuItem.Text = "Jogos";
             this.jogosToolStripMenuItem.Click += new System.EventHandler(this.jogosToolStripMenuItem_Click);
             // 
             // rankingToolStripMenuItem
             // 
             this.rankingToolStripMenuItem.Name = "rankingToolStripMenuItem";
-            this.rankingToolStripMenuItem.Size = new System.Drawing.Size(76, 24);
+            this.rankingToolStripMenuItem.Size = new System.Drawing.Size(62, 20);
             this.rankingToolStripMenuItem.Text = "Ranking";
             this.rankingToolStripMenuItem.Click += new System.EventHandler(this.rankingToolStripMenuItem_Click);
             // 
             // notificacoesToolStripMenuItem
             // 
             this.notificacoesToolStripMenuItem.Name = "notificacoesToolStripMenuItem";
-            this.notificacoesToolStripMenuItem.Size = new System.Drawing.Size(106, 24);
+            this.notificacoesToolStripMenuItem.Size = new System.Drawing.Size(85, 20);
             this.notificacoesToolStripMenuItem.Text = "Notificacoes";
             this.notificacoesToolStripMenuItem.Click += new System.EventHandler(this.notificacoesToolStripMenuItem_Click);
             // 
             // configuracoesToolStripMenuItem
             // 
             this.configuracoesToolStripMenuItem.Name = "configuracoesToolStripMenuItem";
-            this.configuracoesToolStripMenuItem.Size = new System.Drawing.Size(118, 24);
+            this.configuracoesToolStripMenuItem.Size = new System.Drawing.Size(96, 20);
             this.configuracoesToolStripMenuItem.Text = "Configuracoes";
             this.configuracoesToolStripMenuItem.Click += new System.EventHandler(this.configuracoesToolStripMenuItem_Click);
             // 
             // pictureBox1
             // 
             this.pictureBox1.Image = global::FiorentionoDesktop.Properties.Resources.user;
-            this.pictureBox1.Location = new System.Drawing.Point(917, 43);
+            this.pictureBox1.Location = new System.Drawing.Point(688, 35);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(113, 104);
+            this.pictureBox1.Size = new System.Drawing.Size(85, 84);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 1;
             this.pictureBox1.TabStop = false;
+            this.pictureBox1.DoubleClick += new System.EventHandler(this.pictureBox1_DoubleClick);
             // 
             // notifyIcon1
             // 
@@ -119,9 +122,10 @@
             // 
             // PrincipalForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
-            this.ClientSize = new System.Drawing.Size(1067, 554);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.ClientSize = new System.Drawing.Size(800, 450);
             this.MainMenuStrip = this.menuStrip1;
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "PrincipalForm";
             this.Load += new System.EventHandler(this.PrincipalForm_Load);
             this.panel1.ResumeLayout(false);

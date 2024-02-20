@@ -1,4 +1,6 @@
-﻿using System;
+﻿using FiorentionoDesktop.Model;
+using FiorentionoDesktop.Properties;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -6,8 +8,12 @@ using System.Windows.Forms;
 
 namespace FiorentionoDesktop
 {
+    
     internal static class Program
     {
+
+       static Settings settings = Settings.Default;
+      static  ModuloDesktopEntities ctx = new ModuloDesktopEntities();
         /// <summary>
         /// Ponto de entrada principal para o aplicativo.
         /// </summary>
@@ -16,7 +22,16 @@ namespace FiorentionoDesktop
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
+            if (settings.keep)
+            {
+                var logado = ctx.Usuarios.Find(settings.idUser);
+                Application.Run(new PrincipalForm(logado));
+
+            }
+            else
+            {
+                Application.Run(new Form1());
+            }
         }
     }
 

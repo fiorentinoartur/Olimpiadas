@@ -15,6 +15,11 @@ namespace FiorentionoDesktop
         public PrincipalForm()
         {
             InitializeComponent();
+        }      
+        public PrincipalForm(Usuarios usuario)
+        {
+            InitializeComponent();
+            logado = usuario;
         }
 
         
@@ -23,34 +28,7 @@ namespace FiorentionoDesktop
 
         }
 
-        private void linkLabel2_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
-        {
-            new JogosForm().Show();
-            this.Hide();
-        }
 
-        private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
-        {
-            new MeusConvidadosForm().Show();
-            this.Hide();
-        }
-
-        private void linkLabel4_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
-        {
-           new NotificationForm().Show();   
-            this.Hide();
-        }
-
-        private void linkLabel6_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
-        {
-            new SettingsForm().Show();
-            this.Hide();
-        }
-        private void linkLabel3_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
-        {
-            new RankingForm().Show();   
-            this.Hide();    
-        }
 
         private void PrincipalForm_Load(object sender, EventArgs e)
         {
@@ -99,6 +77,11 @@ namespace FiorentionoDesktop
         private void notifyIcon1_MouseDoubleClick(object sender, MouseEventArgs e)
         {
 
+        }
+
+        private void pictureBox1_DoubleClick(object sender, EventArgs e)
+        {
+            new SingUpForm().ShowDialog();
         }
     }
 }

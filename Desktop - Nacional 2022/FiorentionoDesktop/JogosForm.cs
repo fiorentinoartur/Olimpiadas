@@ -16,14 +16,14 @@ namespace FiorentionoDesktop
         public JogosForm()
         {
             InitializeComponent();
-            dt.Columns.Add("Id");
+
             dt.Columns.Add("Data");
             dt.Columns.Add("Hora");
-            dt.Columns.Add("Time1");
+            dt.Columns.Add("Time 1");
             dt.Columns.Add("Placa1");
             dt.Columns.Add("X");
             dt.Columns.Add("Placa2");
-            dt.Columns.Add("Time2");
+            dt.Columns.Add("Time 2");
         }
 
         private void panel1_Paint(object sender, PaintEventArgs e)
@@ -72,14 +72,19 @@ namespace FiorentionoDesktop
                 else
                 {
                     row.Cells["Time 1"].Style.BackColor = Color.Yellow;
-                    row.Cells["Time 1"].Style.BackColor = Color.Yellow;
+                    row.Cells["Time 2"].Style.BackColor = Color.Yellow;
                 }
             }
         }
 
         private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
         {
+            ColorDgv();
+        }
 
+        private void dataGridView1_Sorted(object sender, EventArgs e)
+        {
+            ColorDgv();
         }
     }
 }

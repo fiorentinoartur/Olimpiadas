@@ -22,36 +22,11 @@ namespace FiorentionoDesktop
             dt.Columns.Add("Remetente");
             dt.Columns.Add("Notificação");
             dt.Columns.Add("Status");
+            dt.Columns.Add("Id");
         }
 
 
-        private void linkLabel2_LinkClicked_1(object sender, LinkLabelLinkClickedEventArgs e)
-        {
-            new JogosForm().Show();
-            this.Hide();
-
-        }
-
-        private void linkLabel3_LinkClicked_1(object sender, LinkLabelLinkClickedEventArgs e)
-        {
-            new RankingForm().Show();
-            this.Hide();
-
-        }
-
-        private void linkLabel6_LinkClicked_1(object sender, LinkLabelLinkClickedEventArgs e)
-        {
-            new SettingsForm().Show();
-            this.Hide();
-
-        }
-
-        private void linkLabel1_LinkClicked_1(object sender, LinkLabelLinkClickedEventArgs e)
-        {
-            new MeusConvidadosForm().Show();
-            this.Hide();
-
-        }
+      
 
         private void NotificationForm_Load(object sender, EventArgs e)
         {
@@ -60,26 +35,28 @@ namespace FiorentionoDesktop
 
         private void LoadNotificacoes()
         {
-            var notificacoes = ctx.Notificacao
-           .Where(x => x.idusuario == logado.IdUsuario)
-           .ToList()
-           .Select(x => new NotificacaoModel
-           {
-               data = x.dataHora.ToShortDateString(),
-               hora = x.dataHora.ToShortTimeString(),
-               status = x.status.ToLower() == "p" ? "Pendente" : "Lido",
-               User = x.Usuarios.Email,
-               notificacao1 = x.notificacao1,
-           })
-           .ToList();
+            var nots = ctx.Notificacao.Where(x => x.idusuario == logado.IdUsuario).OrderByDescending(x => x.dataHora).ToList();
 
-            foreach (var item in notificacoes)
+            foreach (var item in nots)
             {
-                dt.Rows.Add(item.data, item.hora, item.User, item.notificacao1, item.status);
+                dt.Rows.Add(item.dataHora.ToShortDateString(), item.dataHora.ToShortTimeString(), item.Usuarios.Email, item.notificacao1, item.status,item.id);
             }
 
             dataGridView1.DataSource = dt;
 
+        }
+
+        private void dataGridView1_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if (dataGridView1.Rows[e.RowIndex].Cells["Status"].Value.ToString() == "p")
+            {
+                int id = Convert.ToInt32(dataGridView1.Rows[e.RowIndex].Cells["Id"].Value);
+                var not = ctx.Notificacao.Find(id);
+                not.status = "l";
+                dataGridView1.Rows[e.RowIndex].Cells["Status"].Value = "l";
+                ctx.Entry(not).CurrentValues.SetValues(not);
+                ctx.SaveChanges();
+            }
         }
     }
 }

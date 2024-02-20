@@ -55,5 +55,20 @@ namespace FiorentionoDesktop
             new ForgotPass().Show();
             this.Hide();
         }
+
+        private void checkBox1_CheckedChanged(object sender, EventArgs e)
+        {
+            if (checkBox1.Checked)
+            {
+                settings.keep = true;
+                settings.idUser = logado.IdUsuario;
+            }
+            else
+            {
+                settings.keep = false;
+                settings.idUser = 0;
+            }
+            settings.Save();
+        }
     }
 }
