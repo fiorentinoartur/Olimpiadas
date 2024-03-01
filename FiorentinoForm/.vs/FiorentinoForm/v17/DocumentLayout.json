@@ -1,0 +1,282 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\admin\\Desktop\\LogistsSystem\\FiorentinoForm\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{D071A8C9-833D-44DF-9A78-765CBDD67F02}|FiorentinoForm.csproj|c:\\users\\admin\\desktop\\logistssystem\\fiorentinoform\\cadastrofunc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{D071A8C9-833D-44DF-9A78-765CBDD67F02}|FiorentinoForm.csproj|solutionrelative:cadastrofunc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D071A8C9-833D-44DF-9A78-765CBDD67F02}|FiorentinoForm.csproj|C:\\Users\\admin\\Desktop\\LogistsSystem\\FiorentinoForm\\frequenciafunc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{D071A8C9-833D-44DF-9A78-765CBDD67F02}|FiorentinoForm.csproj|solutionrelative:frequenciafunc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D071A8C9-833D-44DF-9A78-765CBDD67F02}|FiorentinoForm.csproj|C:\\Users\\admin\\Desktop\\LogistsSystem\\FiorentinoForm\\parent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{D071A8C9-833D-44DF-9A78-765CBDD67F02}|FiorentinoForm.csproj|solutionrelative:parent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D071A8C9-833D-44DF-9A78-765CBDD67F02}|FiorentinoForm.csproj|c:\\users\\admin\\desktop\\logistssystem\\fiorentinoform\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D071A8C9-833D-44DF-9A78-765CBDD67F02}|FiorentinoForm.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D071A8C9-833D-44DF-9A78-765CBDD67F02}|FiorentinoForm.csproj|C:\\Users\\admin\\Desktop\\LogistsSystem\\FiorentinoForm\\lancamentovale.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{D071A8C9-833D-44DF-9A78-765CBDD67F02}|FiorentinoForm.csproj|solutionrelative:lancamentovale.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D071A8C9-833D-44DF-9A78-765CBDD67F02}|FiorentinoForm.csproj|c:\\users\\admin\\desktop\\logistssystem\\fiorentinoform\\holerite.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{D071A8C9-833D-44DF-9A78-765CBDD67F02}|FiorentinoForm.csproj|solutionrelative:holerite.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D071A8C9-833D-44DF-9A78-765CBDD67F02}|FiorentinoForm.csproj|C:\\Users\\admin\\Desktop\\LogistsSystem\\FiorentinoForm\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{D071A8C9-833D-44DF-9A78-765CBDD67F02}|FiorentinoForm.csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D071A8C9-833D-44DF-9A78-765CBDD67F02}|FiorentinoForm.csproj|C:\\Users\\admin\\Desktop\\LogistsSystem\\FiorentinoForm\\frequenciafunc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D071A8C9-833D-44DF-9A78-765CBDD67F02}|FiorentinoForm.csproj|solutionrelative:frequenciafunc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D071A8C9-833D-44DF-9A78-765CBDD67F02}|FiorentinoForm.csproj|c:\\users\\admin\\desktop\\logistssystem\\fiorentinoform\\packages.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{D071A8C9-833D-44DF-9A78-765CBDD67F02}|FiorentinoForm.csproj|solutionrelative:packages.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D071A8C9-833D-44DF-9A78-765CBDD67F02}|FiorentinoForm.csproj|C:\\Users\\admin\\Desktop\\LogistsSystem\\FiorentinoForm\\teste.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{D071A8C9-833D-44DF-9A78-765CBDD67F02}|FiorentinoForm.csproj|solutionrelative:teste.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D071A8C9-833D-44DF-9A78-765CBDD67F02}|FiorentinoForm.csproj|c:\\users\\admin\\desktop\\logistssystem\\fiorentinoform\\cadastrofunc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D071A8C9-833D-44DF-9A78-765CBDD67F02}|FiorentinoForm.csproj|solutionrelative:cadastrofunc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D071A8C9-833D-44DF-9A78-765CBDD67F02}|FiorentinoForm.csproj|C:\\Users\\admin\\Desktop\\LogistsSystem\\FiorentinoForm\\lancamentovale.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D071A8C9-833D-44DF-9A78-765CBDD67F02}|FiorentinoForm.csproj|solutionrelative:lancamentovale.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D071A8C9-833D-44DF-9A78-765CBDD67F02}|FiorentinoForm.csproj|C:\\Users\\admin\\Desktop\\LogistsSystem\\FiorentinoForm\\parent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D071A8C9-833D-44DF-9A78-765CBDD67F02}|FiorentinoForm.csproj|solutionrelative:parent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D071A8C9-833D-44DF-9A78-765CBDD67F02}|FiorentinoForm.csproj|C:\\Users\\admin\\Desktop\\LogistsSystem\\FiorentinoForm\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D071A8C9-833D-44DF-9A78-765CBDD67F02}|FiorentinoForm.csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D071A8C9-833D-44DF-9A78-765CBDD67F02}|FiorentinoForm.csproj|C:\\Users\\admin\\Desktop\\LogistsSystem\\FiorentinoForm\\form1.resx||{FF4D6ACA-9352-4A5F-821E-F4D6EBDCAB11}",
+      "RelativeMoniker": "D:0:0:{D071A8C9-833D-44DF-9A78-765CBDD67F02}|FiorentinoForm.csproj|solutionrelative:form1.resx||{FF4D6ACA-9352-4A5F-821E-F4D6EBDCAB11}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D071A8C9-833D-44DF-9A78-765CBDD67F02}|FiorentinoForm.csproj|C:\\Users\\admin\\Desktop\\LogistsSystem\\FiorentinoForm\\models\\model1.edmx||{C99AEA30-8E36-4515-B76F-496F5A48A6AA}|",
+      "RelativeMoniker": "D:0:0:{D071A8C9-833D-44DF-9A78-765CBDD67F02}|FiorentinoForm.csproj|solutionrelative:models\\model1.edmx||{C99AEA30-8E36-4515-B76F-496F5A48A6AA}|"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 6,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\admin\\Desktop\\LogistsSystem\\FiorentinoForm\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\admin\\Desktop\\LogistsSystem\\FiorentinoForm\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-01T19:05:39.158Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "parent.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\admin\\Desktop\\LogistsSystem\\FiorentinoForm\\parent.cs",
+              "RelativeDocumentMoniker": "parent.cs",
+              "ToolTip": "C:\\Users\\admin\\Desktop\\LogistsSystem\\FiorentinoForm\\parent.cs [Design]",
+              "RelativeToolTip": "parent.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-01T15:13:08.052Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "FrequenciaFunc.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\admin\\Desktop\\LogistsSystem\\FiorentinoForm\\FrequenciaFunc.cs",
+              "RelativeDocumentMoniker": "FrequenciaFunc.cs",
+              "ToolTip": "C:\\Users\\admin\\Desktop\\LogistsSystem\\FiorentinoForm\\FrequenciaFunc.cs [Design]",
+              "RelativeToolTip": "FrequenciaFunc.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-01T15:50:08.213Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Form1.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\admin\\Desktop\\LogistsSystem\\FiorentinoForm\\Form1.cs",
+              "RelativeDocumentMoniker": "Form1.cs",
+              "ToolTip": "C:\\Users\\admin\\Desktop\\LogistsSystem\\FiorentinoForm\\Form1.cs [Design]",
+              "RelativeToolTip": "Form1.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-01T15:12:48.048Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "LancamentoVale.cs",
+              "DocumentMoniker": "C:\\Users\\admin\\Desktop\\LogistsSystem\\FiorentinoForm\\LancamentoVale.cs",
+              "RelativeDocumentMoniker": "LancamentoVale.cs",
+              "ToolTip": "C:\\Users\\admin\\Desktop\\LogistsSystem\\FiorentinoForm\\LancamentoVale.cs",
+              "RelativeToolTip": "LancamentoVale.cs",
+              "ViewState": "AQIAAAoAAAAAAAAAAAAuwC0AAAAjAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-01T16:39:34.988Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "LancamentoVale.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\admin\\Desktop\\LogistsSystem\\FiorentinoForm\\LancamentoVale.cs",
+              "RelativeDocumentMoniker": "LancamentoVale.cs",
+              "ToolTip": "C:\\Users\\admin\\Desktop\\LogistsSystem\\FiorentinoForm\\LancamentoVale.cs [Design]",
+              "RelativeToolTip": "LancamentoVale.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-01T16:36:46.366Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "CadastroFunc.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\admin\\Desktop\\LogistsSystem\\FiorentinoForm\\CadastroFunc.cs",
+              "RelativeDocumentMoniker": "CadastroFunc.cs",
+              "ToolTip": "C:\\Users\\admin\\Desktop\\LogistsSystem\\FiorentinoForm\\CadastroFunc.cs [Design]",
+              "RelativeToolTip": "CadastroFunc.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-01T16:02:20.791Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "FrequenciaFunc.cs",
+              "DocumentMoniker": "C:\\Users\\admin\\Desktop\\LogistsSystem\\FiorentinoForm\\FrequenciaFunc.cs",
+              "RelativeDocumentMoniker": "FrequenciaFunc.cs",
+              "ToolTip": "C:\\Users\\admin\\Desktop\\LogistsSystem\\FiorentinoForm\\FrequenciaFunc.cs",
+              "RelativeToolTip": "FrequenciaFunc.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAAB4AAAAjAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-01T15:57:31.751Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "CadastroFunc.cs",
+              "DocumentMoniker": "C:\\Users\\admin\\Desktop\\LogistsSystem\\FiorentinoForm\\CadastroFunc.cs",
+              "RelativeDocumentMoniker": "CadastroFunc.cs",
+              "ToolTip": "C:\\Users\\admin\\Desktop\\LogistsSystem\\FiorentinoForm\\CadastroFunc.cs",
+              "RelativeToolTip": "CadastroFunc.cs",
+              "ViewState": "AQIAAAsAAAAAAAAAAAAxwBsAAAAiAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-01T18:28:43.762Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "packages.config",
+              "DocumentMoniker": "C:\\Users\\admin\\Desktop\\LogistsSystem\\FiorentinoForm\\packages.config",
+              "RelativeDocumentMoniker": "packages.config",
+              "ToolTip": "C:\\Users\\admin\\Desktop\\LogistsSystem\\FiorentinoForm\\packages.config",
+              "RelativeToolTip": "packages.config",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
+              "WhenOpened": "2024-03-01T18:39:57.868Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Holerite.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\admin\\Desktop\\LogistsSystem\\FiorentinoForm\\Holerite.cs",
+              "RelativeDocumentMoniker": "Holerite.cs",
+              "ToolTip": "C:\\Users\\admin\\Desktop\\LogistsSystem\\FiorentinoForm\\Holerite.cs [Design]",
+              "RelativeToolTip": "Holerite.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-01T17:59:01.592Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "parent.cs",
+              "DocumentMoniker": "C:\\Users\\admin\\Desktop\\LogistsSystem\\FiorentinoForm\\parent.cs",
+              "RelativeDocumentMoniker": "parent.cs",
+              "ToolTip": "C:\\Users\\admin\\Desktop\\LogistsSystem\\FiorentinoForm\\parent.cs",
+              "RelativeToolTip": "parent.cs",
+              "ViewState": "AQIAADAAAAAAAAAAAAAiwEEAAAAUAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-01T15:50:17.491Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "teste.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\admin\\Desktop\\LogistsSystem\\FiorentinoForm\\teste.cs",
+              "RelativeDocumentMoniker": "teste.cs",
+              "ToolTip": "C:\\Users\\admin\\Desktop\\LogistsSystem\\FiorentinoForm\\teste.cs [Design]",
+              "RelativeToolTip": "teste.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-01T16:04:02.341Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "Form1.resx",
+              "DocumentMoniker": "C:\\Users\\admin\\Desktop\\LogistsSystem\\FiorentinoForm\\Form1.resx",
+              "RelativeDocumentMoniker": "Form1.resx",
+              "ToolTip": "C:\\Users\\admin\\Desktop\\LogistsSystem\\FiorentinoForm\\Form1.resx",
+              "RelativeToolTip": "Form1.resx",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001005|",
+              "WhenOpened": "2024-03-01T16:30:40.261Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Form1.cs",
+              "DocumentMoniker": "C:\\Users\\admin\\Desktop\\LogistsSystem\\FiorentinoForm\\Form1.cs",
+              "RelativeDocumentMoniker": "Form1.cs",
+              "ToolTip": "C:\\Users\\admin\\Desktop\\LogistsSystem\\FiorentinoForm\\Form1.cs",
+              "RelativeToolTip": "Form1.cs",
+              "ViewState": "AQIAAAEAAAAAAAAAAAAiwBoAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-01T15:14:30.34Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "Model1.edmx [Diagram1]",
+              "DocumentMoniker": "C:\\Users\\admin\\Desktop\\LogistsSystem\\FiorentinoForm\\Models\\Model1.edmx",
+              "RelativeDocumentMoniker": "Models\\Model1.edmx",
+              "ToolTip": "C:\\Users\\admin\\Desktop\\LogistsSystem\\FiorentinoForm\\Models\\Model1.edmx [Diagram1]",
+              "RelativeToolTip": "Models\\Model1.edmx [Diagram1]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001116|",
+              "WhenOpened": "2024-03-01T16:11:22.731Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
