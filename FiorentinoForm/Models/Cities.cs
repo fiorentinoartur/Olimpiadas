@@ -23,9 +23,11 @@ namespace FiorentinoForm.Models
     
         public int ID { get; set; }
         public string Name { get; set; }
+        public Nullable<int> StateID { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<Addresses> Addresses { get; set; }
+        public virtual States States { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<Commuting> Commuting { get; set; }
     }

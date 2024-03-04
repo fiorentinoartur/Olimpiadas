@@ -14,11 +14,12 @@ namespace FiorentinoForm
 {
     public partial class parent : Form
     {
-   public        LogisticsBDEntities ctx = new LogisticsBDEntities();
+   public        LogisticsBDEntities1 ctx = new LogisticsBDEntities1();
         public parent()
         {
             InitializeComponent();
-            WindowState = FormWindowState.Maximized;
+            StartPosition = FormStartPosition.CenterScreen; 
+        
         }
 
         private void parent_Load(object sender, EventArgs e)
@@ -70,6 +71,13 @@ namespace FiorentinoForm
         {
             Hide();
             new LancamentoVale().ShowDialog();
+            Close();
+        }
+
+        private void pictureBox1_DoubleClick(object sender, EventArgs e)
+        {
+            Hide();
+            new CadastroFunc(UserDados.usuario).ShowDialog();
             Close();
         }
     }

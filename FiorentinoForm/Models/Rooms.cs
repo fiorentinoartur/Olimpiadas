@@ -12,10 +12,18 @@ namespace FiorentinoForm.Models
     using System;
     using System.Collections.Generic;
     
-    public partial class Holydays
+    public partial class Rooms
     {
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
+        public Rooms()
+        {
+            this.RoomItems = new HashSet<RoomItems>();
+        }
+    
         public int ID { get; set; }
-        public string Description { get; set; }
-        public System.DateTime Date { get; set; }
+        public string Name { get; set; }
+    
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<RoomItems> RoomItems { get; set; }
     }
 }

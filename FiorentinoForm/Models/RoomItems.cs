@@ -12,10 +12,15 @@ namespace FiorentinoForm.Models
     using System;
     using System.Collections.Generic;
     
-    public partial class Holydays
+    public partial class RoomItems
     {
         public int ID { get; set; }
-        public string Description { get; set; }
-        public System.DateTime Date { get; set; }
+        public Nullable<int> RoomID { get; set; }
+        public Nullable<int> ItemID { get; set; }
+        public Nullable<int> ServiceOrderID { get; set; }
+    
+        public virtual Items Items { get; set; }
+        public virtual Rooms Rooms { get; set; }
+        public virtual ServiceOrder ServiceOrder { get; set; }
     }
 }

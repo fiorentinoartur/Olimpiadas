@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
-  <EntityContainerMapping StorageEntityContainer="LogisticsBDModelStoreContainer" CdmEntityContainer="LogisticsBDEntities">
+  <EntityContainerMapping StorageEntityContainer="LogisticsBDModelStoreContainer" CdmEntityContainer="LogisticsBDEntities1">
     <EntitySetMapping Name="Addresses">
       <EntityTypeMapping TypeName="LogisticsBDModel.Addresses">
         <MappingFragment StoreEntitySet="Addresses">
@@ -27,6 +27,7 @@
         <MappingFragment StoreEntitySet="Cities">
           <ScalarProperty Name="ID" ColumnName="ID" />
           <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="StateID" ColumnName="StateID" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
@@ -46,6 +47,29 @@
           <ScalarProperty Name="ID" ColumnName="ID" />
           <ScalarProperty Name="PersonID" ColumnName="PersonID" />
           <ScalarProperty Name="TransportationID" ColumnName="TransportationID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ContainerOccupation">
+      <EntityTypeMapping TypeName="LogisticsBDModel.ContainerOccupation">
+        <MappingFragment StoreEntitySet="ContainerOccupation">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="ContainerID" ColumnName="ContainerID" />
+          <ScalarProperty Name="PersonID" ColumnName="PersonID" />
+          <ScalarProperty Name="MonthPrice" ColumnName="MonthPrice" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="EntryDate" ColumnName="EntryDate" />
+          <ScalarProperty Name="DepartureDate" ColumnName="DepartureDate" />
+          <ScalarProperty Name="PayDay" ColumnName="PayDay" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Containers">
+      <EntityTypeMapping TypeName="LogisticsBDModel.Containers">
+        <MappingFragment StoreEntitySet="Containers">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="NumberCode" ColumnName="NumberCode" />
+          <ScalarProperty Name="Location" ColumnName="Location" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
@@ -85,6 +109,7 @@
         <MappingFragment StoreEntitySet="DocumentTypes">
           <ScalarProperty Name="ID" ColumnName="ID" />
           <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Validation" ColumnName="Validation" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
@@ -94,6 +119,7 @@
           <ScalarProperty Name="ID" ColumnName="ID" />
           <ScalarProperty Name="AdmissionDate" ColumnName="AdmissionDate" />
           <ScalarProperty Name="HasAdvance" ColumnName="HasAdvance" />
+          <ScalarProperty Name="ManagerID" ColumnName="ManagerID" />
           <ScalarProperty Name="RoleID" ColumnName="RoleID" />
         </MappingFragment>
       </EntityTypeMapping>
@@ -114,7 +140,67 @@
       <EntityTypeMapping TypeName="LogisticsBDModel.Holydays">
         <MappingFragment StoreEntitySet="Holydays">
           <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
           <ScalarProperty Name="Date" ColumnName="Date" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Items">
+      <EntityTypeMapping TypeName="LogisticsBDModel.Items">
+        <MappingFragment StoreEntitySet="Items">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="EstimatedPrice" ColumnName="EstimatedPrice" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Materials">
+      <EntityTypeMapping TypeName="LogisticsBDModel.Materials">
+        <MappingFragment StoreEntitySet="Materials">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Price" ColumnName="Price" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Movings">
+      <EntityTypeMapping TypeName="LogisticsBDModel.Movings">
+        <MappingFragment StoreEntitySet="Movings">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Date" ColumnName="Date" />
+          <ScalarProperty Name="OriginID" ColumnName="OriginID" />
+          <ScalarProperty Name="DestinationID" ColumnName="DestinationID" />
+          <ScalarProperty Name="ServiceOrderID" ColumnName="ServiceOrderID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="OrderMaterial">
+      <EntityTypeMapping TypeName="LogisticsBDModel.OrderMaterial">
+        <MappingFragment StoreEntitySet="OrderMaterial">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="ServiceOrderID" ColumnName="ServiceOrderID" />
+          <ScalarProperty Name="MaterialID" ColumnName="MaterialID" />
+          <ScalarProperty Name="Quantity" ColumnName="Quantity" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Payments">
+      <EntityTypeMapping TypeName="LogisticsBDModel.Payments">
+        <MappingFragment StoreEntitySet="Payments">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="ClientID" ColumnName="ClientID" />
+          <ScalarProperty Name="Amount" ColumnName="Amount" />
+          <ScalarProperty Name="ServiceOrderID" ColumnName="ServiceOrderID" />
+          <ScalarProperty Name="ContainerOccupationID" ColumnName="ContainerOccupationID" />
+          <ScalarProperty Name="PaymentTypeID" ColumnName="PaymentTypeID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PaymentTypes">
+      <EntityTypeMapping TypeName="LogisticsBDModel.PaymentTypes">
+        <MappingFragment StoreEntitySet="PaymentTypes">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
@@ -127,6 +213,7 @@
           <ScalarProperty Name="BirthDay" ColumnName="BirthDay" />
           <ScalarProperty Name="Password" ColumnName="Password" />
           <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="Photo" ColumnName="Photo" />
           <ScalarProperty Name="ResponsibleID" ColumnName="ResponsibleID" />
           <ScalarProperty Name="TypeID" ColumnName="TypeID" />
           <ScalarProperty Name="AddressID" ColumnName="AddressID" />
@@ -169,6 +256,43 @@
           <ScalarProperty Name="ID" ColumnName="ID" />
           <ScalarProperty Name="Name" ColumnName="Name" />
           <ScalarProperty Name="AmountPerDday" ColumnName="AmountPerDday" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="RoomItems">
+      <EntityTypeMapping TypeName="LogisticsBDModel.RoomItems">
+        <MappingFragment StoreEntitySet="RoomItems">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="RoomID" ColumnName="RoomID" />
+          <ScalarProperty Name="ItemID" ColumnName="ItemID" />
+          <ScalarProperty Name="ServiceOrderID" ColumnName="ServiceOrderID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Rooms">
+      <EntityTypeMapping TypeName="LogisticsBDModel.Rooms">
+        <MappingFragment StoreEntitySet="Rooms">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ServiceOrder">
+      <EntityTypeMapping TypeName="LogisticsBDModel.ServiceOrder">
+        <MappingFragment StoreEntitySet="ServiceOrder">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="OrderDate" ColumnName="OrderDate" />
+          <ScalarProperty Name="ExpectedDate" ColumnName="ExpectedDate" />
+          <ScalarProperty Name="Observation" ColumnName="Observation" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="States">
+      <EntityTypeMapping TypeName="LogisticsBDModel.States">
+        <MappingFragment StoreEntitySet="States">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="UF" ColumnName="UF" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>

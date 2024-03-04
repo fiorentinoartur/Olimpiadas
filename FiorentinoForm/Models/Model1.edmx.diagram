@@ -4,41 +4,69 @@
   <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
     <!-- Diagram content (shape and connector positions) -->
     <edmx:Diagrams>
-      <Diagram DiagramId="680de9f92b2c4871bd3d2af9059ae2bf" Name="Diagram1">
-        <EntityTypeShape EntityType="LogisticsBDModel.Addresses" Width="1.5" PointX="3" PointY="9.5" IsExpanded="true" />
-        <EntityTypeShape EntityType="LogisticsBDModel.Benefits" Width="1.5" PointX="8.25" PointY="3.5" IsExpanded="true" />
-        <EntityTypeShape EntityType="LogisticsBDModel.Cities" Width="1.5" PointX="0.75" PointY="11.25" IsExpanded="true" />
-        <EntityTypeShape EntityType="LogisticsBDModel.Commuting" Width="1.5" PointX="3" PointY="12.5" IsExpanded="true" />
-        <EntityTypeShape EntityType="LogisticsBDModel.CommutingPerson" Width="1.5" PointX="7.5" PointY="10.625" IsExpanded="true" />
-        <EntityTypeShape EntityType="LogisticsBDModel.Discounts" Width="1.5" PointX="7.5" PointY="7.5" IsExpanded="true" />
-        <EntityTypeShape EntityType="LogisticsBDModel.DiscountTypes" Width="1.5" PointX="6" PointY="3.75" IsExpanded="true" />
-        <EntityTypeShape EntityType="LogisticsBDModel.Documents" Width="1.5" PointX="10.5" PointY="9.375" IsExpanded="true" />
-        <EntityTypeShape EntityType="LogisticsBDModel.DocumentTypes" Width="1.5" PointX="8.25" PointY="16.875" IsExpanded="true" />
-        <EntityTypeShape EntityType="LogisticsBDModel.Employees" Width="1.5" PointX="7.5" PointY="13.5" IsExpanded="true" />
-        <EntityTypeShape EntityType="LogisticsBDModel.Frequencies" Width="1.5" PointX="9.75" PointY="13.5" IsExpanded="true" />
+      <Diagram DiagramId="95469d6faac64ffaa7a0c00a5c81e3b6" Name="Diagram1">
+        <EntityTypeShape EntityType="LogisticsBDModel.Addresses" Width="1.5" PointX="5.25" PointY="13.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="LogisticsBDModel.Benefits" Width="1.5" PointX="13.5" PointY="23.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="LogisticsBDModel.Cities" Width="1.5" PointX="3" PointY="15" IsExpanded="true" />
+        <EntityTypeShape EntityType="LogisticsBDModel.Commuting" Width="1.5" PointX="5.25" PointY="16.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="LogisticsBDModel.CommutingPerson" Width="1.5" PointX="12.75" PointY="14.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="LogisticsBDModel.ContainerOccupation" Width="1.5" PointX="12.75" PointY="10.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="LogisticsBDModel.Containers" Width="1.5" PointX="10.5" PointY="8.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="LogisticsBDModel.Discounts" Width="1.5" PointX="15.75" PointY="13.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="LogisticsBDModel.DiscountTypes" Width="1.5" PointX="13.5" PointY="20.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="LogisticsBDModel.Documents" Width="1.5" PointX="12.75" PointY="17.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="LogisticsBDModel.DocumentTypes" Width="1.5" PointX="10.5" PointY="18.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="LogisticsBDModel.Employees" Width="1.5" PointX="15.75" PointY="9.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="LogisticsBDModel.Frequencies" Width="1.5" PointX="18" PointY="9.5" IsExpanded="true" />
         <EntityTypeShape EntityType="LogisticsBDModel.Holydays" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
-        <EntityTypeShape EntityType="LogisticsBDModel.People" Width="1.5" PointX="5.25" PointY="8.5" IsExpanded="true" />
-        <EntityTypeShape EntityType="LogisticsBDModel.PersonBenefits" Width="1.5" PointX="10.5" PointY="5.25" IsExpanded="true" />
-        <EntityTypeShape EntityType="LogisticsBDModel.PersonTypes" Width="1.5" PointX="3" PointY="6.875" IsExpanded="true" />
-        <EntityTypeShape EntityType="LogisticsBDModel.Phones" Width="1.5" PointX="7.5" PointY="25.5" IsExpanded="true" />
-        <EntityTypeShape EntityType="LogisticsBDModel.Roles" Width="1.5" PointX="5.25" PointY="13.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="LogisticsBDModel.Items" Width="1.5" PointX="15.75" PointY="24.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="LogisticsBDModel.Materials" Width="1.5" PointX="15.75" PointY="30" IsExpanded="true" />
+        <EntityTypeShape EntityType="LogisticsBDModel.Movings" Width="1.5" PointX="7.5" PointY="13.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="LogisticsBDModel.OrderMaterial" Width="1.5" PointX="18" PointY="21.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="LogisticsBDModel.Payments" Width="1.5" PointX="18" PointY="13.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="LogisticsBDModel.PaymentTypes" Width="1.5" PointX="15.75" PointY="6.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="LogisticsBDModel.People" Width="1.5" PointX="10.5" PointY="12" IsExpanded="true" />
+        <EntityTypeShape EntityType="LogisticsBDModel.PersonBenefits" Width="1.5" PointX="15.75" PointY="17.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="LogisticsBDModel.PersonTypes" Width="1.5" PointX="8.25" PointY="10.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="LogisticsBDModel.Phones" Width="1.5" PointX="12.75" PointY="33.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="LogisticsBDModel.Roles" Width="1.5" PointX="13.5" PointY="6.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="LogisticsBDModel.RoomItems" Width="1.5" PointX="18" PointY="18.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="LogisticsBDModel.Rooms" Width="1.5" PointX="15.75" PointY="27.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="LogisticsBDModel.ServiceOrder" Width="1.5" PointX="15.75" PointY="21.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="LogisticsBDModel.States" Width="1.5" PointX="0.75" PointY="15.25" IsExpanded="true" />
         <AssociationConnector Association="LogisticsBDModel.FK_Addresses_Cities" ManuallyRouted="false" />
+        <AssociationConnector Association="LogisticsBDModel.FK_Movings_Addresses" ManuallyRouted="false" />
+        <AssociationConnector Association="LogisticsBDModel.FK_Movings_Addresses1" ManuallyRouted="false" />
         <AssociationConnector Association="LogisticsBDModel.FK_People_Addresses" ManuallyRouted="false" />
         <AssociationConnector Association="LogisticsBDModel.FK_Benefits_DiscountTypes" ManuallyRouted="false" />
         <AssociationConnector Association="LogisticsBDModel.FK_PersonBenefits_Benefits" ManuallyRouted="false" />
+        <AssociationConnector Association="LogisticsBDModel.FK_Cities_States" ManuallyRouted="false" />
         <AssociationConnector Association="LogisticsBDModel.FK_Transportation_Cities" ManuallyRouted="false" />
         <AssociationConnector Association="LogisticsBDModel.FK_TransportationPerson_Transportation" ManuallyRouted="false" />
         <AssociationConnector Association="LogisticsBDModel.FK_TransportationPerson_People" ManuallyRouted="false" />
+        <AssociationConnector Association="LogisticsBDModel.FK_ContainerOccupation_Containers" ManuallyRouted="false" />
+        <AssociationConnector Association="LogisticsBDModel.FK_ContainerOccupation_People" ManuallyRouted="false" />
+        <AssociationConnector Association="LogisticsBDModel.FK_Payments_ContainerOccupation" ManuallyRouted="false" />
         <AssociationConnector Association="LogisticsBDModel.FK_Discounts_DiscountTypes" ManuallyRouted="false" />
         <AssociationConnector Association="LogisticsBDModel.FK_Discounts_People1" ManuallyRouted="false" />
         <AssociationConnector Association="LogisticsBDModel.FK_DocImages_DocumentTypes" ManuallyRouted="false" />
         <AssociationConnector Association="LogisticsBDModel.FK_DocImages_People" ManuallyRouted="false" />
         <AssociationConnector Association="LogisticsBDModel.FK_Employees_People" ManuallyRouted="false" />
+        <AssociationConnector Association="LogisticsBDModel.FK_Employees_People1" ManuallyRouted="false" />
         <AssociationConnector Association="LogisticsBDModel.FK_Employees_Roles" ManuallyRouted="false" />
         <AssociationConnector Association="LogisticsBDModel.FK_Frequencies_Employees" ManuallyRouted="false" />
+        <AssociationConnector Association="LogisticsBDModel.FK_RoomItems_Items" ManuallyRouted="false" />
+        <AssociationConnector Association="LogisticsBDModel.FK_OrderMaterial_Materials" ManuallyRouted="false" />
+        <AssociationConnector Association="LogisticsBDModel.FK_OrderMaterial_ServiceOrder" ManuallyRouted="false" />
+        <AssociationConnector Association="LogisticsBDModel.FK_Payments_PaymentTypes" ManuallyRouted="false" />
+        <AssociationConnector Association="LogisticsBDModel.FK_Payments_People" ManuallyRouted="false" />
+        <AssociationConnector Association="LogisticsBDModel.FK_Payments_ServiceOrder" ManuallyRouted="false" />
+        <AssociationConnector Association="LogisticsBDModel.FK_People_People" ManuallyRouted="false" />
         <AssociationConnector Association="LogisticsBDModel.FK_People_PersonTypes" ManuallyRouted="false" />
         <AssociationConnector Association="LogisticsBDModel.FK_PersonBenefits_People" ManuallyRouted="false" />
         <AssociationConnector Association="LogisticsBDModel.FK_Phones_People" ManuallyRouted="false" />
+        <AssociationConnector Association="LogisticsBDModel.FK_RoomItems_Rooms" ManuallyRouted="false" />
+        <AssociationConnector Association="LogisticsBDModel.FK_RoomItems_ServiceOrder" ManuallyRouted="false" />
       </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>

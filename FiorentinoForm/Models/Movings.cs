@@ -12,10 +12,15 @@ namespace FiorentinoForm.Models
     using System;
     using System.Collections.Generic;
     
-    public partial class Holydays
+    public partial class Movings
     {
         public int ID { get; set; }
-        public string Description { get; set; }
-        public System.DateTime Date { get; set; }
+        public Nullable<System.DateTime> Date { get; set; }
+        public Nullable<int> OriginID { get; set; }
+        public Nullable<int> DestinationID { get; set; }
+        public Nullable<int> ServiceOrderID { get; set; }
+    
+        public virtual Addresses Addresses { get; set; }
+        public virtual Addresses Addresses1 { get; set; }
     }
 }

@@ -12,24 +12,19 @@ namespace FiorentinoForm.Models
     using System;
     using System.Collections.Generic;
     
-    public partial class Employees
+    public partial class Containers
     {
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
-        public Employees()
+        public Containers()
         {
-            this.Frequencies = new HashSet<Frequencies>();
+            this.ContainerOccupation = new HashSet<ContainerOccupation>();
         }
     
         public int ID { get; set; }
-        public Nullable<System.DateTime> AdmissionDate { get; set; }
-        public Nullable<bool> HasAdvance { get; set; }
-        public Nullable<int> ManagerID { get; set; }
-        public Nullable<int> RoleID { get; set; }
+        public string NumberCode { get; set; }
+        public string Location { get; set; }
     
-        public virtual People People { get; set; }
-        public virtual People People1 { get; set; }
-        public virtual Roles Roles { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<Frequencies> Frequencies { get; set; }
+        public virtual ICollection<ContainerOccupation> ContainerOccupation { get; set; }
     }
 }

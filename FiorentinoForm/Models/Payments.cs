@@ -12,19 +12,18 @@ namespace FiorentinoForm.Models
     using System;
     using System.Collections.Generic;
     
-    public partial class DocumentTypes
+    public partial class Payments
     {
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
-        public DocumentTypes()
-        {
-            this.Documents = new HashSet<Documents>();
-        }
-    
         public int ID { get; set; }
-        public string Name { get; set; }
-        public string Validation { get; set; }
+        public Nullable<int> ClientID { get; set; }
+        public Nullable<decimal> Amount { get; set; }
+        public Nullable<int> ServiceOrderID { get; set; }
+        public Nullable<int> ContainerOccupationID { get; set; }
+        public Nullable<int> PaymentTypeID { get; set; }
     
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<Documents> Documents { get; set; }
+        public virtual ContainerOccupation ContainerOccupation { get; set; }
+        public virtual PaymentTypes PaymentTypes { get; set; }
+        public virtual People People { get; set; }
+        public virtual ServiceOrder ServiceOrder { get; set; }
     }
 }

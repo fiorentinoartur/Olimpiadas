@@ -13,10 +13,10 @@ namespace FiorentinoForm.Models
     using System.Data.Entity;
     using System.Data.Entity.Infrastructure;
     
-    public partial class LogisticsBDEntities : DbContext
+    public partial class LogisticsBDEntities1 : DbContext
     {
-        public LogisticsBDEntities()
-            : base("name=LogisticsBDEntities")
+        public LogisticsBDEntities1()
+            : base("name=LogisticsBDEntities1")
         {
         }
     
@@ -30,6 +30,8 @@ namespace FiorentinoForm.Models
         public virtual DbSet<Cities> Cities { get; set; }
         public virtual DbSet<Commuting> Commuting { get; set; }
         public virtual DbSet<CommutingPerson> CommutingPerson { get; set; }
+        public virtual DbSet<ContainerOccupation> ContainerOccupation { get; set; }
+        public virtual DbSet<Containers> Containers { get; set; }
         public virtual DbSet<Discounts> Discounts { get; set; }
         public virtual DbSet<DiscountTypes> DiscountTypes { get; set; }
         public virtual DbSet<Documents> Documents { get; set; }
@@ -37,10 +39,20 @@ namespace FiorentinoForm.Models
         public virtual DbSet<Employees> Employees { get; set; }
         public virtual DbSet<Frequencies> Frequencies { get; set; }
         public virtual DbSet<Holydays> Holydays { get; set; }
+        public virtual DbSet<Items> Items { get; set; }
+        public virtual DbSet<Materials> Materials { get; set; }
+        public virtual DbSet<Movings> Movings { get; set; }
+        public virtual DbSet<OrderMaterial> OrderMaterial { get; set; }
+        public virtual DbSet<Payments> Payments { get; set; }
+        public virtual DbSet<PaymentTypes> PaymentTypes { get; set; }
         public virtual DbSet<People> People { get; set; }
         public virtual DbSet<PersonBenefits> PersonBenefits { get; set; }
         public virtual DbSet<PersonTypes> PersonTypes { get; set; }
         public virtual DbSet<Phones> Phones { get; set; }
         public virtual DbSet<Roles> Roles { get; set; }
+        public virtual DbSet<RoomItems> RoomItems { get; set; }
+        public virtual DbSet<Rooms> Rooms { get; set; }
+        public virtual DbSet<ServiceOrder> ServiceOrder { get; set; }
+        public virtual DbSet<States> States { get; set; }
     }
 }

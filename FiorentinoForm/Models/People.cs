@@ -18,8 +18,12 @@ namespace FiorentinoForm.Models
         public People()
         {
             this.CommutingPerson = new HashSet<CommutingPerson>();
+            this.ContainerOccupation = new HashSet<ContainerOccupation>();
             this.Discounts = new HashSet<Discounts>();
             this.Documents = new HashSet<Documents>();
+            this.Employees1 = new HashSet<Employees>();
+            this.Payments = new HashSet<Payments>();
+            this.People1 = new HashSet<People>();
             this.PersonBenefits = new HashSet<PersonBenefits>();
             this.Phones = new HashSet<Phones>();
         }
@@ -30,7 +34,8 @@ namespace FiorentinoForm.Models
         public Nullable<System.DateTime> BirthDay { get; set; }
         public string Password { get; set; }
         public string Email { get; set; }
-        public string ResponsibleID { get; set; }
+        public string Photo { get; set; }
+        public Nullable<int> ResponsibleID { get; set; }
         public Nullable<int> TypeID { get; set; }
         public Nullable<int> AddressID { get; set; }
     
@@ -38,10 +43,19 @@ namespace FiorentinoForm.Models
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<CommutingPerson> CommutingPerson { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<ContainerOccupation> ContainerOccupation { get; set; }
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<Discounts> Discounts { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<Documents> Documents { get; set; }
         public virtual Employees Employees { get; set; }
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<Employees> Employees1 { get; set; }
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<Payments> Payments { get; set; }
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<People> People1 { get; set; }
+        public virtual People People2 { get; set; }
         public virtual PersonTypes PersonTypes { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<PersonBenefits> PersonBenefits { get; set; }
