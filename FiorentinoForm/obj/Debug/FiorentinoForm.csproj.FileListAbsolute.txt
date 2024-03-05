@@ -19,3 +19,4 @@ C:\Users\admin\Desktop\Olimpiadas\FiorentinoForm\obj\Debug\FiorentinoForm.csproj
 C:\Users\admin\Desktop\Olimpiadas\FiorentinoForm\obj\Debug\Fiorenti.4C99F392.Up2Date
 C:\Users\admin\Desktop\Olimpiadas\FiorentinoForm\obj\Debug\FiorentinoForm.exe
 C:\Users\admin\Desktop\Olimpiadas\FiorentinoForm\obj\Debug\FiorentinoForm.pdb
+C:\Users\admin\Desktop\Olimpiadas\FiorentinoForm\obj\Debug\FiorentinoForm.CadastroValeForm.resources

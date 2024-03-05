@@ -3,72 +3,72 @@
   "WorkspaceRootPath": "C:\\Users\\admin\\Desktop\\Olimpiadas\\FiorentinoForm\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{D071A8C9-833D-44DF-9A78-765CBDD67F02}|FiorentinoForm.csproj|C:\\Users\\admin\\Desktop\\Olimpiadas\\FiorentinoForm\\cadastrofunc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D071A8C9-833D-44DF-9A78-765CBDD67F02}|FiorentinoForm.csproj|solutionrelative:cadastrofunc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{D071A8C9-833D-44DF-9A78-765CBDD67F02}|FiorentinoForm.csproj|c:\\users\\admin\\desktop\\olimpiadas\\fiorentinoform\\lancamentovale.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D071A8C9-833D-44DF-9A78-765CBDD67F02}|FiorentinoForm.csproj|solutionrelative:lancamentovale.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D071A8C9-833D-44DF-9A78-765CBDD67F02}|FiorentinoForm.csproj|C:\\Users\\admin\\Desktop\\Olimpiadas\\FiorentinoForm\\parent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D071A8C9-833D-44DF-9A78-765CBDD67F02}|FiorentinoForm.csproj|solutionrelative:parent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D071A8C9-833D-44DF-9A78-765CBDD67F02}|FiorentinoForm.csproj|C:\\Users\\admin\\Desktop\\Olimpiadas\\FiorentinoForm\\parent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{D071A8C9-833D-44DF-9A78-765CBDD67F02}|FiorentinoForm.csproj|solutionrelative:parent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D071A8C9-833D-44DF-9A78-765CBDD67F02}|FiorentinoForm.csproj|C:\\Users\\admin\\Desktop\\Olimpiadas\\FiorentinoForm\\teste.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{D071A8C9-833D-44DF-9A78-765CBDD67F02}|FiorentinoForm.csproj|solutionrelative:teste.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D071A8C9-833D-44DF-9A78-765CBDD67F02}|FiorentinoForm.csproj|C:\\Users\\admin\\Desktop\\Olimpiadas\\FiorentinoForm\\lancamentovale.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{D071A8C9-833D-44DF-9A78-765CBDD67F02}|FiorentinoForm.csproj|solutionrelative:lancamentovale.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D071A8C9-833D-44DF-9A78-765CBDD67F02}|FiorentinoForm.csproj|C:\\Users\\admin\\Desktop\\Olimpiadas\\FiorentinoForm\\holerite.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{D071A8C9-833D-44DF-9A78-765CBDD67F02}|FiorentinoForm.csproj|solutionrelative:holerite.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D071A8C9-833D-44DF-9A78-765CBDD67F02}|FiorentinoForm.csproj|c:\\users\\admin\\desktop\\olimpiadas\\fiorentinoform\\frequenciafunc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{D071A8C9-833D-44DF-9A78-765CBDD67F02}|FiorentinoForm.csproj|solutionrelative:frequenciafunc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D071A8C9-833D-44DF-9A78-765CBDD67F02}|FiorentinoForm.csproj|C:\\Users\\admin\\Desktop\\Olimpiadas\\FiorentinoForm\\form1.resx||{FF4D6ACA-9352-4A5F-821E-F4D6EBDCAB11}",
-      "RelativeMoniker": "D:0:0:{D071A8C9-833D-44DF-9A78-765CBDD67F02}|FiorentinoForm.csproj|solutionrelative:form1.resx||{FF4D6ACA-9352-4A5F-821E-F4D6EBDCAB11}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D071A8C9-833D-44DF-9A78-765CBDD67F02}|FiorentinoForm.csproj|C:\\Users\\admin\\Desktop\\Olimpiadas\\FiorentinoForm\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{D071A8C9-833D-44DF-9A78-765CBDD67F02}|FiorentinoForm.csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{D071A8C9-833D-44DF-9A78-765CBDD67F02}|FiorentinoForm.csproj|C:\\Users\\admin\\Desktop\\Olimpiadas\\FiorentinoForm\\cadastrovaleform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{D071A8C9-833D-44DF-9A78-765CBDD67F02}|FiorentinoForm.csproj|solutionrelative:cadastrovaleform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{D071A8C9-833D-44DF-9A78-765CBDD67F02}|FiorentinoForm.csproj|C:\\Users\\admin\\Desktop\\Olimpiadas\\FiorentinoForm\\cadastrofunc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{D071A8C9-833D-44DF-9A78-765CBDD67F02}|FiorentinoForm.csproj|solutionrelative:cadastrofunc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D071A8C9-833D-44DF-9A78-765CBDD67F02}|FiorentinoForm.csproj|c:\\users\\admin\\desktop\\olimpiadas\\fiorentinoform\\form1.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D071A8C9-833D-44DF-9A78-765CBDD67F02}|FiorentinoForm.csproj|solutionrelative:form1.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D071A8C9-833D-44DF-9A78-765CBDD67F02}|FiorentinoForm.csproj|C:\\Users\\admin\\Desktop\\Olimpiadas\\FiorentinoForm\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D071A8C9-833D-44DF-9A78-765CBDD67F02}|FiorentinoForm.csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D071A8C9-833D-44DF-9A78-765CBDD67F02}|FiorentinoForm.csproj|C:\\Users\\admin\\Desktop\\Olimpiadas\\FiorentinoForm\\parent.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D071A8C9-833D-44DF-9A78-765CBDD67F02}|FiorentinoForm.csproj|solutionrelative:parent.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D071A8C9-833D-44DF-9A78-765CBDD67F02}|FiorentinoForm.csproj|C:\\Users\\admin\\Desktop\\Olimpiadas\\FiorentinoForm\\packages.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
-      "RelativeMoniker": "D:0:0:{D071A8C9-833D-44DF-9A78-765CBDD67F02}|FiorentinoForm.csproj|solutionrelative:packages.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D071A8C9-833D-44DF-9A78-765CBDD67F02}|FiorentinoForm.csproj|C:\\Users\\admin\\Desktop\\Olimpiadas\\FiorentinoForm\\loginscreen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D071A8C9-833D-44DF-9A78-765CBDD67F02}|FiorentinoForm.csproj|solutionrelative:loginscreen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{D071A8C9-833D-44DF-9A78-765CBDD67F02}|FiorentinoForm.csproj|C:\\Users\\admin\\Desktop\\Olimpiadas\\FiorentinoForm\\lancamentovale.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{D071A8C9-833D-44DF-9A78-765CBDD67F02}|FiorentinoForm.csproj|solutionrelative:lancamentovale.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{D071A8C9-833D-44DF-9A78-765CBDD67F02}|FiorentinoForm.csproj|C:\\Users\\admin\\Desktop\\Olimpiadas\\FiorentinoForm\\loginscreen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{D071A8C9-833D-44DF-9A78-765CBDD67F02}|FiorentinoForm.csproj|solutionrelative:loginscreen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D071A8C9-833D-44DF-9A78-765CBDD67F02}|FiorentinoForm.csproj|C:\\Users\\admin\\Desktop\\Olimpiadas\\FiorentinoForm\\loginscreen.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D071A8C9-833D-44DF-9A78-765CBDD67F02}|FiorentinoForm.csproj|solutionrelative:loginscreen.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{D071A8C9-833D-44DF-9A78-765CBDD67F02}|FiorentinoForm.csproj|C:\\Users\\admin\\Desktop\\Olimpiadas\\FiorentinoForm\\frequenciafunc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{D071A8C9-833D-44DF-9A78-765CBDD67F02}|FiorentinoForm.csproj|solutionrelative:frequenciafunc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D071A8C9-833D-44DF-9A78-765CBDD67F02}|FiorentinoForm.csproj|C:\\Users\\admin\\Desktop\\Olimpiadas\\FiorentinoForm\\cadastrovaleform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D071A8C9-833D-44DF-9A78-765CBDD67F02}|FiorentinoForm.csproj|solutionrelative:cadastrovaleform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D071A8C9-833D-44DF-9A78-765CBDD67F02}|FiorentinoForm.csproj|C:\\Users\\admin\\Desktop\\Olimpiadas\\FiorentinoForm\\models\\model1.edmx||{C99AEA30-8E36-4515-B76F-496F5A48A6AA}|",
+      "RelativeMoniker": "D:0:0:{D071A8C9-833D-44DF-9A78-765CBDD67F02}|FiorentinoForm.csproj|solutionrelative:models\\model1.edmx||{C99AEA30-8E36-4515-B76F-496F5A48A6AA}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D071A8C9-833D-44DF-9A78-765CBDD67F02}|FiorentinoForm.csproj|C:\\Users\\admin\\Desktop\\Olimpiadas\\FiorentinoForm\\models\\personbenefits.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D071A8C9-833D-44DF-9A78-765CBDD67F02}|FiorentinoForm.csproj|solutionrelative:models\\personbenefits.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D071A8C9-833D-44DF-9A78-765CBDD67F02}|FiorentinoForm.csproj|C:\\Users\\admin\\Desktop\\Olimpiadas\\FiorentinoForm\\holerite.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{D071A8C9-833D-44DF-9A78-765CBDD67F02}|FiorentinoForm.csproj|solutionrelative:holerite.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D071A8C9-833D-44DF-9A78-765CBDD67F02}|FiorentinoForm.csproj|C:\\Users\\admin\\Desktop\\Olimpiadas\\FiorentinoForm\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{D071A8C9-833D-44DF-9A78-765CBDD67F02}|FiorentinoForm.csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D071A8C9-833D-44DF-9A78-765CBDD67F02}|FiorentinoForm.csproj|C:\\Users\\admin\\Desktop\\Olimpiadas\\FiorentinoForm\\form1.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D071A8C9-833D-44DF-9A78-765CBDD67F02}|FiorentinoForm.csproj|solutionrelative:form1.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D071A8C9-833D-44DF-9A78-765CBDD67F02}|FiorentinoForm.csproj|C:\\Users\\admin\\Desktop\\Olimpiadas\\FiorentinoForm\\cadastrovaleform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D071A8C9-833D-44DF-9A78-765CBDD67F02}|FiorentinoForm.csproj|solutionrelative:cadastrovaleform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D071A8C9-833D-44DF-9A78-765CBDD67F02}|FiorentinoForm.csproj|C:\\Users\\admin\\Desktop\\Olimpiadas\\FiorentinoForm\\parent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{D071A8C9-833D-44DF-9A78-765CBDD67F02}|FiorentinoForm.csproj|solutionrelative:parent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D071A8C9-833D-44DF-9A78-765CBDD67F02}|FiorentinoForm.csproj|C:\\Users\\admin\\Desktop\\Olimpiadas\\FiorentinoForm\\packages.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{D071A8C9-833D-44DF-9A78-765CBDD67F02}|FiorentinoForm.csproj|solutionrelative:packages.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D071A8C9-833D-44DF-9A78-765CBDD67F02}|FiorentinoForm.csproj|C:\\Users\\admin\\Desktop\\Olimpiadas\\FiorentinoForm\\lancamentovale.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D071A8C9-833D-44DF-9A78-765CBDD67F02}|FiorentinoForm.csproj|solutionrelative:lancamentovale.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D071A8C9-833D-44DF-9A78-765CBDD67F02}|FiorentinoForm.csproj|C:\\Users\\admin\\Desktop\\Olimpiadas\\FiorentinoForm\\frequenciafunc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D071A8C9-833D-44DF-9A78-765CBDD67F02}|FiorentinoForm.csproj|solutionrelative:frequenciafunc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{D071A8C9-833D-44DF-9A78-765CBDD67F02}|FiorentinoForm.csproj|C:\\Users\\admin\\Desktop\\Olimpiadas\\FiorentinoForm\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -79,16 +79,36 @@
       "RelativeMoniker": "D:0:0:{D071A8C9-833D-44DF-9A78-765CBDD67F02}|FiorentinoForm.csproj|solutionrelative:userdados.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D071A8C9-833D-44DF-9A78-765CBDD67F02}|FiorentinoForm.csproj|C:\\Users\\admin\\Desktop\\Olimpiadas\\FiorentinoForm\\frequenciafunc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D071A8C9-833D-44DF-9A78-765CBDD67F02}|FiorentinoForm.csproj|solutionrelative:frequenciafunc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{D071A8C9-833D-44DF-9A78-765CBDD67F02}|FiorentinoForm.csproj|C:\\Users\\admin\\Desktop\\Olimpiadas\\FiorentinoForm\\cadastrofunc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D071A8C9-833D-44DF-9A78-765CBDD67F02}|FiorentinoForm.csproj|solutionrelative:cadastrofunc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D071A8C9-833D-44DF-9A78-765CBDD67F02}|FiorentinoForm.csproj|C:\\Users\\admin\\Desktop\\Olimpiadas\\FiorentinoForm\\models\\model1.edmx||{C99AEA30-8E36-4515-B76F-496F5A48A6AA}|",
-      "RelativeMoniker": "D:0:0:{D071A8C9-833D-44DF-9A78-765CBDD67F02}|FiorentinoForm.csproj|solutionrelative:models\\model1.edmx||{C99AEA30-8E36-4515-B76F-496F5A48A6AA}|"
+      "AbsoluteMoniker": "D:0:0:{D071A8C9-833D-44DF-9A78-765CBDD67F02}|FiorentinoForm.csproj|C:\\Users\\admin\\Desktop\\Olimpiadas\\FiorentinoForm\\parent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D071A8C9-833D-44DF-9A78-765CBDD67F02}|FiorentinoForm.csproj|solutionrelative:parent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D071A8C9-833D-44DF-9A78-765CBDD67F02}|FiorentinoForm.csproj|C:\\Users\\admin\\Desktop\\Olimpiadas\\FiorentinoForm\\lancamentovale.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D071A8C9-833D-44DF-9A78-765CBDD67F02}|FiorentinoForm.csproj|solutionrelative:lancamentovale.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{D071A8C9-833D-44DF-9A78-765CBDD67F02}|FiorentinoForm.csproj|C:\\Users\\admin\\Desktop\\Olimpiadas\\FiorentinoForm\\teste.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{D071A8C9-833D-44DF-9A78-765CBDD67F02}|FiorentinoForm.csproj|solutionrelative:teste.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D071A8C9-833D-44DF-9A78-765CBDD67F02}|FiorentinoForm.csproj|C:\\Users\\admin\\Desktop\\Olimpiadas\\FiorentinoForm\\form1.resx||{FF4D6ACA-9352-4A5F-821E-F4D6EBDCAB11}",
+      "RelativeMoniker": "D:0:0:{D071A8C9-833D-44DF-9A78-765CBDD67F02}|FiorentinoForm.csproj|solutionrelative:form1.resx||{FF4D6ACA-9352-4A5F-821E-F4D6EBDCAB11}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D071A8C9-833D-44DF-9A78-765CBDD67F02}|FiorentinoForm.csproj|C:\\Users\\admin\\Desktop\\Olimpiadas\\FiorentinoForm\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D071A8C9-833D-44DF-9A78-765CBDD67F02}|FiorentinoForm.csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D071A8C9-833D-44DF-9A78-765CBDD67F02}|FiorentinoForm.csproj|C:\\Users\\admin\\Desktop\\Olimpiadas\\FiorentinoForm\\parent.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D071A8C9-833D-44DF-9A78-765CBDD67F02}|FiorentinoForm.csproj|solutionrelative:parent.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D071A8C9-833D-44DF-9A78-765CBDD67F02}|FiorentinoForm.csproj|C:\\Users\\admin\\Desktop\\Olimpiadas\\FiorentinoForm\\loginscreen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D071A8C9-833D-44DF-9A78-765CBDD67F02}|FiorentinoForm.csproj|solutionrelative:loginscreen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D071A8C9-833D-44DF-9A78-765CBDD67F02}|FiorentinoForm.csproj|C:\\Users\\admin\\Desktop\\Olimpiadas\\FiorentinoForm\\loginscreen.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D071A8C9-833D-44DF-9A78-765CBDD67F02}|FiorentinoForm.csproj|solutionrelative:loginscreen.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -98,59 +118,22 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 10,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
               "DocumentIndex": 5,
-              "Title": "Holerite.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\admin\\Desktop\\Olimpiadas\\FiorentinoForm\\Holerite.cs",
-              "RelativeDocumentMoniker": "Holerite.cs",
-              "ToolTip": "C:\\Users\\admin\\Desktop\\Olimpiadas\\FiorentinoForm\\Holerite.cs [Design]",
-              "RelativeToolTip": "Holerite.cs [Design]",
+              "Title": "FrequenciaFunc.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\admin\\Desktop\\Olimpiadas\\FiorentinoForm\\FrequenciaFunc.cs",
+              "RelativeDocumentMoniker": "FrequenciaFunc.cs",
+              "ToolTip": "C:\\Users\\admin\\Desktop\\Olimpiadas\\FiorentinoForm\\FrequenciaFunc.cs [Design]",
+              "RelativeToolTip": "FrequenciaFunc.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-01T17:59:01.592Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2024-03-01T15:50:08.213Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "Form1.resx",
-              "DocumentMoniker": "C:\\Users\\admin\\Desktop\\Olimpiadas\\FiorentinoForm\\Form1.resx",
-              "RelativeDocumentMoniker": "Form1.resx",
-              "ToolTip": "C:\\Users\\admin\\Desktop\\Olimpiadas\\FiorentinoForm\\Form1.resx",
-              "RelativeToolTip": "Form1.resx",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001005|",
-              "WhenOpened": "2024-03-01T16:30:40.261Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "LoginScreen.cs",
-              "DocumentMoniker": "C:\\Users\\admin\\Desktop\\Olimpiadas\\FiorentinoForm\\LoginScreen.cs",
-              "RelativeDocumentMoniker": "LoginScreen.cs",
-              "ToolTip": "C:\\Users\\admin\\Desktop\\Olimpiadas\\FiorentinoForm\\LoginScreen.cs",
-              "RelativeToolTip": "LoginScreen.cs",
-              "ViewState": "AQIAADYAAAAAAAAAAAAYwCsAAAAtAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-04T19:10:42.518Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "packages.config",
-              "DocumentMoniker": "C:\\Users\\admin\\Desktop\\Olimpiadas\\FiorentinoForm\\packages.config",
-              "RelativeDocumentMoniker": "packages.config",
-              "ToolTip": "C:\\Users\\admin\\Desktop\\Olimpiadas\\FiorentinoForm\\packages.config",
-              "RelativeToolTip": "packages.config",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAEAAAAJAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
-              "WhenOpened": "2024-03-01T18:39:57.868Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 3,
               "Title": "LancamentoVale.cs [Design]",
               "DocumentMoniker": "C:\\Users\\admin\\Desktop\\Olimpiadas\\FiorentinoForm\\LancamentoVale.cs",
               "RelativeDocumentMoniker": "LancamentoVale.cs",
@@ -162,82 +145,43 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "teste.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\admin\\Desktop\\Olimpiadas\\FiorentinoForm\\teste.cs",
-              "RelativeDocumentMoniker": "teste.cs",
-              "ToolTip": "C:\\Users\\admin\\Desktop\\Olimpiadas\\FiorentinoForm\\teste.cs [Design]",
-              "RelativeToolTip": "teste.cs [Design]",
+              "DocumentIndex": 0,
+              "Title": "LancamentoVale.cs",
+              "DocumentMoniker": "C:\\Users\\admin\\Desktop\\Olimpiadas\\FiorentinoForm\\LancamentoVale.cs",
+              "RelativeDocumentMoniker": "LancamentoVale.cs",
+              "ToolTip": "C:\\Users\\admin\\Desktop\\Olimpiadas\\FiorentinoForm\\LancamentoVale.cs",
+              "RelativeToolTip": "LancamentoVale.cs",
+              "ViewState": "AQIAAA0AAAAAAAAAAAAcwBgAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-01T16:04:02.341Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "parent.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\admin\\Desktop\\Olimpiadas\\FiorentinoForm\\parent.cs",
-              "RelativeDocumentMoniker": "parent.cs",
-              "ToolTip": "C:\\Users\\admin\\Desktop\\Olimpiadas\\FiorentinoForm\\parent.cs [Design]",
-              "RelativeToolTip": "parent.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-01T15:13:08.052Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "Form1.cs",
-              "DocumentMoniker": "C:\\Users\\admin\\Desktop\\Olimpiadas\\FiorentinoForm\\Form1.cs",
-              "RelativeDocumentMoniker": "Form1.cs",
-              "ToolTip": "C:\\Users\\admin\\Desktop\\Olimpiadas\\FiorentinoForm\\Form1.cs",
-              "RelativeToolTip": "Form1.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABYAAAAEAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-01T15:14:30.34Z",
+              "WhenOpened": "2024-03-01T16:39:34.988Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 1,
+              "Title": "CadastroValeForm.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\admin\\Desktop\\Olimpiadas\\FiorentinoForm\\CadastroValeForm.cs",
+              "RelativeDocumentMoniker": "CadastroValeForm.cs",
+              "ToolTip": "C:\\Users\\admin\\Desktop\\Olimpiadas\\FiorentinoForm\\CadastroValeForm.cs [Design]",
+              "RelativeToolTip": "CadastroValeForm.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-05T17:06:54.769Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
               "Title": "Form1.cs [Design]",
               "DocumentMoniker": "C:\\Users\\admin\\Desktop\\Olimpiadas\\FiorentinoForm\\Form1.cs",
               "RelativeDocumentMoniker": "Form1.cs",
               "ToolTip": "C:\\Users\\admin\\Desktop\\Olimpiadas\\FiorentinoForm\\Form1.cs [Design]",
               "RelativeToolTip": "Form1.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-01T15:12:48.048Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2024-03-01T15:12:48.048Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "parent.cs",
-              "DocumentMoniker": "C:\\Users\\admin\\Desktop\\Olimpiadas\\FiorentinoForm\\parent.cs",
-              "RelativeDocumentMoniker": "parent.cs",
-              "ToolTip": "C:\\Users\\admin\\Desktop\\Olimpiadas\\FiorentinoForm\\parent.cs",
-              "RelativeToolTip": "parent.cs",
-              "ViewState": "AQIAACkAAAAAAAAAAAAgwE8AAAAcAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-01T15:50:17.491Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "CadastroFunc.cs",
-              "DocumentMoniker": "C:\\Users\\admin\\Desktop\\Olimpiadas\\FiorentinoForm\\CadastroFunc.cs",
-              "RelativeDocumentMoniker": "CadastroFunc.cs",
-              "ToolTip": "C:\\Users\\admin\\Desktop\\Olimpiadas\\FiorentinoForm\\CadastroFunc.cs",
-              "RelativeToolTip": "CadastroFunc.cs",
-              "ViewState": "AQIAAAMAAAAAAAAAAAAAABIAAAAmAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-01T18:28:43.762Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 2,
               "Title": "CadastroFunc.cs [Design]",
               "DocumentMoniker": "C:\\Users\\admin\\Desktop\\Olimpiadas\\FiorentinoForm\\CadastroFunc.cs",
               "RelativeDocumentMoniker": "CadastroFunc.cs",
@@ -249,7 +193,31 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 6,
+              "Title": "CadastroValeForm.cs",
+              "DocumentMoniker": "C:\\Users\\admin\\Desktop\\Olimpiadas\\FiorentinoForm\\CadastroValeForm.cs",
+              "RelativeDocumentMoniker": "CadastroValeForm.cs",
+              "ToolTip": "C:\\Users\\admin\\Desktop\\Olimpiadas\\FiorentinoForm\\CadastroValeForm.cs",
+              "RelativeToolTip": "CadastroValeForm.cs",
+              "ViewState": "AQIAAEsAAAAAAAAAAAAswGoAAABAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-05T17:10:16.261Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Model1.edmx [Diagram1]",
+              "DocumentMoniker": "C:\\Users\\admin\\Desktop\\Olimpiadas\\FiorentinoForm\\Models\\Model1.edmx",
+              "RelativeDocumentMoniker": "Models\\Model1.edmx",
+              "ToolTip": "C:\\Users\\admin\\Desktop\\Olimpiadas\\FiorentinoForm\\Models\\Model1.edmx [Diagram1]",
+              "RelativeToolTip": "Models\\Model1.edmx [Diagram1]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001116|",
+              "WhenOpened": "2024-03-04T15:58:00.263Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "LoginScreen.cs [Design]",
               "DocumentMoniker": "C:\\Users\\admin\\Desktop\\Olimpiadas\\FiorentinoForm\\LoginScreen.cs",
               "RelativeDocumentMoniker": "LoginScreen.cs",
@@ -260,19 +228,19 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "FrequenciaFunc.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\admin\\Desktop\\Olimpiadas\\FiorentinoForm\\FrequenciaFunc.cs",
-              "RelativeDocumentMoniker": "FrequenciaFunc.cs",
-              "ToolTip": "C:\\Users\\admin\\Desktop\\Olimpiadas\\FiorentinoForm\\FrequenciaFunc.cs [Design]",
-              "RelativeToolTip": "FrequenciaFunc.cs [Design]",
+              "DocumentIndex": 8,
+              "Title": "PersonBenefits.cs",
+              "DocumentMoniker": "C:\\Users\\admin\\Desktop\\Olimpiadas\\FiorentinoForm\\Models\\PersonBenefits.cs",
+              "RelativeDocumentMoniker": "Models\\PersonBenefits.cs",
+              "ToolTip": "C:\\Users\\admin\\Desktop\\Olimpiadas\\FiorentinoForm\\Models\\PersonBenefits.cs",
+              "RelativeToolTip": "Models\\PersonBenefits.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABUAAAAYAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-01T15:50:08.213Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2024-03-05T19:24:14.162Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 11,
               "Title": "Form1.Designer.cs",
               "DocumentMoniker": "C:\\Users\\admin\\Desktop\\Olimpiadas\\FiorentinoForm\\Form1.Designer.cs",
               "RelativeDocumentMoniker": "Form1.Designer.cs",
@@ -280,33 +248,78 @@
               "RelativeToolTip": "Form1.Designer.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-04T19:38:00.597Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-03-04T19:38:00.597Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Holerite.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\admin\\Desktop\\Olimpiadas\\FiorentinoForm\\Holerite.cs",
+              "RelativeDocumentMoniker": "Holerite.cs",
+              "ToolTip": "C:\\Users\\admin\\Desktop\\Olimpiadas\\FiorentinoForm\\Holerite.cs [Design]",
+              "RelativeToolTip": "Holerite.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-01T17:59:01.592Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 12,
-              "Title": "parent.Designer.cs",
-              "DocumentMoniker": "C:\\Users\\admin\\Desktop\\Olimpiadas\\FiorentinoForm\\parent.Designer.cs",
-              "RelativeDocumentMoniker": "parent.Designer.cs",
-              "ToolTip": "C:\\Users\\admin\\Desktop\\Olimpiadas\\FiorentinoForm\\parent.Designer.cs",
-              "RelativeToolTip": "parent.Designer.cs",
+              "Title": "CadastroValeForm.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\admin\\Desktop\\Olimpiadas\\FiorentinoForm\\CadastroValeForm.Designer.cs",
+              "RelativeDocumentMoniker": "CadastroValeForm.Designer.cs",
+              "ToolTip": "C:\\Users\\admin\\Desktop\\Olimpiadas\\FiorentinoForm\\CadastroValeForm.Designer.cs",
+              "RelativeToolTip": "CadastroValeForm.Designer.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-04T19:34:17.499Z",
+              "WhenOpened": "2024-03-05T18:31:24.8Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 16,
-              "Title": "LoginScreen.Designer.cs",
-              "DocumentMoniker": "C:\\Users\\admin\\Desktop\\Olimpiadas\\FiorentinoForm\\LoginScreen.Designer.cs",
-              "RelativeDocumentMoniker": "LoginScreen.Designer.cs",
-              "ToolTip": "C:\\Users\\admin\\Desktop\\Olimpiadas\\FiorentinoForm\\LoginScreen.Designer.cs",
-              "RelativeToolTip": "LoginScreen.Designer.cs",
-              "ViewState": "AQIAABwAAAAAAAAAAAAqwDQAAABOAAAA",
+              "Title": "FrequenciaFunc.cs",
+              "DocumentMoniker": "C:\\Users\\admin\\Desktop\\Olimpiadas\\FiorentinoForm\\FrequenciaFunc.cs",
+              "RelativeDocumentMoniker": "FrequenciaFunc.cs",
+              "ToolTip": "C:\\Users\\admin\\Desktop\\Olimpiadas\\FiorentinoForm\\FrequenciaFunc.cs",
+              "RelativeToolTip": "FrequenciaFunc.cs",
+              "ViewState": "AQIAAEMAAAAAAAAAAAAkwFkAAAASAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-04T19:08:22.235Z"
+              "WhenOpened": "2024-03-01T15:57:31.751Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "parent.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\admin\\Desktop\\Olimpiadas\\FiorentinoForm\\parent.cs",
+              "RelativeDocumentMoniker": "parent.cs",
+              "ToolTip": "C:\\Users\\admin\\Desktop\\Olimpiadas\\FiorentinoForm\\parent.cs [Design]",
+              "RelativeToolTip": "parent.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-01T15:13:08.052Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "packages.config",
+              "DocumentMoniker": "C:\\Users\\admin\\Desktop\\Olimpiadas\\FiorentinoForm\\packages.config",
+              "RelativeDocumentMoniker": "packages.config",
+              "ToolTip": "C:\\Users\\admin\\Desktop\\Olimpiadas\\FiorentinoForm\\packages.config",
+              "RelativeToolTip": "packages.config",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAEAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
+              "WhenOpened": "2024-03-01T18:39:57.868Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "LancamentoVale.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\admin\\Desktop\\Olimpiadas\\FiorentinoForm\\LancamentoVale.Designer.cs",
+              "RelativeDocumentMoniker": "LancamentoVale.Designer.cs",
+              "ToolTip": "C:\\Users\\admin\\Desktop\\Olimpiadas\\FiorentinoForm\\LancamentoVale.Designer.cs",
+              "RelativeToolTip": "LancamentoVale.Designer.cs",
+              "ViewState": "AQIAAE8AAAAAAAAAAAAuwGgAAAAMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-05T18:05:03.27Z"
             },
             {
               "$type": "Document",
@@ -316,7 +329,7 @@
               "RelativeDocumentMoniker": "Program.cs",
               "ToolTip": "C:\\Users\\admin\\Desktop\\Olimpiadas\\FiorentinoForm\\Program.cs",
               "RelativeToolTip": "Program.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAArAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAAuAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-03-01T19:05:39.158Z"
             },
@@ -334,39 +347,98 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
-              "Title": "FrequenciaFunc.cs",
-              "DocumentMoniker": "C:\\Users\\admin\\Desktop\\Olimpiadas\\FiorentinoForm\\FrequenciaFunc.cs",
-              "RelativeDocumentMoniker": "FrequenciaFunc.cs",
-              "ToolTip": "C:\\Users\\admin\\Desktop\\Olimpiadas\\FiorentinoForm\\FrequenciaFunc.cs",
-              "RelativeToolTip": "FrequenciaFunc.cs",
-              "ViewState": "AQIAAFgAAAAAAAAAAAAqwEsAAAAsAAAA",
+              "DocumentIndex": 23,
+              "Title": "Form1.cs",
+              "DocumentMoniker": "C:\\Users\\admin\\Desktop\\Olimpiadas\\FiorentinoForm\\Form1.cs",
+              "RelativeDocumentMoniker": "Form1.cs",
+              "ToolTip": "C:\\Users\\admin\\Desktop\\Olimpiadas\\FiorentinoForm\\Form1.cs",
+              "RelativeToolTip": "Form1.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABYAAAAEAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-01T15:57:31.751Z"
+              "WhenOpened": "2024-03-01T15:14:30.34Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "Form1.resx",
+              "DocumentMoniker": "C:\\Users\\admin\\Desktop\\Olimpiadas\\FiorentinoForm\\Form1.resx",
+              "RelativeDocumentMoniker": "Form1.resx",
+              "ToolTip": "C:\\Users\\admin\\Desktop\\Olimpiadas\\FiorentinoForm\\Form1.resx",
+              "RelativeToolTip": "Form1.resx",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001005|",
+              "WhenOpened": "2024-03-01T16:30:40.261Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "LoginScreen.cs",
+              "DocumentMoniker": "C:\\Users\\admin\\Desktop\\Olimpiadas\\FiorentinoForm\\LoginScreen.cs",
+              "RelativeDocumentMoniker": "LoginScreen.cs",
+              "ToolTip": "C:\\Users\\admin\\Desktop\\Olimpiadas\\FiorentinoForm\\LoginScreen.cs",
+              "RelativeToolTip": "LoginScreen.cs",
+              "ViewState": "AQIAADYAAAAAAAAAAAAYwCsAAAAtAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-04T19:10:42.518Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "CadastroFunc.cs",
+              "DocumentMoniker": "C:\\Users\\admin\\Desktop\\Olimpiadas\\FiorentinoForm\\CadastroFunc.cs",
+              "RelativeDocumentMoniker": "CadastroFunc.cs",
+              "ToolTip": "C:\\Users\\admin\\Desktop\\Olimpiadas\\FiorentinoForm\\CadastroFunc.cs",
+              "RelativeToolTip": "CadastroFunc.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAAmAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-01T18:28:43.762Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 20,
-              "Title": "Model1.edmx [Diagram1]",
-              "DocumentMoniker": "C:\\Users\\admin\\Desktop\\Olimpiadas\\FiorentinoForm\\Models\\Model1.edmx",
-              "RelativeDocumentMoniker": "Models\\Model1.edmx",
-              "ToolTip": "C:\\Users\\admin\\Desktop\\Olimpiadas\\FiorentinoForm\\Models\\Model1.edmx [Diagram1]",
-              "RelativeToolTip": "Models\\Model1.edmx [Diagram1]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001116|",
-              "WhenOpened": "2024-03-04T15:58:00.263Z"
+              "Title": "parent.cs",
+              "DocumentMoniker": "C:\\Users\\admin\\Desktop\\Olimpiadas\\FiorentinoForm\\parent.cs",
+              "RelativeDocumentMoniker": "parent.cs",
+              "ToolTip": "C:\\Users\\admin\\Desktop\\Olimpiadas\\FiorentinoForm\\parent.cs",
+              "RelativeToolTip": "parent.cs",
+              "ViewState": "AQIAACkAAAAAAAAAAAAgwE8AAAAcAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-01T15:50:17.491Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 21,
-              "Title": "LancamentoVale.cs",
-              "DocumentMoniker": "C:\\Users\\admin\\Desktop\\Olimpiadas\\FiorentinoForm\\LancamentoVale.cs",
-              "RelativeDocumentMoniker": "LancamentoVale.cs",
-              "ToolTip": "C:\\Users\\admin\\Desktop\\Olimpiadas\\FiorentinoForm\\LancamentoVale.cs",
-              "RelativeToolTip": "LancamentoVale.cs",
-              "ViewState": "AQIAAAoAAAAAAAAAAAAuwC0AAAAjAAAA",
+              "Title": "teste.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\admin\\Desktop\\Olimpiadas\\FiorentinoForm\\teste.cs",
+              "RelativeDocumentMoniker": "teste.cs",
+              "ToolTip": "C:\\Users\\admin\\Desktop\\Olimpiadas\\FiorentinoForm\\teste.cs [Design]",
+              "RelativeToolTip": "teste.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-01T16:39:34.988Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-03-01T16:04:02.341Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "parent.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\admin\\Desktop\\Olimpiadas\\FiorentinoForm\\parent.Designer.cs",
+              "RelativeDocumentMoniker": "parent.Designer.cs",
+              "ToolTip": "C:\\Users\\admin\\Desktop\\Olimpiadas\\FiorentinoForm\\parent.Designer.cs",
+              "RelativeToolTip": "parent.Designer.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-04T19:34:17.499Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "LoginScreen.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\admin\\Desktop\\Olimpiadas\\FiorentinoForm\\LoginScreen.Designer.cs",
+              "RelativeDocumentMoniker": "LoginScreen.Designer.cs",
+              "ToolTip": "C:\\Users\\admin\\Desktop\\Olimpiadas\\FiorentinoForm\\LoginScreen.Designer.cs",
+              "RelativeToolTip": "LoginScreen.Designer.cs",
+              "ViewState": "AQIAABwAAAAAAAAAAAAqwDQAAABOAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-04T19:08:22.235Z"
             }
           ]
         }
