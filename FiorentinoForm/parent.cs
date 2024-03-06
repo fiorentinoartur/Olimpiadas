@@ -14,7 +14,7 @@ namespace FiorentinoForm
 {
     public partial class parent : Form
     {
-   public        LogisticsBDEntities1 ctx = new LogisticsBDEntities1();
+   public        LogisticsBDEntities2 ctx = new LogisticsBDEntities2();
         public parent()
         {
             InitializeComponent();

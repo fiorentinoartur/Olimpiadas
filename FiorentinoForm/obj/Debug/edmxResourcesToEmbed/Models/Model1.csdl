@@ -255,7 +255,7 @@
     <Key>
       <PropertyRef Name="ID" />
     </Key>
-    <Property Name="ID" Type="Int32" Nullable="false" />
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
     <Property Name="PersonID" Type="Int32" />
     <Property Name="BenefitID" Type="Int32" />
     <Property Name="CancelationDate" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
@@ -331,6 +331,16 @@
     <Property Name="Name" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
     <Property Name="UF" Type="String" MaxLength="2" FixedLength="true" Unicode="false" />
     <NavigationProperty Name="Cities" Relationship="Self.FK_Cities_States" FromRole="States" ToRole="Cities" />
+  </EntityType>
+  <EntityType Name="sysdiagrams">
+    <Key>
+      <PropertyRef Name="diagram_id" />
+    </Key>
+    <Property Name="name" Type="String" MaxLength="128" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="principal_id" Type="Int32" Nullable="false" />
+    <Property Name="diagram_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="version" Type="Int32" />
+    <Property Name="definition" Type="Binary" MaxLength="Max" FixedLength="false" />
   </EntityType>
   <Association Name="FK_Addresses_Cities">
     <End Role="Cities" Type="Self.Cities" Multiplicity="0..1" />
@@ -728,7 +738,7 @@
       </Dependent>
     </ReferentialConstraint>
   </Association>
-  <EntityContainer Name="LogisticsBDEntities1" annotation:LazyLoadingEnabled="true">
+  <EntityContainer Name="LogisticsBDEntities2" annotation:LazyLoadingEnabled="true">
     <EntitySet Name="Addresses" EntityType="Self.Addresses" />
     <EntitySet Name="Benefits" EntityType="Self.Benefits" />
     <EntitySet Name="Cities" EntityType="Self.Cities" />
@@ -758,6 +768,7 @@
     <EntitySet Name="Rooms" EntityType="Self.Rooms" />
     <EntitySet Name="ServiceOrder" EntityType="Self.ServiceOrder" />
     <EntitySet Name="States" EntityType="Self.States" />
+    <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagrams" />
     <AssociationSet Name="FK_Addresses_Cities" Association="Self.FK_Addresses_Cities">
       <End Role="Cities" EntitySet="Cities" />
       <End Role="Addresses" EntitySet="Addresses" />

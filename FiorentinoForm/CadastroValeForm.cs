@@ -25,7 +25,7 @@ namespace FiorentinoForm
         {
             InitializeComponent();
             PersonBenefit = personBenefit;
-            titleCadastroVale.Text = "Atualizar Vale";
+            titleCadastroVale.Text = "Atualizar Beneficio";
             button1.Text = "Atualizar";
  
 

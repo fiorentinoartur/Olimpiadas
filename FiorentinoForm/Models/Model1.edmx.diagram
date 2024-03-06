@@ -4,7 +4,7 @@
   <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
     <!-- Diagram content (shape and connector positions) -->
     <edmx:Diagrams>
-      <Diagram DiagramId="95469d6faac64ffaa7a0c00a5c81e3b6" Name="Diagram1">
+      <Diagram DiagramId="10b1876da377485b8efea6a65d235943" Name="Diagram1">
         <EntityTypeShape EntityType="LogisticsBDModel.Addresses" Width="1.5" PointX="5.25" PointY="13.25" IsExpanded="true" />
         <EntityTypeShape EntityType="LogisticsBDModel.Benefits" Width="1.5" PointX="13.5" PointY="23.625" IsExpanded="true" />
         <EntityTypeShape EntityType="LogisticsBDModel.Cities" Width="1.5" PointX="3" PointY="15" IsExpanded="true" />
@@ -34,6 +34,7 @@
         <EntityTypeShape EntityType="LogisticsBDModel.Rooms" Width="1.5" PointX="15.75" PointY="27.375" IsExpanded="true" />
         <EntityTypeShape EntityType="LogisticsBDModel.ServiceOrder" Width="1.5" PointX="15.75" PointY="21.75" IsExpanded="true" />
         <EntityTypeShape EntityType="LogisticsBDModel.States" Width="1.5" PointX="0.75" PointY="15.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="LogisticsBDModel.sysdiagrams" Width="1.5" PointX="2.75" PointY="0.75" IsExpanded="true" />
         <AssociationConnector Association="LogisticsBDModel.FK_Addresses_Cities" ManuallyRouted="false" />
         <AssociationConnector Association="LogisticsBDModel.FK_Movings_Addresses" ManuallyRouted="false" />
         <AssociationConnector Association="LogisticsBDModel.FK_Movings_Addresses1" ManuallyRouted="false" />

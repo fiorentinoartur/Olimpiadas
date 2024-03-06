@@ -13,10 +13,10 @@ namespace FiorentinoForm.Models
     using System.Data.Entity;
     using System.Data.Entity.Infrastructure;
     
-    public partial class LogisticsBDEntities1 : DbContext
+    public partial class LogisticsBDEntities2 : DbContext
     {
-        public LogisticsBDEntities1()
-            : base("name=LogisticsBDEntities1")
+        public LogisticsBDEntities2()
+            : base("name=LogisticsBDEntities2")
         {
         }
     
@@ -54,5 +54,6 @@ namespace FiorentinoForm.Models
         public virtual DbSet<Rooms> Rooms { get; set; }
         public virtual DbSet<ServiceOrder> ServiceOrder { get; set; }
         public virtual DbSet<States> States { get; set; }
+        public virtual DbSet<sysdiagrams> sysdiagrams { get; set; }
     }
 }

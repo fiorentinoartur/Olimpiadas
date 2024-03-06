@@ -36,10 +36,9 @@ namespace FiorentinoForm
         private void filtrar()
         {
         var lista =   ctx.PersonBenefits.Where(x =>
-            (textBox1.Text == " " || x.People.Name.ToLower().Contains(textBox1.Text) && 
-            (comboBox1.SelectedIndex < 0 || comboBox1.SelectedItem == x.Benefits.Name) &&
-            (x.SolicitationDate >= dateTimePicker1.Value && x.SolicitationDate <= dateTimePicker2.Value)
-            )).ToList(); 
+            (textBox1.Text == " " || x.People.Name.ToLower().Contains(textBox1.Text)) && 
+            (comboBox1.SelectedIndex < 0 || comboBox1.SelectedItem.ToString() == x.Benefits.Name)
+            ).ToList(); 
 
      
 

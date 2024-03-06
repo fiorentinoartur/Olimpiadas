@@ -15,7 +15,7 @@ namespace FiorentinoForm
 {
     public partial class LoginScreen : Form
     {
-        public LogisticsBDEntities1 ctx =  new LogisticsBDEntities1();
+        public LogisticsBDEntities2 ctx =  new LogisticsBDEntities2();
         int tries = 3;
         int ms = 1000;
         public LoginScreen()

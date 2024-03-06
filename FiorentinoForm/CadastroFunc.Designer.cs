@@ -64,6 +64,14 @@
             this.textBox7 = new System.Windows.Forms.TextBox();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.label39 = new System.Windows.Forms.Label();
+            this.textBox18 = new System.Windows.Forms.TextBox();
+            this.label11 = new System.Windows.Forms.Label();
+            this.label37 = new System.Windows.Forms.Label();
+            this.label38 = new System.Windows.Forms.Label();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.textBox16 = new System.Windows.Forms.TextBox();
+            this.textBox17 = new System.Windows.Forms.TextBox();
             this.dateTimePicker3 = new System.Windows.Forms.DateTimePicker();
             this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
             this.label14 = new System.Windows.Forms.Label();
@@ -73,6 +81,7 @@
             this.button4 = new System.Windows.Forms.Button();
             this.dateTimePicker4 = new System.Windows.Forms.DateTimePicker();
             this.label8 = new System.Windows.Forms.Label();
+            this.label29 = new System.Windows.Forms.Label();
             this.label17 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
@@ -80,6 +89,7 @@
             this.label22 = new System.Windows.Forms.Label();
             this.comboBox5 = new System.Windows.Forms.ComboBox();
             this.textBox11 = new System.Windows.Forms.TextBox();
+            this.textBox15 = new System.Windows.Forms.TextBox();
             this.textBox14 = new System.Windows.Forms.TextBox();
             this.textBox13 = new System.Windows.Forms.TextBox();
             this.textBox12 = new System.Windows.Forms.TextBox();
@@ -87,31 +97,21 @@
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.label32 = new System.Windows.Forms.Label();
             this.tabPage4 = new System.Windows.Forms.TabPage();
-            this.button5 = new System.Windows.Forms.Button();
-            this.label24 = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.textBox15 = new System.Windows.Forms.TextBox();
-            this.label29 = new System.Windows.Forms.Label();
-            this.label11 = new System.Windows.Forms.Label();
-            this.label37 = new System.Windows.Forms.Label();
-            this.label38 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox16 = new System.Windows.Forms.TextBox();
-            this.textBox17 = new System.Windows.Forms.TextBox();
-            this.checkedListBox1 = new System.Windows.Forms.CheckedListBox();
-            this.label10 = new System.Windows.Forms.Label();
-            this.radioButton1 = new System.Windows.Forms.RadioButton();
-            this.radioButton2 = new System.Windows.Forms.RadioButton();
-            this.checkBox1 = new System.Windows.Forms.CheckBox();
-            this.checkBox2 = new System.Windows.Forms.CheckBox();
-            this.checkBox3 = new System.Windows.Forms.CheckBox();
-            this.checkBox4 = new System.Windows.Forms.CheckBox();
-            this.label39 = new System.Windows.Forms.Label();
-            this.textBox18 = new System.Windows.Forms.TextBox();
-            this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.groupBox5 = new System.Windows.Forms.GroupBox();
             this.radioButton3 = new System.Windows.Forms.RadioButton();
             this.radioButton4 = new System.Windows.Forms.RadioButton();
+            this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.radioButton2 = new System.Windows.Forms.RadioButton();
+            this.radioButton1 = new System.Windows.Forms.RadioButton();
+            this.button5 = new System.Windows.Forms.Button();
+            this.label24 = new System.Windows.Forms.Label();
+            this.checkBox4 = new System.Windows.Forms.CheckBox();
+            this.checkBox3 = new System.Windows.Forms.CheckBox();
+            this.checkBox2 = new System.Windows.Forms.CheckBox();
+            this.checkBox1 = new System.Windows.Forms.CheckBox();
+            this.label10 = new System.Windows.Forms.Label();
+            this.checkedListBox1 = new System.Windows.Forms.CheckedListBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
@@ -122,15 +122,17 @@
             this.tabPage3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.tabPage4.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            this.groupBox3.SuspendLayout();
             this.groupBox5.SuspendLayout();
+            this.groupBox3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
             // 
             this.panel1.Controls.Add(this.tabControl1);
+            this.panel1.Controls.Add(this.button2);
             this.panel1.Size = new System.Drawing.Size(1607, 843);
+            this.panel1.Controls.SetChildIndex(this.button2, 0);
             this.panel1.Controls.SetChildIndex(this.tabControl1, 0);
             this.panel1.Controls.SetChildIndex(this.panel2, 0);
             this.panel1.Controls.SetChildIndex(this.panel3, 0);
@@ -152,7 +154,7 @@
             this.tabControl1.Location = new System.Drawing.Point(338, 131);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(1120, 658);
+            this.tabControl1.Size = new System.Drawing.Size(1057, 545);
             this.tabControl1.TabIndex = 3;
             // 
             // tabPage1
@@ -162,7 +164,6 @@
             this.tabPage1.Controls.Add(this.textBox9);
             this.tabPage1.Controls.Add(this.dateTimePicker1);
             this.tabPage1.Controls.Add(this.label30);
-            this.tabPage1.Controls.Add(this.button2);
             this.tabPage1.Controls.Add(this.label25);
             this.tabPage1.Controls.Add(this.label21);
             this.tabPage1.Controls.Add(this.label16);
@@ -182,7 +183,7 @@
             this.tabPage1.Location = new System.Drawing.Point(4, 25);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(1112, 629);
+            this.tabPage1.Size = new System.Drawing.Size(1049, 516);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Dados Pessoais";
             this.tabPage1.UseVisualStyleBackColor = true;
@@ -232,9 +233,9 @@
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(744, 442);
+            this.button2.Location = new System.Drawing.Point(1268, 719);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(92, 32);
+            this.button2.Size = new System.Drawing.Size(123, 42);
             this.button2.TabIndex = 43;
             this.button2.Text = "Próximo";
             this.button2.UseVisualStyleBackColor = true;
@@ -388,7 +389,7 @@
             this.tabPage2.Location = new System.Drawing.Point(4, 25);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(1112, 629);
+            this.tabPage2.Size = new System.Drawing.Size(1049, 516);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Dados Pessoais";
             this.tabPage2.UseVisualStyleBackColor = true;
@@ -505,6 +506,74 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Documento";
             // 
+            // label39
+            // 
+            this.label39.AutoSize = true;
+            this.label39.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label39.Location = new System.Drawing.Point(102, 107);
+            this.label39.Name = "label39";
+            this.label39.Size = new System.Drawing.Size(89, 20);
+            this.label39.TabIndex = 76;
+            this.label39.Text = "Reservista";
+            // 
+            // textBox18
+            // 
+            this.textBox18.Location = new System.Drawing.Point(107, 142);
+            this.textBox18.Name = "textBox18";
+            this.textBox18.Size = new System.Drawing.Size(151, 22);
+            this.textBox18.TabIndex = 77;
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label11.Location = new System.Drawing.Point(513, 18);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(94, 20);
+            this.label11.TabIndex = 70;
+            this.label11.Text = "Passaporte";
+            // 
+            // label37
+            // 
+            this.label37.AutoSize = true;
+            this.label37.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label37.Location = new System.Drawing.Point(316, 18);
+            this.label37.Name = "label37";
+            this.label37.Size = new System.Drawing.Size(42, 20);
+            this.label37.TabIndex = 71;
+            this.label37.Text = "CPF";
+            // 
+            // label38
+            // 
+            this.label38.AutoSize = true;
+            this.label38.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label38.Location = new System.Drawing.Point(102, 18);
+            this.label38.Name = "label38";
+            this.label38.Size = new System.Drawing.Size(34, 20);
+            this.label38.TabIndex = 72;
+            this.label38.Text = "RG";
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(518, 53);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(151, 22);
+            this.textBox1.TabIndex = 73;
+            // 
+            // textBox16
+            // 
+            this.textBox16.Location = new System.Drawing.Point(321, 53);
+            this.textBox16.Name = "textBox16";
+            this.textBox16.Size = new System.Drawing.Size(151, 22);
+            this.textBox16.TabIndex = 74;
+            // 
+            // textBox17
+            // 
+            this.textBox17.Location = new System.Drawing.Point(107, 53);
+            this.textBox17.Name = "textBox17";
+            this.textBox17.Size = new System.Drawing.Size(151, 22);
+            this.textBox17.TabIndex = 75;
+            // 
             // dateTimePicker3
             // 
             this.dateTimePicker3.Format = System.Windows.Forms.DateTimePickerFormat.Short;
@@ -573,7 +642,7 @@
             this.tabPage3.Location = new System.Drawing.Point(4, 25);
             this.tabPage3.Name = "tabPage3";
             this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage3.Size = new System.Drawing.Size(1112, 629);
+            this.tabPage3.Size = new System.Drawing.Size(1049, 516);
             this.tabPage3.TabIndex = 2;
             this.tabPage3.Text = "Dependentes";
             this.tabPage3.UseVisualStyleBackColor = true;
@@ -603,6 +672,16 @@
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(0, 20);
             this.label8.TabIndex = 60;
+            // 
+            // label29
+            // 
+            this.label29.AutoSize = true;
+            this.label29.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label29.Location = new System.Drawing.Point(184, 244);
+            this.label29.Name = "label29";
+            this.label29.Size = new System.Drawing.Size(89, 20);
+            this.label29.TabIndex = 63;
+            this.label29.Text = "Reservista";
             // 
             // label17
             // 
@@ -669,6 +748,13 @@
             this.textBox11.Size = new System.Drawing.Size(151, 22);
             this.textBox11.TabIndex = 67;
             // 
+            // textBox15
+            // 
+            this.textBox15.Location = new System.Drawing.Point(189, 279);
+            this.textBox15.Name = "textBox15";
+            this.textBox15.Size = new System.Drawing.Size(151, 22);
+            this.textBox15.TabIndex = 69;
+            // 
             // textBox14
             // 
             this.textBox14.Location = new System.Drawing.Point(600, 200);
@@ -703,7 +789,7 @@
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(188, 338);
+            this.dataGridView1.Location = new System.Drawing.Point(188, 333);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 24;
@@ -735,220 +821,10 @@
             this.tabPage4.Location = new System.Drawing.Point(4, 25);
             this.tabPage4.Name = "tabPage4";
             this.tabPage4.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage4.Size = new System.Drawing.Size(1112, 629);
+            this.tabPage4.Size = new System.Drawing.Size(1049, 516);
             this.tabPage4.TabIndex = 3;
             this.tabPage4.Text = "Beneficios";
             this.tabPage4.UseVisualStyleBackColor = true;
-            // 
-            // button5
-            // 
-            this.button5.Location = new System.Drawing.Point(708, 452);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(92, 32);
-            this.button5.TabIndex = 47;
-            this.button5.Text = "Cadastrar";
-            this.button5.UseVisualStyleBackColor = true;
-            // 
-            // label24
-            // 
-            this.label24.AutoSize = true;
-            this.label24.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label24.Location = new System.Drawing.Point(423, 108);
-            this.label24.Name = "label24";
-            this.label24.Size = new System.Drawing.Size(175, 39);
-            this.label24.TabIndex = 46;
-            this.label24.Text = "Beneficios";
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::FiorentinoForm.Properties.Resources.SemFoto;
-            this.pictureBox1.Location = new System.Drawing.Point(113, 82);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(69, 58);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 40;
-            this.pictureBox1.TabStop = false;
-            // 
-            // textBox15
-            // 
-            this.textBox15.Location = new System.Drawing.Point(189, 279);
-            this.textBox15.Name = "textBox15";
-            this.textBox15.Size = new System.Drawing.Size(151, 22);
-            this.textBox15.TabIndex = 69;
-            // 
-            // label29
-            // 
-            this.label29.AutoSize = true;
-            this.label29.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label29.Location = new System.Drawing.Point(184, 244);
-            this.label29.Name = "label29";
-            this.label29.Size = new System.Drawing.Size(111, 25);
-            this.label29.TabIndex = 63;
-            this.label29.Text = "Reservista";
-            // 
-            // label11
-            // 
-            this.label11.AutoSize = true;
-            this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.Location = new System.Drawing.Point(513, 18);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(94, 20);
-            this.label11.TabIndex = 70;
-            this.label11.Text = "Passaporte";
-            // 
-            // label37
-            // 
-            this.label37.AutoSize = true;
-            this.label37.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label37.Location = new System.Drawing.Point(316, 18);
-            this.label37.Name = "label37";
-            this.label37.Size = new System.Drawing.Size(42, 20);
-            this.label37.TabIndex = 71;
-            this.label37.Text = "CPF";
-            // 
-            // label38
-            // 
-            this.label38.AutoSize = true;
-            this.label38.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label38.Location = new System.Drawing.Point(102, 18);
-            this.label38.Name = "label38";
-            this.label38.Size = new System.Drawing.Size(34, 20);
-            this.label38.TabIndex = 72;
-            this.label38.Text = "RG";
-            // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(518, 53);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(151, 22);
-            this.textBox1.TabIndex = 73;
-            // 
-            // textBox16
-            // 
-            this.textBox16.Location = new System.Drawing.Point(321, 53);
-            this.textBox16.Name = "textBox16";
-            this.textBox16.Size = new System.Drawing.Size(151, 22);
-            this.textBox16.TabIndex = 74;
-            // 
-            // textBox17
-            // 
-            this.textBox17.Location = new System.Drawing.Point(107, 53);
-            this.textBox17.Name = "textBox17";
-            this.textBox17.Size = new System.Drawing.Size(151, 22);
-            this.textBox17.TabIndex = 75;
-            // 
-            // checkedListBox1
-            // 
-            this.checkedListBox1.FormattingEnabled = true;
-            this.checkedListBox1.Location = new System.Drawing.Point(281, 186);
-            this.checkedListBox1.Name = "checkedListBox1";
-            this.checkedListBox1.Size = new System.Drawing.Size(488, 242);
-            this.checkedListBox1.TabIndex = 36;
-            // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(553, 195);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(157, 20);
-            this.label10.TabIndex = 41;
-            this.label10.Text = "Adiconar  Depente?";
-            // 
-            // radioButton1
-            // 
-            this.radioButton1.AutoSize = true;
-            this.radioButton1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton1.Location = new System.Drawing.Point(30, 12);
-            this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(59, 24);
-            this.radioButton1.TabIndex = 45;
-            this.radioButton1.TabStop = true;
-            this.radioButton1.Text = "Sim";
-            this.radioButton1.UseVisualStyleBackColor = true;
-            // 
-            // radioButton2
-            // 
-            this.radioButton2.AutoSize = true;
-            this.radioButton2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton2.Location = new System.Drawing.Point(110, 12);
-            this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(60, 24);
-            this.radioButton2.TabIndex = 44;
-            this.radioButton2.TabStop = true;
-            this.radioButton2.Text = "Não";
-            this.radioButton2.UseVisualStyleBackColor = true;
-            // 
-            // checkBox1
-            // 
-            this.checkBox1.AutoSize = true;
-            this.checkBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBox1.Location = new System.Drawing.Point(312, 229);
-            this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(165, 30);
-            this.checkBox1.TabIndex = 40;
-            this.checkBox1.Text = "Cesta Básica";
-            this.checkBox1.UseVisualStyleBackColor = true;
-            // 
-            // checkBox2
-            // 
-            this.checkBox2.AutoSize = true;
-            this.checkBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBox2.Location = new System.Drawing.Point(312, 269);
-            this.checkBox2.Name = "checkBox2";
-            this.checkBox2.Size = new System.Drawing.Size(188, 30);
-            this.checkBox2.TabIndex = 39;
-            this.checkBox2.Text = "Vale Transporte";
-            this.checkBox2.UseVisualStyleBackColor = true;
-            // 
-            // checkBox3
-            // 
-            this.checkBox3.AutoSize = true;
-            this.checkBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBox3.Location = new System.Drawing.Point(312, 363);
-            this.checkBox3.Name = "checkBox3";
-            this.checkBox3.Size = new System.Drawing.Size(178, 30);
-            this.checkBox3.TabIndex = 38;
-            this.checkBox3.Text = "Seguro de vida";
-            this.checkBox3.UseVisualStyleBackColor = true;
-            // 
-            // checkBox4
-            // 
-            this.checkBox4.AutoSize = true;
-            this.checkBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBox4.Location = new System.Drawing.Point(312, 309);
-            this.checkBox4.Name = "checkBox4";
-            this.checkBox4.Size = new System.Drawing.Size(221, 30);
-            this.checkBox4.TabIndex = 37;
-            this.checkBox4.Text = "Assistência Médica";
-            this.checkBox4.UseVisualStyleBackColor = true;
-            // 
-            // label39
-            // 
-            this.label39.AutoSize = true;
-            this.label39.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label39.Location = new System.Drawing.Point(102, 107);
-            this.label39.Name = "label39";
-            this.label39.Size = new System.Drawing.Size(89, 20);
-            this.label39.TabIndex = 76;
-            this.label39.Text = "Reservista";
-            // 
-            // textBox18
-            // 
-            this.textBox18.Location = new System.Drawing.Point(107, 142);
-            this.textBox18.Name = "textBox18";
-            this.textBox18.Size = new System.Drawing.Size(151, 22);
-            this.textBox18.TabIndex = 77;
-            // 
-            // groupBox3
-            // 
-            this.groupBox3.Controls.Add(this.radioButton2);
-            this.groupBox3.Controls.Add(this.radioButton1);
-            this.groupBox3.Location = new System.Drawing.Point(527, 363);
-            this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(200, 44);
-            this.groupBox3.TabIndex = 48;
-            this.groupBox3.TabStop = false;
             // 
             // groupBox5
             // 
@@ -984,6 +860,131 @@
             this.radioButton4.Text = "Sim";
             this.radioButton4.UseVisualStyleBackColor = true;
             // 
+            // groupBox3
+            // 
+            this.groupBox3.Controls.Add(this.radioButton2);
+            this.groupBox3.Controls.Add(this.radioButton1);
+            this.groupBox3.Location = new System.Drawing.Point(527, 363);
+            this.groupBox3.Name = "groupBox3";
+            this.groupBox3.Size = new System.Drawing.Size(200, 44);
+            this.groupBox3.TabIndex = 48;
+            this.groupBox3.TabStop = false;
+            // 
+            // radioButton2
+            // 
+            this.radioButton2.AutoSize = true;
+            this.radioButton2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radioButton2.Location = new System.Drawing.Point(110, 12);
+            this.radioButton2.Name = "radioButton2";
+            this.radioButton2.Size = new System.Drawing.Size(60, 24);
+            this.radioButton2.TabIndex = 44;
+            this.radioButton2.TabStop = true;
+            this.radioButton2.Text = "Não";
+            this.radioButton2.UseVisualStyleBackColor = true;
+            // 
+            // radioButton1
+            // 
+            this.radioButton1.AutoSize = true;
+            this.radioButton1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radioButton1.Location = new System.Drawing.Point(30, 12);
+            this.radioButton1.Name = "radioButton1";
+            this.radioButton1.Size = new System.Drawing.Size(59, 24);
+            this.radioButton1.TabIndex = 45;
+            this.radioButton1.TabStop = true;
+            this.radioButton1.Text = "Sim";
+            this.radioButton1.UseVisualStyleBackColor = true;
+            // 
+            // button5
+            // 
+            this.button5.Location = new System.Drawing.Point(708, 452);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(92, 32);
+            this.button5.TabIndex = 47;
+            this.button5.Text = "Cadastrar";
+            this.button5.UseVisualStyleBackColor = true;
+            // 
+            // label24
+            // 
+            this.label24.AutoSize = true;
+            this.label24.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label24.Location = new System.Drawing.Point(423, 108);
+            this.label24.Name = "label24";
+            this.label24.Size = new System.Drawing.Size(175, 39);
+            this.label24.TabIndex = 46;
+            this.label24.Text = "Beneficios";
+            // 
+            // checkBox4
+            // 
+            this.checkBox4.AutoSize = true;
+            this.checkBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBox4.Location = new System.Drawing.Point(312, 309);
+            this.checkBox4.Name = "checkBox4";
+            this.checkBox4.Size = new System.Drawing.Size(177, 24);
+            this.checkBox4.TabIndex = 37;
+            this.checkBox4.Text = "Assistência Médica";
+            this.checkBox4.UseVisualStyleBackColor = true;
+            // 
+            // checkBox3
+            // 
+            this.checkBox3.AutoSize = true;
+            this.checkBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBox3.Location = new System.Drawing.Point(312, 363);
+            this.checkBox3.Name = "checkBox3";
+            this.checkBox3.Size = new System.Drawing.Size(142, 24);
+            this.checkBox3.TabIndex = 38;
+            this.checkBox3.Text = "Seguro de vida";
+            this.checkBox3.UseVisualStyleBackColor = true;
+            // 
+            // checkBox2
+            // 
+            this.checkBox2.AutoSize = true;
+            this.checkBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBox2.Location = new System.Drawing.Point(312, 269);
+            this.checkBox2.Name = "checkBox2";
+            this.checkBox2.Size = new System.Drawing.Size(150, 24);
+            this.checkBox2.TabIndex = 39;
+            this.checkBox2.Text = "Vale Transporte";
+            this.checkBox2.UseVisualStyleBackColor = true;
+            // 
+            // checkBox1
+            // 
+            this.checkBox1.AutoSize = true;
+            this.checkBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBox1.Location = new System.Drawing.Point(312, 229);
+            this.checkBox1.Name = "checkBox1";
+            this.checkBox1.Size = new System.Drawing.Size(132, 24);
+            this.checkBox1.TabIndex = 40;
+            this.checkBox1.Text = "Cesta Básica";
+            this.checkBox1.UseVisualStyleBackColor = true;
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.Location = new System.Drawing.Point(553, 195);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(208, 25);
+            this.label10.TabIndex = 41;
+            this.label10.Text = "Adiconar  Depentes?";
+            // 
+            // checkedListBox1
+            // 
+            this.checkedListBox1.FormattingEnabled = true;
+            this.checkedListBox1.Location = new System.Drawing.Point(281, 186);
+            this.checkedListBox1.Name = "checkedListBox1";
+            this.checkedListBox1.Size = new System.Drawing.Size(488, 242);
+            this.checkedListBox1.TabIndex = 36;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::FiorentinoForm.Properties.Resources.SemFoto;
+            this.pictureBox1.Location = new System.Drawing.Point(113, 82);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(69, 58);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 40;
+            this.pictureBox1.TabStop = false;
+            // 
             // CadastroFunc
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -1006,11 +1007,11 @@
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.tabPage4.ResumeLayout(false);
             this.tabPage4.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            this.groupBox3.ResumeLayout(false);
-            this.groupBox3.PerformLayout();
             this.groupBox5.ResumeLayout(false);
             this.groupBox5.PerformLayout();
+            this.groupBox3.ResumeLayout(false);
+            this.groupBox3.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }

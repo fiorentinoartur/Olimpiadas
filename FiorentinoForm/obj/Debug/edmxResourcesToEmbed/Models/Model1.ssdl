@@ -202,7 +202,7 @@
     <Key>
       <PropertyRef Name="ID" />
     </Key>
-    <Property Name="ID" Type="int" Nullable="false" />
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
     <Property Name="PersonID" Type="int" />
     <Property Name="BenefitID" Type="int" />
     <Property Name="CancelationDate" Type="nchar" MaxLength="10" />
@@ -265,6 +265,16 @@
     <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
     <Property Name="Name" Type="varchar" MaxLength="50" />
     <Property Name="UF" Type="char" MaxLength="2" />
+  </EntityType>
+  <EntityType Name="sysdiagrams">
+    <Key>
+      <PropertyRef Name="diagram_id" />
+    </Key>
+    <Property Name="name" Type="nvarchar" MaxLength="128" Nullable="false" />
+    <Property Name="principal_id" Type="int" Nullable="false" />
+    <Property Name="diagram_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="version" Type="int" />
+    <Property Name="definition" Type="varbinary(max)" />
   </EntityType>
   <Association Name="FK_Addresses_Cities">
     <End Role="Cities" Type="Self.Cities" Multiplicity="0..1" />
@@ -692,6 +702,7 @@
     <EntitySet Name="Rooms" EntityType="Self.Rooms" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="ServiceOrder" EntityType="Self.ServiceOrder" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="States" EntityType="Self.States" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagrams" Schema="dbo" store:Type="Tables" />
     <AssociationSet Name="FK_Addresses_Cities" Association="Self.FK_Addresses_Cities">
       <End Role="Cities" EntitySet="Cities" />
       <End Role="Addresses" EntitySet="Addresses" />

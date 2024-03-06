@@ -82,9 +82,9 @@
             this.titleCadastroVale.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.titleCadastroVale.Location = new System.Drawing.Point(396, 132);
             this.titleCadastroVale.Name = "titleCadastroVale";
-            this.titleCadastroVale.Size = new System.Drawing.Size(244, 39);
+            this.titleCadastroVale.Size = new System.Drawing.Size(316, 39);
             this.titleCadastroVale.TabIndex = 12;
-            this.titleCadastroVale.Text = "Cadastrar Vale";
+            this.titleCadastroVale.Text = "Cadastrar Beneficio";
             // 
             // button1
             // 
@@ -142,6 +142,11 @@
             // numericUpDown1
             // 
             this.numericUpDown1.Location = new System.Drawing.Point(292, 351);
+            this.numericUpDown1.Maximum = new decimal(new int[] {
+            1000,
+            0,
+            0,
+            0});
             this.numericUpDown1.Name = "numericUpDown1";
             this.numericUpDown1.Size = new System.Drawing.Size(186, 22);
             this.numericUpDown1.TabIndex = 13;
