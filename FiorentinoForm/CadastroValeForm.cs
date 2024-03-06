@@ -64,7 +64,7 @@ namespace FiorentinoForm
                 int idPerson = int.Parse(ctx.People.Where(x => x.Name == comboBoxFunc.SelectedItem.ToString()).FirstOrDefault().ID.ToString());
                 int idBeneficio = int.Parse(ctx.Benefits.Where(x => x.Name == comboBoxBeneficio.SelectedItem.ToString()).FirstOrDefault().ID.ToString());
 
-                int bit = comboBox1.SelectedItem == "Dia" ? 0 : 1;
+                int bit = comboBox1.SelectedItem.ToString() == "Dia" ? 0 : 1;
                 pb.PersonID = idPerson;
                 pb.BenefitID = idBeneficio;
                 pb.Amount = numericUpDown1.Value.ToString();
@@ -89,7 +89,7 @@ namespace FiorentinoForm
             int idPerson = int.Parse(ctx.People.Where(x => x.Name == comboBoxFunc.SelectedItem.ToString()).FirstOrDefault().ID.ToString());
             int idBeneficio = int.Parse(ctx.Benefits.Where(x => x.Name == comboBoxBeneficio.SelectedItem.ToString()).FirstOrDefault().ID.ToString());
 
-            int bit = comboBox1.SelectedItem == "Dia" ? 0 : 1;
+            int bit = comboBox1.SelectedItem.ToString() == "Dia" ? 0 : 1;
 
             var personBenefits = ctx.People.ToList();
          

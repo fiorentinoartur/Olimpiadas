@@ -16,7 +16,7 @@ namespace FiorentinoForm
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new LancamentoVale());
+            Application.Run(new CadastroFunc());
         }
     }
 }

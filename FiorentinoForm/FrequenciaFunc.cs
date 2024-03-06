@@ -75,23 +75,7 @@ namespace FiorentinoForm
                 {
                     valor = "0" + valor;
                 }
-                List<DateTime> feriados = new List<DateTime>
-                {
-                    new DateTime(ano,1,1),
-                    new DateTime(ano,2,12),
-                    new DateTime(ano,2,13),
-                    new DateTime(ano,3,29),
-                    new DateTime(ano,3,21),
-                    new DateTime(ano,5,1),
-                    new DateTime(ano,5,30),
-                    new DateTime(ano,9,7),
-                    new DateTime(ano,10,12),
-                    new DateTime(ano,11,02),
-                    new DateTime(ano,11,15),
-                    new DateTime(ano,11,20),
-                    new DateTime(ano,12,25)
 
-                };
                 var column = dataGridView1.Columns.Add("Dias", valor);
                 if (new DateTime(ano, mes, i).DayOfWeek == DayOfWeek.Sunday || ctx.Holydays.Select(x => x.Date).ToList().Contains(new DateTime(ano, mes, i)))
                 {
@@ -232,25 +216,9 @@ namespace FiorentinoForm
                 {
                     valor = "0" + valor;
                 }
-                List<DateTime> feriados = new List<DateTime>
-                {
-                    new DateTime(ano,1,1),
-                    new DateTime(ano,2,12),
-                    new DateTime(ano,2,13),
-                    new DateTime(ano,3,29),
-                    new DateTime(ano,3,21),
-                    new DateTime(ano,5,1),
-                    new DateTime(ano,5,30),
-                    new DateTime(ano,9,7),
-                    new DateTime(ano,10,12),
-                    new DateTime(ano,11,02),
-                    new DateTime(ano,11,15),
-                    new DateTime(ano,11,20),
-                    new DateTime(ano,12,25)
 
-                };
                 var column = dataGridView1.Columns.Add("Dias", valor);
-                if (new DateTime(ano, mes, i).DayOfWeek == DayOfWeek.Sunday || feriados.Contains(new DateTime(ano, mes, i)))
+                if (new DateTime(ano, mes, i).DayOfWeek == DayOfWeek.Sunday || ctx.Holydays.Select(x => x.Date).Contains(new DateTime(ano, mes, i)))
                 {
                     dataGridView1.Columns[column].DefaultCellStyle.BackColor = Color.Orange;
                 }
