@@ -62,7 +62,7 @@ namespace FiorentinoForm
                 Id = x.ID,
                 Funcionario = x.People.Name,
                 Vale = x.Benefits.Name,
-                Valor = x.Amount.ToString(),
+                Valor = x.Amount ?? "-",
                 Data_Solicitacao = x.SolicitationDate,
                 Data_Cancelamento = x.CancelationDate ?? "-",
                 Ocorrencia = x.Occurrence.Value == 0 ? "Dia" : "Mês"

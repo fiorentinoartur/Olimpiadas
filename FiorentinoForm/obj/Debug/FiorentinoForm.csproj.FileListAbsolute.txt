@@ -6,7 +6,10 @@ C:\Users\admin\Desktop\Olimpiadas\FiorentinoForm\bin\Debug\EntityFramework.SqlSe
 C:\Users\admin\Desktop\Olimpiadas\FiorentinoForm\bin\Debug\EntityFramework.xml
 C:\Users\admin\Desktop\Olimpiadas\FiorentinoForm\bin\Debug\EntityFramework.SqlServer.xml
 C:\Users\admin\Desktop\Olimpiadas\FiorentinoForm\obj\Debug\FiorentinoForm.csproj.AssemblyReference.cache
+C:\Users\admin\Desktop\Olimpiadas\FiorentinoForm\obj\Debug\FiorentinoForm.AddDepenteForm.resources
 C:\Users\admin\Desktop\Olimpiadas\FiorentinoForm\obj\Debug\FiorentinoForm.CadastroFunc.resources
+C:\Users\admin\Desktop\Olimpiadas\FiorentinoForm\obj\Debug\FiorentinoForm.CadastroValeForm.resources
+C:\Users\admin\Desktop\Olimpiadas\FiorentinoForm\obj\Debug\FiorentinoForm.DependentesControl.resources
 C:\Users\admin\Desktop\Olimpiadas\FiorentinoForm\obj\Debug\FiorentinoForm.Form1.resources
 C:\Users\admin\Desktop\Olimpiadas\FiorentinoForm\obj\Debug\FiorentinoForm.FrequenciaFunc.resources
 C:\Users\admin\Desktop\Olimpiadas\FiorentinoForm\obj\Debug\FiorentinoForm.LancamentoVale.resources
@@ -19,4 +22,3 @@ C:\Users\admin\Desktop\Olimpiadas\FiorentinoForm\obj\Debug\FiorentinoForm.csproj
 C:\Users\admin\Desktop\Olimpiadas\FiorentinoForm\obj\Debug\Fiorenti.4C99F392.Up2Date
 C:\Users\admin\Desktop\Olimpiadas\FiorentinoForm\obj\Debug\FiorentinoForm.exe
 C:\Users\admin\Desktop\Olimpiadas\FiorentinoForm\obj\Debug\FiorentinoForm.pdb
-C:\Users\admin\Desktop\Olimpiadas\FiorentinoForm\obj\Debug\FiorentinoForm.CadastroValeForm.resources
